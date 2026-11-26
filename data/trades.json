@@ -11,8 +11,10 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "BUY SQQQ $14.84 market filled 0.327325 @45.3371, tactical score -0.52 bear trend+intraday; stop 1.5%/tp 3%; flat by 15:50 ET",
-   "n": 1
+   "details": "BUY SQQQ $14.84 market filled 0.327325 @45.3371, tactical score -0.52 bear trend+intraday; stop 1.5%/tp 3%; flat by 15:50 ET",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the trend was down. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
+   "n": 1,
+   "news": []
   },
   {
    "time": "2026-11-16T11:32:42-05:00",
@@ -25,8 +27,15 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "SELL SQQQ 0.327325 market filled @44.4401 - tactical stop -1.95% + Fed speech event window. Realized -0.29. flat",
-   "n": 2
+   "details": "SELL SQQQ 0.327325 market filled @44.4401 - tactical stop -1.95% + Fed speech event window. Realized -0.29. flat",
+   "why": "Sold SQQQ because it fell 1.9% from its buy price, hitting its stop-loss. A Fed speech was also coming up.",
+   "n": 2,
+   "result": {
+    "pnl": -0.29,
+    "pnl_pct": -1.98,
+    "rt": 1
+   },
+   "news": []
   },
   {
    "time": "2026-11-16T12:20:39-05:00",
@@ -39,8 +48,10 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "BUY SQQQ $17.99 market filled 0.398125 @45.1868, tactical score -0.631 (QQQ breaking lower, 665.7), SQQQ eligible; stop 1.5%/tp 3%; flat by 15:50 ET",
-   "n": 3
+   "details": "BUY SQQQ $17.99 market filled 0.398125 @45.1868, tactical score -0.631 (QQQ breaking lower, 665.7), SQQQ eligible; stop 1.5%/tp 3%; flat by 15:50 ET",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq was breaking lower. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
+   "n": 3,
+   "news": []
   },
   {
    "time": "2026-11-16T15:50:22-05:00",
@@ -53,8 +64,15 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "15:45 run did not fire; flattened tactical SQQQ (never overnight). SELL SQQQ 0.398125 market, order filled @45.8001 ($18.23; cost $17.99, +$0.24). Day P&L -$0.05 (4 orders, 2 round trips). Rule D OFF. EOD summary sent with this run",
-   "n": 4
+   "details": "15:45 run did not fire; flattened tactical SQQQ (never overnight). SELL SQQQ 0.398125 market, order filled @45.8001 ($18.23; cost $17.99, +$0.24). Day P&L -$0.05 (4 orders, 2 round trips). Rule D OFF. EOD summary sent with this run",
+   "why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight.",
+   "n": 4,
+   "result": {
+    "pnl": 0.24,
+    "pnl_pct": 1.36,
+    "rt": 2
+   },
+   "news": []
   },
   {
    "time": "2026-11-17T09:39:20-05:00",
@@ -67,8 +85,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "BUY SQQQ $19.24 market (tactical), order filled 0.418087 @ 46.0191. Reason: score -0.36 (bear trend + bear intraday), size reduced x0.79 by bullish low-conf research. Stop 1.5% / TP 3.0%. Must be flat by 15:50 (NVDA tonight)",
-   "n": 5
+   "details": "BUY SQQQ $19.24 market (tactical), order filled 0.418087 @ 46.0191. Reason: score -0.36 (bear trend + bear intraday), size reduced x0.79 by bullish low-conf research. Stop 1.5% / TP 3.0%. Must be flat by 15:50 (NVDA tonight)",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals mildly pointed down: the trend was down. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
+   "n": 5,
+   "news": [
+    {
+     "time": "08:30",
+     "text": "Oct retail sales +0.2% (in line). Ex-autos and control group both +0.6% vs +0.4%",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "Pre-open",
+     "text": "Disney and Home Depot beat",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "Geopolitics: Trump–Xi meeting 11/19 in Shenzhen (APEC). The tariff truce expires 1 Headline risk",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T09:52:33-05:00",
@@ -81,8 +120,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "ADD SQQQ $5.80 market (tactical), order filled 0.125324 @ 46.28. Score -0.469 (QQQ 660.2 new low); engine target $25.13. SQQQ now ~0.543411 sh",
-   "n": 6
+   "details": "ADD SQQQ $5.80 market (tactical), order filled 0.125324 @ 46.28. Score -0.469 (QQQ 660.2 new low); engine target $25.13. SQQQ now ~0.543411 sh",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the Nasdaq had just hit a new low for the day.",
+   "n": 6,
+   "news": [
+    {
+     "time": "08:30",
+     "text": "Oct retail sales +0.2% (in line). Ex-autos and control group both +0.6% vs +0.4%",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "Pre-open",
+     "text": "Disney and Home Depot beat",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "Geopolitics: Trump–Xi meeting 11/19 in Shenzhen (APEC). The tariff truce expires 1 Headline risk",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T10:09:58-05:00",
@@ -95,8 +155,29 @@
    "order_type": "limit",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 46.4643; market $23.45 order filled 0.503467 @ 46.577. Score -0.643, conviction 0.367 (QQQ 659.47 new low, below prior close 661.75); research flipped bearish conf 0.40 (x1.10 SQQQ). Engine target $95.10. Limit raised 46.37->46.47 after ask\u2026",
-   "n": 7
+   "details": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 46.4643; market $23.45 order filled 0.503467 @ 46.577. Score -0.643, conviction 0.367 (QQQ 659.47 new low, below prior close 661.75); research flipped bearish conf 0.40 (x1.10 SQQQ). Engine target $95.10. Limit raised 46.37->46.47 after ask…",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "n": 7,
+   "news": [
+    {
+     "time": "Pre-open",
+     "text": "plan to block Chinese optical transceiver imports (COHR +10%, LITE +8%). 0",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "NVDA: first report since Huang resigned 11/12 (Kress interim CEO); consensus rev ~$109B",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "No major shock (no surprise Fed move, no >2% drop, no halts)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T10:10:18-05:00",
@@ -109,8 +190,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 46.4643; market $23.45 order filled 0.503467 @ 46.577. Score -0.643, conviction 0.367 (QQQ 659.47 new low, below prior close 661.75); research flipped bearish conf 0.40 (x1.10 SQQQ). Engine target $95.10. Limit raised 46.37->46.47 after ask\u2026",
-   "n": 8
+   "details": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 46.4643; market $23.45 order filled 0.503467 @ 46.577. Score -0.643, conviction 0.367 (QQQ 659.47 new low, below prior close 661.75); research flipped bearish conf 0.40 (x1.10 SQQQ). Engine target $95.10. Limit raised 46.37->46.47 after ask…",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "n": 8,
+   "news": [
+    {
+     "time": "Pre-open",
+     "text": "plan to block Chinese optical transceiver imports (COHR +10%, LITE +8%). 0",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "NVDA: first report since Huang resigned 11/12 (Kress interim CEO); consensus rev ~$109B",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "No major shock (no surprise Fed move, no >2% drop, no halts)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T10:42:31-05:00",
@@ -123,8 +225,34 @@
    "order_type": "limit",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TAKE PROFIT SELL half SQQQ (tactical): limit 1 sh order filled @ 47.96; market 0.023455 sh order filled @ 48.003. pnl +3.4% hit TP 3%; engine trims to $49 target (score -0.608, conv 0.348). QQQ 651.99. Remaining SQQQ 1.023423",
-   "n": 9
+   "details": "TAKE PROFIT SELL half SQQQ (tactical): limit 1 sh order filled @ 47.96; market 0.023455 sh order filled @ 48.003. pnl +3.4% hit TP 3%; engine trims to $49 target (score -0.608, conv 0.348). QQQ 651.99. Remaining SQQQ 1.023423",
+   "why": "Sold half of its SQQQ to lock in a gain of about 3.4%, past its 3% profit target. It kept the rest in case the move continued.",
+   "n": 9,
+   "result": {
+    "pnl": 1.74,
+    "pnl_pct": 3.68,
+    "rt": 3
+   },
+   "news": [
+    {
+     "time": "Pre-open",
+     "text": "plan to block Chinese optical transceiver imports (COHR +10%, LITE +8%). 0",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "NVDA: first report since Huang resigned 11/12 (Kress interim CEO); consensus rev ~$109B",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "No major shock (no surprise Fed move, no >2% drop, no halts)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T10:42:51-05:00",
@@ -137,8 +265,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TAKE PROFIT SELL half SQQQ (tactical): limit 1 sh order filled @ 47.96; market 0.023455 sh order filled @ 48.003. pnl +3.4% hit TP 3%; engine trims to $49 target (score -0.608, conv 0.348). QQQ 651.99. Remaining SQQQ 1.023423",
-   "n": 10
+   "details": "TAKE PROFIT SELL half SQQQ (tactical): limit 1 sh order filled @ 47.96; market 0.023455 sh order filled @ 48.003. pnl +3.4% hit TP 3%; engine trims to $49 target (score -0.608, conv 0.348). QQQ 651.99. Remaining SQQQ 1.023423",
+   "why": "Sold half of its SQQQ to lock in a gain of about 3.4%, past its 3% profit target. It kept the rest in case the move continued.",
+   "n": 10,
+   "result": {
+    "pnl": 1.74,
+    "pnl_pct": 3.68,
+    "rt": 3
+   },
+   "news": [
+    {
+     "time": "Pre-open",
+     "text": "plan to block Chinese optical transceiver imports (COHR +10%, LITE +8%). 0",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "NVDA: first report since Huang resigned 11/12 (Kress interim CEO); consensus rev ~$109B",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "No major shock (no surprise Fed move, no >2% drop, no halts)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T10:48:02-05:00",
@@ -151,8 +305,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TRIM SQQQ (tactical) market sell 0.511805 sh order filled @ 48.5950. pnl +4.5%, engine target cut to $24.82 as conviction fades (score -0.482, conv 0.276). QQQ 649.3700. Remaining SQQQ 0.511618",
-   "n": 11
+   "details": "TRIM SQQQ (tactical) market sell 0.511805 sh order filled @ 48.5950. pnl +4.5%, engine target cut to $24.82 as conviction fades (score -0.482, conv 0.276). QQQ 649.3700. Remaining SQQQ 0.511618",
+   "why": "Sold some of its SQQQ to lock in a gain of about 4.5%, as the signal got weaker. It kept the rest in case the move continued.",
+   "n": 11,
+   "result": {
+    "pnl": 1.09,
+    "pnl_pct": 4.59,
+    "rt": 4
+   },
+   "news": [
+    {
+     "time": "Pre-open",
+     "text": "plan to block Chinese optical transceiver imports (COHR +10%, LITE +8%). 0",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "NVDA: first report since Huang resigned 11/12 (Kress interim CEO); consensus rev ~$109B",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "No major shock (no surprise Fed move, no >2% drop, no halts)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T10:53:09-05:00",
@@ -165,8 +345,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TRIM SQQQ (tactical) market sell 0.255850 sh order filled @ 48.9050. pnl +5.5%, engine laddered TP target $12.52. QQQ 647.4300. Remaining SQQQ 0.255768",
-   "n": 12
+   "details": "TRIM SQQQ (tactical) market sell 0.255850 sh order filled @ 48.9050. pnl +5.5%, engine laddered TP target $12.52. QQQ 647.4300. Remaining SQQQ 0.255768",
+   "why": "Sold some of its SQQQ to lock in a gain of about 5.5%, taking profits in steps. It kept the rest in case the move continued.",
+   "n": 12,
+   "result": {
+    "pnl": 0.6,
+    "pnl_pct": 5.01,
+    "rt": 5
+   },
+   "news": [
+    {
+     "time": "Pre-open",
+     "text": "plan to block Chinese optical transceiver imports (COHR +10%, LITE +8%). 0",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "NVDA: first report since Huang resigned 11/12 (Kress interim CEO); consensus rev ~$109B",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "No major shock (no surprise Fed move, no >2% drop, no halts)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T10:56:54-05:00",
@@ -179,8 +385,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TRIM SQQQ (tactical) market sell 0.127884 sh order filled @ 48.2309. pnl +4.2% on QQQ bounce to 650.1800; engine laddered TP target $6.18. Remaining SQQQ 0.127884",
-   "n": 13
+   "details": "TRIM SQQQ (tactical) market sell 0.127884 sh order filled @ 48.2309. pnl +4.2% on QQQ bounce to 650.1800; engine laddered TP target $6.18. Remaining SQQQ 0.127884",
+   "why": "Sold some of its SQQQ to lock in a gain of about 4.2%, taking profits in steps. It kept the rest in case the move continued.",
+   "n": 13,
+   "result": {
+    "pnl": 0.21,
+    "pnl_pct": 3.55,
+    "rt": 6
+   },
+   "news": [
+    {
+     "time": "Pre-open",
+     "text": "plan to block Chinese optical transceiver imports (COHR +10%, LITE +8%). 0",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "NVDA: first report since Huang resigned 11/12 (Kress interim CEO); consensus rev ~$109B",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "No major shock (no surprise Fed move, no >2% drop, no halts)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T11:07:17-05:00",
@@ -193,8 +425,29 @@
    "order_type": "limit",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 47.3589; market $43.81 order filled 0.926041 @ 47.3089. Score -0.608, conv 0.348; QQQ 653.99 in research's 652.5-655 failed-bounce entry zone, research bearish 0.55. 13%). SQQQ now 2.053925 sh avg 47.29. Stop 1.5%/TP 3%; flat by 15:50 (NVDA\u2026",
-   "n": 14
+   "details": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 47.3589; market $43.81 order filled 0.926041 @ 47.3089. Score -0.608, conv 0.348; QQQ 653.99 in research's 652.5-655 failed-bounce entry zone, research bearish 0.55. 13%). SQQQ now 2.053925 sh avg 47.29. Stop 1.5%/TP 3%; flat by 15:50 (NVDA…",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: a bounce had just stalled where the bot's research expected it to. The bot's news research agreed. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
+   "n": 14,
+   "news": [
+    {
+     "time": "10:45–10:49",
+     "text": "Iranian state media: US struck Qeshm Island, no damage or casualties",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "10:56",
+     "text": "WSJ: Huang signals willingness to return as Nvidia CEO (X reports say the board ruled it out)",
+     "source": "WSJ",
+     "impact": "good"
+    },
+    {
+     "time": "",
+     "text": "No surprise Fed move; no halt found (halt feeds not checked directly)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T11:07:19-05:00",
@@ -207,8 +460,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 47.3589; market $43.81 order filled 0.926041 @ 47.3089. Score -0.608, conv 0.348; QQQ 653.99 in research's 652.5-655 failed-bounce entry zone, research bearish 0.55. 13%). SQQQ now 2.053925 sh avg 47.29. Stop 1.5%/TP 3%; flat by 15:50 (NVDA\u2026",
-   "n": 15
+   "details": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 47.3589; market $43.81 order filled 0.926041 @ 47.3089. Score -0.608, conv 0.348; QQQ 653.99 in research's 652.5-655 failed-bounce entry zone, research bearish 0.55. 13%). SQQQ now 2.053925 sh avg 47.29. Stop 1.5%/TP 3%; flat by 15:50 (NVDA…",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: a bounce had just stalled where the bot's research expected it to. The bot's news research agreed. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
+   "n": 15,
+   "news": [
+    {
+     "time": "10:45–10:49",
+     "text": "Iranian state media: US struck Qeshm Island, no damage or casualties",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "10:56",
+     "text": "WSJ: Huang signals willingness to return as Nvidia CEO (X reports say the board ruled it out)",
+     "source": "WSJ",
+     "impact": "good"
+    },
+    {
+     "time": "",
+     "text": "No surprise Fed move; no halt found (halt feeds not checked directly)",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T15:34:52-05:00",
@@ -221,8 +495,34 @@
    "order_type": "limit",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "CORE run: rule D OFF (BEAR trend, rv20 36%) -> core Discretionary tactical exit: SOLD SQQQ 2 @ 47.373 (limit) + 0.053925 @ 47.365 (mkt), proceeds ~97.30 vs cost 97.10 (+0.20). Reason: score faded -0.61 -> -0.38, QQQ bouncing to 654.45, research says flat before NVDA print; SQQQ must be flat by\u2026",
-   "n": 16
+   "details": "CORE run: rule D OFF (BEAR trend, rv20 36%) -> core Discretionary tactical exit: SOLD SQQQ 2 @ 47.373 (limit) + 0.053925 @ 47.365 (mkt), proceeds ~97.30 vs cost 97.10 (+0.20). Reason: score faded -0.61 -> -0.38, QQQ bouncing to 654.45, research says flat before NVDA print; SQQQ must be flat by…",
+   "why": "Sold SQQQ because the bot's signals faded as the Nasdaq bounced back up, so the reason for the trade was gone. It also wanted to be out before Nvidia's earnings report.",
+   "n": 16,
+   "result": {
+    "pnl": 0.17,
+    "pnl_pct": 0.18,
+    "rt": 7
+   },
+   "news": [
+    {
+     "time": "14:49",
+     "text": "Thune on the outages: \"bad actors\"",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "15:01",
+     "text": "Dow down 2%; the selloff is extending",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "",
+     "text": "Background: BofA's fund manager survey has the tech overweight at its lowest since 2006. NVDA consensus is ~$109B revenue and $2.47 EPS. Bitcoin is ~$64.5K",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-17T15:34:54-05:00",
@@ -235,8 +535,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "CORE run: rule D OFF (BEAR trend, rv20 36%) -> core Discretionary tactical exit: SOLD SQQQ 2 @ 47.373 (limit) + 0.053925 @ 47.365 (mkt), proceeds ~97.30 vs cost 97.10 (+0.20). Reason: score faded -0.61 -> -0.38, QQQ bouncing to 654.45, research says flat before NVDA print; SQQQ must be flat by\u2026",
-   "n": 17
+   "details": "CORE run: rule D OFF (BEAR trend, rv20 36%) -> core Discretionary tactical exit: SOLD SQQQ 2 @ 47.373 (limit) + 0.053925 @ 47.365 (mkt), proceeds ~97.30 vs cost 97.10 (+0.20). Reason: score faded -0.61 -> -0.38, QQQ bouncing to 654.45, research says flat before NVDA print; SQQQ must be flat by…",
+   "why": "Sold SQQQ because the bot's signals faded as the Nasdaq bounced back up, so the reason for the trade was gone. It also wanted to be out before Nvidia's earnings report.",
+   "n": 17,
+   "result": {
+    "pnl": 0.17,
+    "pnl_pct": 0.18,
+    "rt": 7
+   },
+   "news": [
+    {
+     "time": "14:49",
+     "text": "Thune on the outages: \"bad actors\"",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "15:01",
+     "text": "Dow down 2%; the selloff is extending",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "",
+     "text": "Background: BofA's fund manager survey has the tech overweight at its lowest since 2006. NVDA consensus is ~$109B revenue and $2.47 EPS. Bitcoin is ~$64.5K",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-18T15:32:23-05:00",
@@ -249,8 +575,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "CORE decision run: rule D OFF -> core $0. FORCED daily trade: BUY TQQQ $5.00 market, order filled 0.096015 sh @ 52.075. Tactical score -0.002, flags [no_sqqq]; research bearish 0.50",
-   "n": 18
+   "details": "CORE decision run: rule D OFF -> core $0. FORCED daily trade: BUY TQQQ $5.00 market, order filled 0.096015 sh @ 52.075. Tactical score -0.002, flags [no_sqqq]; research bearish 0.50",
+   "why": "Made a small $5 trade because the bot's rules call for at least one trade a day, and its signals weren't strong enough for a normal one.",
+   "n": 18,
+   "news": [
+    {
+     "time": "",
+     "text": "Iran: morning strikes already priced; Tasnim 14:19 called Iran-Oman talks \"constructive\"; X \"stocks plunge\" story at 15:03 is a rehash. No impact",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "14:32",
+     "text": "Thune: Democrats not engaging on government funding (Dec 11 deadline). Minor negative. 14:51 Navarro on AI for transshipment detection (no new tariffs). Nebius sharply lower on a guidance cut (minor AI-sentiment negative)",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "Nothing new on the Fed Chair nominee, chip-export rules, China or tariffs",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-18T15:50:19-05:00",
@@ -263,8 +610,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "EOD flatten per engine (tactical TQQQ, core OFF): SELL TQQQ 0.096015 market, order filled @52.38 (+$0.03 vs 52.075). Flat",
-   "n": 19
+   "details": "EOD flatten per engine (tactical TQQQ, core OFF): SELL TQQQ 0.096015 market, order filled @52.38 (+$0.03 vs 52.075). Flat",
+   "why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight.",
+   "n": 19,
+   "result": {
+    "pnl": 0.03,
+    "pnl_pct": 0.59,
+    "rt": 8
+   },
+   "news": [
+    {
+     "time": "",
+     "text": "Iran: morning strikes already priced; Tasnim 14:19 called Iran-Oman talks \"constructive\"; X \"stocks plunge\" story at 15:03 is a rehash. No impact",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "14:32",
+     "text": "Thune: Democrats not engaging on government funding (Dec 11 deadline). Minor negative. 14:51 Navarro on AI for transshipment detection (no new tariffs). Nebius sharply lower on a guidance cut (minor AI-sentiment negative)",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "Nothing new on the Fed Chair nominee, chip-export rules, China or tariffs",
+     "source": "",
+     "impact": ""
+    }
+   ]
   },
   {
    "time": "2026-11-19T09:45:48-05:00",
@@ -277,8 +650,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TRADE tactical BUY TQQQ 0.38 market filled 0.365363 sh @ 55.78. Score +0.354 (intraday_mom +0.94, trend15m +1, vwap +0.51; rsi2 -1, gap_fade -1). Stop 1.5%, TP 3%. Rule D OFF. QQQ 674.21 new session high",
-   "n": 20
+   "details": "TRADE tactical BUY TQQQ 0.38 market filled 0.365363 sh @ 55.78. Score +0.354 (intraday_mom +0.94, trend15m +1, vwap +0.51; rsi2 -1, gap_fade -1). Stop 1.5%, TP 3%. Rule D OFF. QQQ 674.21 new session high",
+   "why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up: the Nasdaq had just hit a new high for the day. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "n": 20,
+   "news": [
+    {
+     "time": "Today",
+     "text": "BIS rule: licenses for remote compute to China/Macau-HQ firms, advanced chip exports to ID; TSMC/Samsung reportedly paused some China shipments (partly unverified)",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "07:40",
+     "text": "Iran says 2 tankers hit mines (unverified); Houthi missiles at Riyadh intercepted; Brent > $90",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "08:30-08:53",
+     "text": "Texas resumes data-center permit reviews",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-19T10:19:38-05:00",
@@ -291,8 +685,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TRADE tactical STOP SELL TQQQ 0.365363 market filled @ 54.0815 (entry 55.78, -3.0%, P&L -$0.62). Stop -1.5% (~54.94) breached as QQQ fell to 666.95. Score -0.286, SQQQ not eligible (no_sqqq). Now flat, Tactical today: 1 loss, -$0.62. Rule D OFF",
-   "n": 21
+   "details": "TRADE tactical STOP SELL TQQQ 0.365363 market filled @ 54.0815 (entry 55.78, -3.0%, P&L -$0.62). Stop -1.5% (~54.94) breached as QQQ fell to 666.95. Score -0.286, SQQQ not eligible (no_sqqq). Now flat, Tactical today: 1 loss, -$0.62. Rule D OFF",
+   "why": "Sold TQQQ because it fell 3% from its buy price, past its 1.5% stop-loss. The Nasdaq had turned lower.",
+   "n": 21,
+   "result": {
+    "pnl": -0.62,
+    "pnl_pct": -3.04,
+    "rt": 9
+   },
+   "news": [
+    {
+     "time": "Today",
+     "text": "BIS chip rule effective; TSMC/Samsung China pauses, Moonshot $150M B300 cancel (X summary, unverified)",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "≈09:25",
+     "text": "IRGC claims 2 tankers hit Hormuz mines (unverified); Axios: WH asked Pentagon for Iran response options; Brent $93",
+     "source": "Axios",
+     "impact": "bad"
+    },
+    {
+     "time": "Today",
+     "text": "Trump-Xi-Putin APEC trilateral on fuel supply; US-China action plan on trade (X, unconfirmed)",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-20T15:31:20-05:00",
@@ -305,8 +725,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "Rule D OFF (core --). Tactical score -0.61 ['no_sqqq']. FORCED daily trade: BUY TQQQ $5.00 market, order filled 0.12161 @ 41.115. Research bearish 0.60; size kept at forced minimum. Engine stops apply; flat-by-close not required for TQQQ but tactical",
-   "n": 22
+   "details": "Rule D OFF (core --). Tactical score -0.61 ['no_sqqq']. FORCED daily trade: BUY TQQQ $5.00 market, order filled 0.12161 @ 41.115. Research bearish 0.60; size kept at forced minimum. Engine stops apply; flat-by-close not required for TQQQ but tactical",
+   "why": "Made a small $5 trade because the bot's rules call for at least one trade a day, and its signals weren't strong enough for a normal one.",
+   "n": 22,
+   "news": [
+    {
+     "time": "14:19",
+     "text": "Trump: tax penalty on US companies building data centers abroad",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "14:58",
+     "text": "Trump presser: urges the Fed to cut; Citi note says rates are too high; doubts about the Dec hike grow",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "13:55",
+     "text": "Bitcoin < $59k, $1B+ liquidations",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-20T15:35:09-05:00",
@@ -319,8 +760,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "Engine exit (target CASH, score -0.61, pnl -0.73%): SELL TQQQ 0.12161 market, order filled @ 40.8424",
-   "n": 23
+   "details": "Engine exit (target CASH, score -0.61, pnl -0.73%): SELL TQQQ 0.12161 market, order filled @ 40.8424",
+   "why": "Sold TQQQ because the bot's signals faded as the Nasdaq lost momentum, so the reason for the trade was gone.",
+   "n": 23,
+   "result": {
+    "pnl": -0.03,
+    "pnl_pct": -0.66,
+    "rt": 10
+   },
+   "news": [
+    {
+     "time": "14:19",
+     "text": "Trump: tax penalty on US companies building data centers abroad",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "14:58",
+     "text": "Trump presser: urges the Fed to cut; Citi note says rates are too high; doubts about the Dec hike grow",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "13:55",
+     "text": "Bitcoin < $59k, $1B+ liquidations",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-23T10:38:52-05:00",
@@ -333,8 +800,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL ENTRY. Engine TQQQ, score +0.421 (QQQ 656.65 new day high, holding above 645; research bullish 0.60). BUY TQQQ $15.93 market, order filled 0.316647 @ 50.3083. Stop 1.68%, target 3.35%. Rule D OFF",
-   "n": 24
+   "details": "TACTICAL ENTRY. Engine TQQQ, score +0.421 (QQQ 656.65 new day high, holding above 645; research bullish 0.60). BUY TQQQ $15.93 market, order filled 0.316647 @ 50.3083. Stop 1.68%, target 3.35%. Rule D OFF",
+   "why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the Nasdaq had just hit a new high for the day. The bot's news research agreed. It planned to sell if the trade lost 1.7% or gained 3.4%.",
+   "n": 24,
+   "news": [
+    {
+     "time": "08:30-09:00",
+     "text": "Nvidia board reinstates Jensen Huang as CEO (prior brief)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "07:38",
+     "text": "Arm CEO Haas extends through 2033 and becomes SoftBank vice chair",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "07:30",
+     "text": "Germany composite PMI 55 (strong); France 46.2",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-23T10:48:52-05:00",
@@ -347,8 +835,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "STOP EXIT. TQQQ pnl -1.78% past -1.68% stop (QQQ faded 656.65 -> 652.39), engine target CASH score -0.115. SELL TQQQ 0.316647 market, order filled @ 49.3327. Round trip -0.31; tactical losses today 1/3. Flat, Rule D OFF",
-   "n": 25
+   "details": "STOP EXIT. TQQQ pnl -1.78% past -1.68% stop (QQQ faded 656.65 -> 652.39), engine target CASH score -0.115. SELL TQQQ 0.316647 market, order filled @ 49.3327. Round trip -0.31; tactical losses today 1/3. Flat, Rule D OFF",
+   "why": "Sold TQQQ because it fell 1.8% from its buy price, past its 1.7% stop-loss. The Nasdaq had turned lower.",
+   "n": 25,
+   "result": {
+    "pnl": -0.31,
+    "pnl_pct": -1.94,
+    "rt": 11
+   },
+   "news": [
+    {
+     "time": "08:30-09:00",
+     "text": "Nvidia board reinstates Jensen Huang as CEO (prior brief)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "07:38",
+     "text": "Arm CEO Haas extends through 2033 and becomes SoftBank vice chair",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "07:30",
+     "text": "Germany composite PMI 55 (strong); France 46.2",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-24T09:34:23-05:00",
@@ -361,8 +875,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "QQQ 637.86, TQQQ, SQQQ. Rule D OFF (BEAR, rv20 47.9%). Tactical score +0.40 (trend15m up, tnx20d/net-liq mild +; research bearish 0.57 -> TQQQ size x0.66), conviction 0.23. BUY TQQQ $13.34 market filled 0.289905 @ 46.015. Stop 1.5% (~45.33), TP 3% (~47.40). Event window 09:55-10:15 (Conf Board\u2026",
-   "n": 26
+   "details": "QQQ 637.86, TQQQ, SQQQ. Rule D OFF (BEAR, rv20 47.9%). Tactical score +0.40 (trend15m up, tnx20d/net-liq mild +; research bearish 0.57 -> TQQQ size x0.66), conviction 0.23. BUY TQQQ $13.34 market filled 0.289905 @ 46.015. Stop 1.5% (~45.33), TP 3% (~47.40). Event window 09:55-10:15 (Conf Board…",
+   "why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "n": 26,
+   "news": [
+    {
+     "time": "08:22",
+     "text": "Fed hike odds back to ~95% for 25bp Dec (5% for 50bp) per futures; AI rally stoking inflation worries",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "morning",
+     "text": "Axios: Anthropic/OpenAI staff worry unreleased models too powerful; ANT near/below $83 IPO price",
+     "source": "Axios",
+     "impact": "bad"
+    },
+    {
+     "time": "morning",
+     "text": "GS TMT desk: \"better sentiment is not a clearing event for semis\"; BofA: Huang reinstatement not end of scrutiny",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-24T09:39:45-05:00",
@@ -375,8 +910,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TQQQ 0.289905 held (entry 46.015), TQQQ, QQQ 636.63. Engine tactical score -0.10 -> EXIT. SELL TQQQ 0.289905 market filled @ 45.965. Round trip P&L -0.01 (loss 1 of 3). Flat, Rule D OFF",
-   "n": 27
+   "details": "TQQQ 0.289905 held (entry 46.015), TQQQ, QQQ 636.63. Engine tactical score -0.10 -> EXIT. SELL TQQQ 0.289905 market filled @ 45.965. Round trip P&L -0.01 (loss 1 of 3). Flat, Rule D OFF",
+   "why": "Sold TQQQ because the bot's signals faded as the Nasdaq lost momentum, so the reason for the trade was gone.",
+   "n": 27,
+   "result": {
+    "pnl": -0.01,
+    "pnl_pct": -0.11,
+    "rt": 12
+   },
+   "news": [
+    {
+     "time": "08:22",
+     "text": "Fed hike odds back to ~95% for 25bp Dec (5% for 50bp) per futures; AI rally stoking inflation worries",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "morning",
+     "text": "Axios: Anthropic/OpenAI staff worry unreleased models too powerful; ANT near/below $83 IPO price",
+     "source": "Axios",
+     "impact": "bad"
+    },
+    {
+     "time": "morning",
+     "text": "GS TMT desk: \"better sentiment is not a clearing event for semis\"; BofA: Huang reinstatement not end of scrutiny",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-25T08:44:44-05:00",
@@ -389,8 +950,29 @@
    "order_type": "limit",
    "session": "pre-market",
    "sleeve": "tactical",
-   "reason": "(premarket, PCE/GDP reaction): Engine score -0.80 (bear trend + bear intraday, high-fear 0.5x) -> BUY 1 SQQQ limit 53.33 extended_hours gfd, order. State: filled avg 53.3100. Stop 1.5% / TP 3% per engine. Rule D OFF",
-   "n": 28
+   "details": "(premarket, PCE/GDP reaction): Engine score -0.80 (bear trend + bear intraday, high-fear 0.5x) -> BUY 1 SQQQ limit 53.33 extended_hours gfd, order. State: filled avg 53.3100. Stop 1.5% / TP 3% per engine. Rule D OFF",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: it was reacting to the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "n": 28,
+   "news": [
+    {
+     "time": "≈07:35",
+     "text": "NVDA cuts GeForce allocations 20-30% for Q4 (distributor reports)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈07:14-07:23",
+     "text": "Romney presses on ~880k H200/AMD chip approvals for China",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "≈07:52",
+     "text": "Asia tech plunge (SoftBank -10%, KOSPI halts); India +2%",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-25T09:43:21-05:00",
@@ -403,8 +985,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "SQQQ take-profit trim (+3.41% >= 3%). SELL 0.499909 SQQQ market regular_hours gfd, filled avg 55.16 (~$27.58). Now holding ~0.500091 SQQQ (avg 53.31), Engine score -0.482, sqqq_high_fear. Rule D OFF. QQQ 609.9700, TQQQ 40.0557, SQQQ 55.1163",
-   "n": 29
+   "details": "SQQQ take-profit trim (+3.41% >= 3%). SELL 0.499909 SQQQ market regular_hours gfd, filled avg 55.16 (~$27.58). Now holding ~0.500091 SQQQ (avg 53.31), Engine score -0.482, sqqq_high_fear. Rule D OFF. QQQ 609.9700, TQQQ 40.0557, SQQQ 55.1163",
+   "why": "Sold some of its SQQQ to lock in a gain of about 3.4%, past its 3% profit target. It kept the rest in case the move continued.",
+   "n": 29,
+   "result": {
+    "pnl": 0.92,
+    "pnl_pct": 3.47,
+    "rt": 13
+   },
+   "news": [
+    {
+     "time": "08:30",
+     "text": "Oct PCE: headline 3.8% y/y (in line); core 3.3% y/y (+0.1 vs est), 0.3% m/m; income +0.7% (est 0.4%); spending +0.3% (est 0.4%)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "08:30",
+     "text": "Q3 GDP 2nd estimate revised up to 4.3% (from 3.4%)",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "≈08:39",
+     "text": "Dow Jones: Nasdaq futures -2.8% as AI selloff returns; NVDA -5%+, META and AAPL lower; USTR Greer may unveil the 16-economy tariff probe results as soon as this week",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-25T09:59:34-05:00",
@@ -417,8 +1025,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL exit SQQQ (score flipped to +0.31 as QQQ bounced to 618). SELL 0.500091 SQQQ market regular_hours gfd, filled avg 53.215 (~$26.61). Now flat, Tactical today: 1 round trip, pnl +0.88 (losses counter 1). Rule D OFF. QQQ 618.0400, TQQQ 41.8250, SQQQ 53.2310",
-   "n": 30
+   "details": "TACTICAL exit SQQQ (score flipped to +0.31 as QQQ bounced to 618). SELL 0.500091 SQQQ market regular_hours gfd, filled avg 53.215 (~$26.61). Now flat, Tactical today: 1 round trip, pnl +0.88 (losses counter 1). Rule D OFF. QQQ 618.0400, TQQQ 41.8250, SQQQ 53.2310",
+   "why": "Sold SQQQ because the bot's signals flipped as the Nasdaq bounced back up, so the reason for the trade was gone.",
+   "n": 30,
+   "result": {
+    "pnl": -0.05,
+    "pnl_pct": -0.18,
+    "rt": 14
+   },
+   "news": [
+    {
+     "time": "08:30",
+     "text": "Oct PCE: headline 3.8% y/y (in line); core 3.3% y/y (+0.1 vs est), 0.3% m/m; income +0.7% (est 0.4%); spending +0.3% (est 0.4%)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "08:30",
+     "text": "Q3 GDP 2nd estimate revised up to 4.3% (from 3.4%)",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "≈08:39",
+     "text": "Dow Jones: Nasdaq futures -2.8% as AI selloff returns; NVDA -5%+, META and AAPL lower; USTR Greer may unveil the 16-economy tariff probe results as soon as this week",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-25T10:17:53-05:00",
@@ -431,8 +1065,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL entry SQQQ (score -0.42, bear trend + bear intraday, high-fear 0.5x). BUY $29.57 SQQQ market regular_hours gfd, filled 0.543516 @ 54.405. Stop 1.5% / TP 3%. QQQ 612.85. Rule D OFF",
-   "n": 31
+   "details": "TACTICAL entry SQQQ (score -0.42, bear trend + bear intraday, high-fear 0.5x). BUY $29.57 SQQQ market regular_hours gfd, filled 0.543516 @ 54.405. Stop 1.5% / TP 3%. QQQ 612.85. Rule D OFF",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the trend was down. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "n": 31,
+   "news": [
+    {
+     "time": "≈09:36",
+     "text": "Asia recap: KOSPI -5-6% with a trading halt, Nikkei -3%, SoftBank -15% on the AI selloff and tariff worries",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "≈08:21",
+     "text": "Memory chips: DRAM/NAND oversupply warnings; BNP downgrades MU",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "≈07:14",
+     "text": "Romney questions US AI-chip sales to China amid the NVDA/Huang controversy",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-25T10:53:23-05:00",
@@ -445,8 +1100,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL add SQQQ (new research brief bias -1 conf 0.52 -> SQQQ size x1.13; score -0.42). BUY $3.64 SQQQ market regular_hours gfd, filled 0.066447 @ 54.78. Now SQQQ 0.609963 (avg ~54.45). QQQ 610.75. Rule D OFF",
-   "n": 32
+   "details": "TACTICAL add SQQQ (new research brief bias -1 conf 0.52 -> SQQQ size x1.13; score -0.42). BUY $3.64 SQQQ market regular_hours gfd, filled 0.066447 @ 54.78. Now SQQQ 0.609963 (avg ~54.45). QQQ 610.75. Rule D OFF",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down. The bot's news research agreed, so it bought a little more.",
+   "n": 32,
+   "news": [
+    {
+     "time": "≈10:04",
+     "text": "NVDA cuts gaming GPU supply to board partners by 20-30% through early 2027 (Board Channels report)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈09:10",
+     "text": "Reports say the administration is preparing broad tariffs on China, EU, Japan, South Korea and 14 others (EU up to 20%, China up to 40%)",
+     "source": "",
+     "impact": "bad"
+    },
+    {
+     "time": "08:30",
+     "text": "Oct PCE 0.3% m/m, 3.8% y/y (in line); Core 0.3% m/m, 3.3% y/y (hot); Q3 GDP revised to 4.3%",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-25T12:10:12-05:00",
@@ -459,8 +1135,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "STOP hit SQQQ -2.63% (stop 1.5%). SOLD SQQQ 0.609963 market filled @52.7253 = $32.16 (cost $33.21, -$1.05). Now flat, Rule D OFF. QQQ 619.14 bouncing (orb30 + vwap up). Tactical losses today 2",
-   "n": 33
+   "details": "STOP hit SQQQ -2.63% (stop 1.5%). SOLD SQQQ 0.609963 market filled @52.7253 = $32.16 (cost $33.21, -$1.05). Now flat, Rule D OFF. QQQ 619.14 bouncing (orb30 + vwap up). Tactical losses today 2",
+   "why": "Sold SQQQ because it fell 2.6% from its buy price, past its 1.5% stop-loss. The Nasdaq had bounced back up.",
+   "n": 33,
+   "result": {
+    "pnl": -1.05,
+    "pnl_pct": -3.16,
+    "rt": 15
+   },
+   "news": [
+    {
+     "time": "≈11:28",
+     "text": "Sen. Gallego warns NVDA board it faces \"ruin\" without a deal with Congress",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈11:06",
+     "text": "Hassett calls economy \"Goldilocks\" (4% GDP, low unemployment)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈10:58",
+     "text": "Recap: $1.7T erased at open; BTC < $58K, gold < $3,440",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-25T12:13:22-05:00",
@@ -473,8 +1175,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL entry TQQQ (score +0.36, size x0.77, research x0.67). BOUGHT TQQQ $26.32 market filled 0.6254 @42.085. Stop 1.5%/TP 3%. Rule D OFF. QQQ 619.16",
-   "n": 34
+   "details": "TACTICAL entry TQQQ (score +0.36, size x0.77, research x0.67). BOUGHT TQQQ $26.32 market filled 0.6254 @42.085. Stop 1.5%/TP 3%. Rule D OFF. QQQ 619.16",
+   "why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "n": 34,
+   "news": [
+    {
+     "time": "≈11:28",
+     "text": "Sen. Gallego warns NVDA board it faces \"ruin\" without a deal with Congress",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈11:06",
+     "text": "Hassett calls economy \"Goldilocks\" (4% GDP, low unemployment)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈10:58",
+     "text": "Recap: $1.7T erased at open; BTC < $58K, gold < $3,440",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-25T12:32:13-05:00",
@@ -487,8 +1210,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL add TQQQ (score +0.42, target $30.42). BOUGHT TQQQ $3.88 market filled 0.091381 @42.4592. Rule D OFF. QQQ 620.8500",
-   "n": 35
+   "details": "TACTICAL add TQQQ (score +0.42, target $30.42). BOUGHT TQQQ $3.88 market filled 0.091381 @42.4592. Rule D OFF. QQQ 620.8500",
+   "why": "Added to TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up.",
+   "n": 35,
+   "news": [
+    {
+     "time": "≈11:28",
+     "text": "Sen. Gallego warns NVDA board it faces \"ruin\" without a deal with Congress",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈11:06",
+     "text": "Hassett calls economy \"Goldilocks\" (4% GDP, low unemployment)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈10:58",
+     "text": "Recap: $1.7T erased at open; BTC < $58K, gold < $3,440",
+     "source": "",
+     "impact": "bad"
+    }
+   ]
   },
   {
    "time": "2026-11-25T12:57:31-05:00",
@@ -501,8 +1245,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL take-profit trim TQQQ +3.26%. SOLD TQQQ 0.35835 market filled 0.358350 @43.4550. Rule D OFF. QQQ 625.8650. News scan: Micron downgrades, FinCEN cyber incident, semis selloff; no new shock",
-   "n": 36
+   "details": "TACTICAL take-profit trim TQQQ +3.26%. SOLD TQQQ 0.35835 market filled 0.358350 @43.4550. Rule D OFF. QQQ 625.8650. News scan: Micron downgrades, FinCEN cyber incident, semis selloff; no new shock",
+   "why": "Sold some of its TQQQ to lock in a gain of about 3.3%, past its 3% profit target. It kept the rest in case the move continued. A quick news check found nothing that changed the plan.",
+   "n": 36,
+   "result": {
+    "pnl": 0.49,
+    "pnl_pct": 3.26,
+    "rt": 16
+   },
+   "news": [
+    {
+     "time": "≈12:31",
+     "text": "Intel briefing: no evidence China directed the Huang relationship",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈11:53",
+     "text": "Q3 GDP revised to 4.3%; core PCE 3.3% (earlier release, being recapped)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "11:55 to 12:57",
+     "text": "QQQ +14.7 (611.1 to 625.9), VIX -3.6 with no headline catalyst",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-25T13:03:23-05:00",
@@ -515,8 +1285,29 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL re-add TQQQ (score +0.42, target $51.42, research bullish 0.50 x1.12). BOUGHT TQQQ $35.88 market filled 0.829307 @43.265. Now TQQQ 1.187738. Rule D OFF. QQQ 625.2. Note rsi2_15m 87 (stretched)",
-   "n": 37
+   "details": "TACTICAL re-add TQQQ (score +0.42, target $51.42, research bullish 0.50 x1.12). BOUGHT TQQQ $35.88 market filled 0.829307 @43.265. Now TQQQ 1.187738. Rule D OFF. QQQ 625.2. Note rsi2_15m 87 (stretched)",
+   "why": "Added to TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. The bot's news research agreed, so it bought a little more.",
+   "n": 37,
+   "news": [
+    {
+     "time": "≈12:31",
+     "text": "Intel briefing: no evidence China directed the Huang relationship",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈11:53",
+     "text": "Q3 GDP revised to 4.3%; core PCE 3.3% (earlier release, being recapped)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "11:55 to 12:57",
+     "text": "QQQ +14.7 (611.1 to 625.9), VIX -3.6 with no headline catalyst",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-25T13:39:28-05:00",
@@ -529,8 +1320,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL take-profit trim TQQQ +3.24%. SOLD TQQQ 0.593930 market filled @44.1908 = $26.25. Remaining TQQQ 0.593808. Rule D OFF. QQQ 629.47. News scan (X news): tariffs/inflation, Fed AI-risk report, semis selloff; no new shock",
-   "n": 38
+   "details": "TACTICAL take-profit trim TQQQ +3.24%. SOLD TQQQ 0.593930 market filled @44.1908 = $26.25. Remaining TQQQ 0.593808. Rule D OFF. QQQ 629.47. News scan (X news): tariffs/inflation, Fed AI-risk report, semis selloff; no new shock",
+   "why": "Sold some of its TQQQ to lock in a gain of about 3.2%, past its 3% profit target. It kept the rest in case the move continued. A quick news check found nothing that changed the plan.",
+   "n": 38,
+   "result": {
+    "pnl": 0.94,
+    "pnl_pct": 3.71,
+    "rt": 17
+   },
+   "news": [
+    {
+     "time": "≈12:31",
+     "text": "Intel briefing: no evidence China directed the Huang relationship",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈11:53",
+     "text": "Q3 GDP revised to 4.3%; core PCE 3.3% (earlier release, being recapped)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "11:55 to 12:57",
+     "text": "QQQ +14.7 (611.1 to 625.9), VIX -3.6 with no headline catalyst",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-25T13:44:41-05:00",
@@ -543,8 +1360,34 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "TACTICAL take-profit trim TQQQ +3.68%. SOLD TQQQ 0.296821 market filled @44.47 = $13.20. Remaining TQQQ 0.296987. Rule D OFF. QQQ 630.27",
-   "n": 39
+   "details": "TACTICAL take-profit trim TQQQ +3.68%. SOLD TQQQ 0.296821 market filled @44.47 = $13.20. Remaining TQQQ 0.296987. Rule D OFF. QQQ 630.27",
+   "why": "Sold some of its TQQQ to lock in a gain of about 3.7%, past its 3% profit target. It kept the rest in case the move continued.",
+   "n": 39,
+   "result": {
+    "pnl": 0.36,
+    "pnl_pct": 2.79,
+    "rt": 18
+   },
+   "news": [
+    {
+     "time": "≈12:31",
+     "text": "Intel briefing: no evidence China directed the Huang relationship",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈11:53",
+     "text": "Q3 GDP revised to 4.3%; core PCE 3.3% (earlier release, being recapped)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "11:55 to 12:57",
+     "text": "QQQ +14.7 (611.1 to 625.9), VIX -3.6 with no headline catalyst",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   },
   {
    "time": "2026-11-25T15:47:39-05:00",
@@ -557,8 +1400,3314 @@
    "order_type": "market",
    "session": "regular",
    "sleeve": "tactical",
-   "reason": "EOD: engine EOD flatten (core OFF, Thanksgiving holiday gap). SOLD TQQQ 0.296987 market filled @44.9005 = $13.33. Now flat, Day +2.09 vs open 102.83; 13 trades. Rule D OFF",
-   "n": 40
+   "details": "EOD: engine EOD flatten (core OFF, Thanksgiving holiday gap). SOLD TQQQ 0.296987 market filled @44.9005 = $13.33. Now flat, Day +2.09 vs open 102.83; 13 trades. Rule D OFF",
+   "why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight, and markets were about to close for Thanksgiving.",
+   "n": 40,
+   "result": {
+    "pnl": 0.49,
+    "pnl_pct": 3.78,
+    "rt": 19
+   },
+   "news": [
+    {
+     "time": "≈14:13",
+     "text": "MU down 10%+ on NAND price warnings (TrendForce)",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈14:00",
+     "text": "Beige Book released; no market-moving headlines found",
+     "source": "",
+     "impact": "neutral"
+    },
+    {
+     "time": "≈14:39",
+     "text": "AI data-center credit stress (bank loan sales, CoreWeave bonds ~74c)",
+     "source": "",
+     "impact": "neutral"
+    }
+   ]
   }
- ]
+ ],
+ "round_trips": [
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-16T10:06:56-05:00",
+   "exit_time": "2026-11-16T11:32:42-05:00",
+   "shares": 0.327325,
+   "cost": 14.84,
+   "proceeds": 14.55,
+   "entry_n": [
+    1
+   ],
+   "exit_n": [
+    2
+   ],
+   "id": 1,
+   "pnl": -0.29,
+   "pnl_pct": -1.98,
+   "hold_min": 86,
+   "date": "2026-11-16",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the trend was down. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
+   "exit_why": "Sold SQQQ because it fell 1.9% from its buy price, hitting its stop-loss. A Fed speech was also coming up."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-16T12:20:39-05:00",
+   "exit_time": "2026-11-16T15:50:22-05:00",
+   "shares": 0.398125,
+   "cost": 17.99,
+   "proceeds": 18.23,
+   "entry_n": [
+    3
+   ],
+   "exit_n": [
+    4
+   ],
+   "id": 2,
+   "pnl": 0.24,
+   "pnl_pct": 1.36,
+   "hold_min": 210,
+   "date": "2026-11-16",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq was breaking lower. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
+   "exit_why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-17T09:39:20-05:00",
+   "exit_time": "2026-11-17T10:42:31-05:00",
+   "shares": 1.023455,
+   "cost": 47.34,
+   "proceeds": 49.09,
+   "entry_n": [
+    5,
+    6,
+    7
+   ],
+   "exit_n": [
+    9,
+    10
+   ],
+   "id": 3,
+   "pnl": 1.74,
+   "pnl_pct": 3.68,
+   "hold_min": 63,
+   "date": "2026-11-17",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals mildly pointed down: the trend was down. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
+   "exit_why": "Sold half of its SQQQ to lock in a gain of about 3.4%, past its 3% profit target. It kept the rest in case the move continued."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-17T10:09:58-05:00",
+   "exit_time": "2026-11-17T10:48:02-05:00",
+   "shares": 0.511805,
+   "cost": 23.78,
+   "proceeds": 24.87,
+   "entry_n": [
+    7
+   ],
+   "exit_n": [
+    11
+   ],
+   "id": 4,
+   "pnl": 1.09,
+   "pnl_pct": 4.59,
+   "hold_min": 38,
+   "date": "2026-11-17",
+   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold some of its SQQQ to lock in a gain of about 4.5%, as the signal got weaker. It kept the rest in case the move continued."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-17T10:09:58-05:00",
+   "exit_time": "2026-11-17T10:53:09-05:00",
+   "shares": 0.25585,
+   "cost": 11.92,
+   "proceeds": 12.51,
+   "entry_n": [
+    7,
+    8
+   ],
+   "exit_n": [
+    12
+   ],
+   "id": 5,
+   "pnl": 0.6,
+   "pnl_pct": 5.01,
+   "hold_min": 43,
+   "date": "2026-11-17",
+   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold some of its SQQQ to lock in a gain of about 5.5%, taking profits in steps. It kept the rest in case the move continued."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-17T10:10:18-05:00",
+   "exit_time": "2026-11-17T10:56:54-05:00",
+   "shares": 0.127884,
+   "cost": 5.96,
+   "proceeds": 6.17,
+   "entry_n": [
+    8
+   ],
+   "exit_n": [
+    13
+   ],
+   "id": 6,
+   "pnl": 0.21,
+   "pnl_pct": 3.55,
+   "hold_min": 47,
+   "date": "2026-11-17",
+   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold some of its SQQQ to lock in a gain of about 4.2%, taking profits in steps. It kept the rest in case the move continued."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-17T10:10:18-05:00",
+   "exit_time": "2026-11-17T15:34:52-05:00",
+   "shares": 2.053925,
+   "cost": 97.13,
+   "proceeds": 97.3,
+   "entry_n": [
+    8,
+    14,
+    15
+   ],
+   "exit_n": [
+    16,
+    17
+   ],
+   "id": 7,
+   "pnl": 0.17,
+   "pnl_pct": 0.18,
+   "hold_min": 325,
+   "date": "2026-11-17",
+   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold SQQQ because the bot's signals faded as the Nasdaq bounced back up, so the reason for the trade was gone. It also wanted to be out before Nvidia's earnings report."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-18T15:32:23-05:00",
+   "exit_time": "2026-11-18T15:50:19-05:00",
+   "shares": 0.096015,
+   "cost": 5.0,
+   "proceeds": 5.03,
+   "entry_n": [
+    18
+   ],
+   "exit_n": [
+    19
+   ],
+   "id": 8,
+   "pnl": 0.03,
+   "pnl_pct": 0.59,
+   "hold_min": 18,
+   "date": "2026-11-18",
+   "entry_why": "Made a small $5 trade because the bot's rules call for at least one trade a day, and its signals weren't strong enough for a normal one.",
+   "exit_why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-19T09:45:48-05:00",
+   "exit_time": "2026-11-19T10:19:38-05:00",
+   "shares": 0.365363,
+   "cost": 20.38,
+   "proceeds": 19.76,
+   "entry_n": [
+    20
+   ],
+   "exit_n": [
+    21
+   ],
+   "id": 9,
+   "pnl": -0.62,
+   "pnl_pct": -3.04,
+   "hold_min": 34,
+   "date": "2026-11-19",
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up: the Nasdaq had just hit a new high for the day. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold TQQQ because it fell 3% from its buy price, past its 1.5% stop-loss. The Nasdaq had turned lower."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-20T15:31:20-05:00",
+   "exit_time": "2026-11-20T15:35:09-05:00",
+   "shares": 0.12161,
+   "cost": 5.0,
+   "proceeds": 4.97,
+   "entry_n": [
+    22
+   ],
+   "exit_n": [
+    23
+   ],
+   "id": 10,
+   "pnl": -0.03,
+   "pnl_pct": -0.66,
+   "hold_min": 4,
+   "date": "2026-11-20",
+   "entry_why": "Made a small $5 trade because the bot's rules call for at least one trade a day, and its signals weren't strong enough for a normal one.",
+   "exit_why": "Sold TQQQ because the bot's signals faded as the Nasdaq lost momentum, so the reason for the trade was gone."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-23T10:38:52-05:00",
+   "exit_time": "2026-11-23T10:48:52-05:00",
+   "shares": 0.316647,
+   "cost": 15.93,
+   "proceeds": 15.62,
+   "entry_n": [
+    24
+   ],
+   "exit_n": [
+    25
+   ],
+   "id": 11,
+   "pnl": -0.31,
+   "pnl_pct": -1.94,
+   "hold_min": 10,
+   "date": "2026-11-23",
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the Nasdaq had just hit a new high for the day. The bot's news research agreed. It planned to sell if the trade lost 1.7% or gained 3.4%.",
+   "exit_why": "Sold TQQQ because it fell 1.8% from its buy price, past its 1.7% stop-loss. The Nasdaq had turned lower."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-24T09:34:23-05:00",
+   "exit_time": "2026-11-24T09:39:45-05:00",
+   "shares": 0.289905,
+   "cost": 13.34,
+   "proceeds": 13.33,
+   "entry_n": [
+    26
+   ],
+   "exit_n": [
+    27
+   ],
+   "id": 12,
+   "pnl": -0.01,
+   "pnl_pct": -0.11,
+   "hold_min": 5,
+   "date": "2026-11-24",
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold TQQQ because the bot's signals faded as the Nasdaq lost momentum, so the reason for the trade was gone."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-25T08:44:44-05:00",
+   "exit_time": "2026-11-25T09:43:21-05:00",
+   "shares": 0.499909,
+   "cost": 26.65,
+   "proceeds": 27.57,
+   "entry_n": [
+    28
+   ],
+   "exit_n": [
+    29
+   ],
+   "id": 13,
+   "pnl": 0.92,
+   "pnl_pct": 3.47,
+   "hold_min": 59,
+   "date": "2026-11-25",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: it was reacting to the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold some of its SQQQ to lock in a gain of about 3.4%, past its 3% profit target. It kept the rest in case the move continued."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-25T08:44:44-05:00",
+   "exit_time": "2026-11-25T09:59:34-05:00",
+   "shares": 0.500091,
+   "cost": 26.66,
+   "proceeds": 26.61,
+   "entry_n": [
+    28
+   ],
+   "exit_n": [
+    30
+   ],
+   "id": 14,
+   "pnl": -0.05,
+   "pnl_pct": -0.18,
+   "hold_min": 75,
+   "date": "2026-11-25",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: it was reacting to the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold SQQQ because the bot's signals flipped as the Nasdaq bounced back up, so the reason for the trade was gone."
+  },
+  {
+   "symbol": "SQQQ",
+   "entry_time": "2026-11-25T10:17:53-05:00",
+   "exit_time": "2026-11-25T12:10:12-05:00",
+   "shares": 0.609963,
+   "cost": 33.21,
+   "proceeds": 32.16,
+   "entry_n": [
+    31,
+    32
+   ],
+   "exit_n": [
+    33
+   ],
+   "id": 15,
+   "pnl": -1.05,
+   "pnl_pct": -3.16,
+   "hold_min": 112,
+   "date": "2026-11-25",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the trend was down. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold SQQQ because it fell 2.6% from its buy price, past its 1.5% stop-loss. The Nasdaq had bounced back up."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-25T12:13:22-05:00",
+   "exit_time": "2026-11-25T12:57:31-05:00",
+   "shares": 0.35835,
+   "cost": 15.08,
+   "proceeds": 15.57,
+   "entry_n": [
+    34
+   ],
+   "exit_n": [
+    36
+   ],
+   "id": 16,
+   "pnl": 0.49,
+   "pnl_pct": 3.26,
+   "hold_min": 44,
+   "date": "2026-11-25",
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold some of its TQQQ to lock in a gain of about 3.3%, past its 3% profit target. It kept the rest in case the move continued. A quick news check found nothing that changed the plan."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-25T12:13:22-05:00",
+   "exit_time": "2026-11-25T13:39:28-05:00",
+   "shares": 0.59393,
+   "cost": 25.31,
+   "proceeds": 26.25,
+   "entry_n": [
+    34,
+    35,
+    37
+   ],
+   "exit_n": [
+    38
+   ],
+   "id": 17,
+   "pnl": 0.94,
+   "pnl_pct": 3.71,
+   "hold_min": 86,
+   "date": "2026-11-25",
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold some of its TQQQ to lock in a gain of about 3.2%, past its 3% profit target. It kept the rest in case the move continued. A quick news check found nothing that changed the plan."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-25T13:03:23-05:00",
+   "exit_time": "2026-11-25T13:44:41-05:00",
+   "shares": 0.296821,
+   "cost": 12.84,
+   "proceeds": 13.2,
+   "entry_n": [
+    37
+   ],
+   "exit_n": [
+    39
+   ],
+   "id": 18,
+   "pnl": 0.36,
+   "pnl_pct": 2.79,
+   "hold_min": 41,
+   "date": "2026-11-25",
+   "entry_why": "Added to TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold some of its TQQQ to lock in a gain of about 3.7%, past its 3% profit target. It kept the rest in case the move continued."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-25T13:03:23-05:00",
+   "exit_time": "2026-11-25T15:47:39-05:00",
+   "shares": 0.296987,
+   "cost": 12.85,
+   "proceeds": 13.33,
+   "entry_n": [
+    37
+   ],
+   "exit_n": [
+    40
+   ],
+   "id": 19,
+   "pnl": 0.49,
+   "pnl_pct": 3.78,
+   "hold_min": 164,
+   "date": "2026-11-25",
+   "entry_why": "Added to TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight, and markets were about to close for Thanksgiving."
+  }
+ ],
+ "open_positions": [],
+ "news": {
+  "2026-11-16": {
+   "bot": []
+  },
+  "2026-11-17": {
+   "bot": [
+    {
+     "time": "11/16 close",
+     "text": "S&P −1.92% (7,416.59), NDX 27,197 (−2.7%), QQQ 661.75 (below its 200-day, ~685), VIX ~23.4",
+     "source": "",
+     "impact": "",
+     "seen": 541
+    },
+    {
+     "time": "11/16",
+     "text": "12:00: Warsh speech, including an \"AI could disappoint\" scenario and no December guidance. The 10y fell ~3.5bp at the time. Mostly priced in",
+     "source": "",
+     "impact": "",
+     "seen": 541
+    },
+    {
+     "time": "11/16",
+     "text": "BIS licensing rule on overseas data centers and chip sales to China-HQ firms, Malaysia, Singapore, Thailand, Indonesia and Brazil",
+     "source": "",
+     "impact": "",
+     "seen": 541
+    },
+    {
+     "time": "Overnight",
+     "text": "KOSPI −2.59%, Taiwan −1%+",
+     "source": "",
+     "impact": "",
+     "seen": 541
+    },
+    {
+     "time": "07:09",
+     "text": "NQ +0.39%. Chips up: AVGO +2.8%, AMD +2.1%, MRVL +3.8%, NVDA +1%. Anthropic IPO on track at $70–78",
+     "source": "",
+     "impact": "good",
+     "seen": 541
+    },
+    {
+     "time": "08:30",
+     "text": "Oct retail sales +0.2% (in line). Ex-autos and control group both +0.6% vs +0.4%",
+     "source": "",
+     "impact": "",
+     "seen": 541
+    },
+    {
+     "time": "Pre-open",
+     "text": "Disney and Home Depot beat",
+     "source": "",
+     "impact": "",
+     "seen": 541
+    },
+    {
+     "time": "",
+     "text": "Geopolitics: Trump–Xi meeting 11/19 in Shenzhen (APEC). The tariff truce expires 1 Headline risk",
+     "source": "",
+     "impact": "",
+     "seen": 541
+    },
+    {
+     "time": "08:02",
+     "text": "Musalem: hikes through spring 2027",
+     "source": "",
+     "impact": "bad",
+     "seen": 608
+    },
+    {
+     "time": "09:10",
+     "text": "Waller: payments/tokenization only. 0",
+     "source": "",
+     "impact": "",
+     "seen": 608
+    },
+    {
+     "time": "09:15",
+     "text": "Industrial production −0.4% vs +0.1% exp (single source, unverified)",
+     "source": "",
+     "impact": "bad",
+     "seen": 608
+    },
+    {
+     "time": "09:41",
+     "text": "Hammack: tightening view unchanged; Fed would consider Treasury purchases if repo stress. 0",
+     "source": "",
+     "impact": "",
+     "seen": 608
+    },
+    {
+     "time": "09:45",
+     "text": "Anthropic IPO reportedly several $10B+ orders (prices Wed, trades 11/19)",
+     "source": "",
+     "impact": "good",
+     "seen": 608
+    },
+    {
+     "time": "09:49",
+     "text": "Banks paused $480M chip loan tied to ByteDance",
+     "source": "",
+     "impact": "bad",
+     "seen": 608
+    },
+    {
+     "time": "09:59",
+     "text": "CNBC: investors cutting tech exposure fastest since 2006",
+     "source": "CNBC",
+     "impact": "bad",
+     "seen": 608
+    },
+    {
+     "time": "10:00",
+     "text": "NAHB 25 vs 29 exp (lowest since Apr 2012); business inventories +0.5% in line",
+     "source": "",
+     "impact": "bad",
+     "seen": 608
+    },
+    {
+     "time": "Pre-open",
+     "text": "plan to block Chinese optical transceiver imports (COHR +10%, LITE +8%). 0",
+     "source": "",
+     "impact": "",
+     "seen": 608
+    },
+    {
+     "time": "",
+     "text": "NVDA: first report since Huang resigned 11/12 (Kress interim CEO); consensus rev ~$109B",
+     "source": "",
+     "impact": "",
+     "seen": 608
+    },
+    {
+     "time": "",
+     "text": "No major shock (no surprise Fed move, no >2% drop, no halts)",
+     "source": "",
+     "impact": "",
+     "seen": 608
+    },
+    {
+     "time": "10:04",
+     "text": "Hammack: \"harder to intervene during a tightening cycle.\"",
+     "source": "",
+     "impact": "neutral",
+     "seen": 660
+    },
+    {
+     "time": "10:06",
+     "text": "Huang to testify to House panels Dec 1; Nvidia GC testifies Dec 2 (times TBD)",
+     "source": "",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "10:12",
+     "text": "Bloomberg: AI models flagged civilian targets in simulated military tests",
+     "source": "Bloomberg",
+     "impact": "neutral",
+     "seen": 660
+    },
+    {
+     "time": "10:16",
+     "text": "Iran navy: fourth tanker on fire east of Hormuz",
+     "source": "",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "10:19",
+     "text": "FT: Huang's daughter helped run Nvidia's public defense of its Megaspeed ties",
+     "source": "FT",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "10:32–10:39",
+     "text": "CNN: NSA classified internal network down, adding to several US outages over 6 days; no cyberattack confirmed",
+     "source": "CNN",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "10:42",
+     "text": "Banks froze $480M ByteDance-linked chip loan (follow-up)",
+     "source": "",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "≈10:40",
+     "text": "Nvidia board forms national-security/export oversight committee; Trump: \"a good idea.\" 0",
+     "source": "",
+     "impact": "",
+     "seen": 660
+    },
+    {
+     "time": "10:45–10:49",
+     "text": "Iranian state media: US struck Qeshm Island, no damage or casualties",
+     "source": "",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "10:56",
+     "text": "WSJ: Huang signals willingness to return as Nvidia CEO (X reports say the board ruled it out)",
+     "source": "WSJ",
+     "impact": "good",
+     "seen": 660
+    },
+    {
+     "time": "",
+     "text": "No surprise Fed move; no halt found (halt feeds not checked directly)",
+     "source": "",
+     "impact": "",
+     "seen": 660
+    },
+    {
+     "time": "11:05–11:50",
+     "text": "QQQ failed at resistance and bled lower",
+     "source": "",
+     "impact": "bad",
+     "seen": 725
+    },
+    {
+     "time": "11:22",
+     "text": "FAA halts router installs after the national ground stop (WSJ). DHS says outages \"not cyber\"; Hawley wants a Senate briefing. 0",
+     "source": "WSJ",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "11:23",
+     "text": "Huang thanks supporters; reports he may start a new chip company. 0/− NVDA",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "≈11:34",
+     "text": "Unconfirmed reports of ≥5 Iranian ballistic missiles after the Qeshm strike (first posted 10:12, so not new). Vance: no intent for a prolonged conflict",
+     "source": "",
+     "impact": "neutral",
+     "seen": 725
+    },
+    {
+     "time": "11:41",
+     "text": "Apollo's Rowan: NVDA \"bank of the AI ecosystem\"; neocloud capital could disappear. Eisman also bearish on the neoclouds",
+     "source": "",
+     "impact": "bad",
+     "seen": 725
+    },
+    {
+     "time": "11:42",
+     "text": "App Store problems on Downdetector (outage run continues)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 725
+    },
+    {
+     "time": "11:49",
+     "text": "GDPNow Q4 3.38% (from 3.41%). 0",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "11:51–11:53",
+     "text": "Bloomberg/FT: Nvidia board \"not considering Huang's return as of Tuesday\" (reverses the 10:56 WSJ item)",
+     "source": "WSJ",
+     "impact": "bad",
+     "seen": 725
+    },
+    {
+     "time": "11:55",
+     "text": "Druckenmiller \"neither long nor short equities.\" 0",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "",
+     "text": "Background: CNN report on early-stage Iran dirty-bomb planning in DC (officials say not imminent)",
+     "source": "CNN",
+     "impact": "neutral",
+     "seen": 725
+    },
+    {
+     "time": "12:16",
+     "text": "Amazon's Jassy: Nvidia a partner \"as long as I can foresee.\"",
+     "source": "",
+     "impact": "good",
+     "seen": 788
+    },
+    {
+     "time": "12:17",
+     "text": "BofA FMS: 52% expect a hyperscaler capex cut within 6 months (30% last month)",
+     "source": "",
+     "impact": "bad",
+     "seen": 788
+    },
+    {
+     "time": "12:20",
+     "text": "WSJ: Nvidia hired Heidrick & Struggles for its CEO search (no Huang return). 0/− NVDA",
+     "source": "WSJ",
+     "impact": "",
+     "seen": 788
+    },
+    {
+     "time": "12:25",
+     "text": "Al Jazeera: Trump–Qatar FM talks on Iran \"positive.\"",
+     "source": "",
+     "impact": "good",
+     "seen": 788
+    },
+    {
+     "time": "12:30",
+     "text": "FT: Nvidia booked $104B via its Singapore unit in 2025 and stopped disclosing it (export-diversion story). − NVDA",
+     "source": "FT",
+     "impact": "",
+     "seen": 788
+    },
+    {
+     "time": "12:34",
+     "text": "JPM sees leveraged-loan defaults rising to 4.5% in 2027",
+     "source": "",
+     "impact": "neutral",
+     "seen": 788
+    },
+    {
+     "time": "12:35",
+     "text": "Zerohedge: dealers most short gamma since 2019 ahead of NVDA, Anthropic and OpEx. ±",
+     "source": "",
+     "impact": "",
+     "seen": 788
+    },
+    {
+     "time": "",
+     "text": "12:36/12:52: Apple iCloud/Pay issues on Downdetector (outage run continues)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 788
+    },
+    {
+     "time": "12:37",
+     "text": "Goldman desk: AI sentiment \"as negative as we've seen in quite some time.\" − flows / + contrarian",
+     "source": "",
+     "impact": "",
+     "seen": 788
+    },
+    {
+     "time": "12:59",
+     "text": "Equinor reports an ongoing cyberattack (no operational impact). Zerohedge says the FBI issued a \"global hack alert\" as NSA Net went dark (unverified). − if it spreads",
+     "source": "",
+     "impact": "",
+     "seen": 788
+    },
+    {
+     "time": "",
+     "text": "Hormuz: IRGC claims mines hit 4+ tankers in 24h; LPG tanker Tara Gas hit. Continuation, not a new leg",
+     "source": "",
+     "impact": "neutral",
+     "seen": 788
+    },
+    {
+     "time": "13:17",
+     "text": "Barron's: Huang moved billions in NVDA stock to his heirs before his exit. 0/− NVDA",
+     "source": "Barron's",
+     "impact": "",
+     "seen": 842
+    },
+    {
+     "time": "13:17",
+     "text": "Nvidia board's National Security and Export Control committee; Trump: \"a good idea.\" + NVDA (small)",
+     "source": "",
+     "impact": "",
+     "seen": 842
+    },
+    {
+     "time": "13:11–13:26",
+     "text": "Microsoft launches six AI models; OpenAI GPT-6.2; Meta Muse models on Azure. 0",
+     "source": "",
+     "impact": "",
+     "seen": 842
+    },
+    {
+     "time": "13:37–13:57",
+     "text": "Apple confirms Music/App Store outages; US outage list grows",
+     "source": "",
+     "impact": "neutral",
+     "seen": 842
+    },
+    {
+     "time": "13:40–13:56",
+     "text": "CNN (US officials): Iran plan for a dirty bomb in DC. Iran: \"rubbish.\" White House: no current credible threat; Trump threatens retaliation. IRGC claims a drone strike on a US radar in Bahrain (CENTCOM: no damage). − tail risk",
+     "source": "CNN",
+     "impact": "",
+     "seen": 842
+    },
+    {
+     "time": "13:43",
+     "text": "UBS sees an NVDA beat of $3–4B and a ~$130B guide. Zerohedge: options overpriced NVDA's move in 8 of the last 10 quarters",
+     "source": "",
+     "impact": "good",
+     "seen": 842
+    },
+    {
+     "time": "13:56",
+     "text": "California AG: Nvidia scandal \"raised red flags.\"",
+     "source": "",
+     "impact": "neutral",
+     "seen": 842
+    },
+    {
+     "time": "",
+     "text": "Recaps, not new: Gensler on an AI bubble; Warsh on Fed crash modeling; the Equinor cyberattack",
+     "source": "",
+     "impact": "",
+     "seen": 842
+    },
+    {
+     "time": "14:10",
+     "text": "Al Arabiya: no breakthrough so far in US–Iran talks",
+     "source": "",
+     "impact": "bad",
+     "seen": 906
+    },
+    {
+     "time": "14:10",
+     "text": "Reuters: Huang will testify to Congress in December. 0/− NVDA",
+     "source": "Reuters",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "14:14–14:50",
+     "text": "Apple says its outages came from an internal update, not a cyberattack; most systems are back. + small",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "14:15",
+     "text": "California AG is looking into the Nvidia/Huang scandal",
+     "source": "",
+     "impact": "neutral",
+     "seen": 906
+    },
+    {
+     "time": "14:15–14:44",
+     "text": "Iran says a 4th tanker hit a mine in the eastern Strait of Hormuz; the IRGC says a 3rd vessel exploded",
+     "source": "",
+     "impact": "bad",
+     "seen": 906
+    },
+    {
+     "time": "14:20",
+     "text": "ISNA: Iran is \"seriously pursuing\" a diplomatic end to the standoff. + brief",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "",
+     "text": "**14:25: US strike on an IRGC missile site on Qeshm Island; the US calls it self-defense (Axios, 14:40). −−**",
+     "source": "Axios",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "14:27–14:51",
+     "text": "Williams. Inflation is \"stubbornly high\", the economy is strong, and the situation \"doesn't call for dramatic action\". AI financing is \"opaque\". Mild",
+     "source": "",
+     "impact": "bad",
+     "seen": 906
+    },
+    {
+     "time": "14:49",
+     "text": "Thune on the outages: \"bad actors\"",
+     "source": "",
+     "impact": "neutral",
+     "seen": 906
+    },
+    {
+     "time": "15:01",
+     "text": "Dow down 2%; the selloff is extending",
+     "source": "",
+     "impact": "bad",
+     "seen": 906
+    },
+    {
+     "time": "",
+     "text": "Background: BofA's fund manager survey has the tech overweight at its lowest since 2006. NVDA consensus is ~$109B revenue and $2.47 EPS. Bitcoin is ~$64.5K",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    }
+   ]
+  },
+  "2026-11-18": {
+   "bot": [
+    {
+     "time": "Tue ≈16:05",
+     "text": "NVDA Q3: rev $115.84B vs ~$109.1B, EPS $2.68 vs $2.47, DC $107.6B; Q4 guide $130B vs ~$125B; FY growth guide 75%; +$150B buyback. Bullish, mostly priced ON. NVDA ext 159.6 (+2.7%)",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "",
+     "text": "Tue NVDA call: board says Huang not reinstated, CEO search ongoing (neutral/bearish, cited for fade); no more licensed H200 China sales (small bearish)",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "",
+     "text": "WSJ: SEC probing Nvidia; House Dems probing Cantor NVDA sales / Commerce export delays (headline risk)",
+     "source": "WSJ",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "",
+     "text": "Commerce chip-export license rule (SG, China-serving DCs); China vows retaliation; X 05:43: Trump sided with Lutnick on enforcement. Bearish chips, known",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "≈05:54",
+     "text": "Nasdaq fut +1.2% w/ AI/chip breadth (NBIS, IREN, CRWV, TSM, MU, AVGO, AMD up); 07:13-07:44 steadied +0.7-0.8%",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "",
+     "text": "Fed: Williams Tue \"stubbornly high\" inflation; Dec 25bp hike ~fully priced. Chair is Warsh (since May 2026); no pending nominee",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "≈07:52",
+     "text": "Iran claims MQ-9 downing near Hormuz (unconfirmed); oil falling anyway. Mild tail risk",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "",
+     "text": "TGT, LOW beat; LOW down premarket",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "07:20",
+     "text": "Fed Gov Waller (CNBC): 50bp Dec hike \"probably necessary\" unless Fed signals Jan hike; \"might need to shock people\". Hawkish; market shrugged (yields down) but raises minutes risk",
+     "source": "CNBC",
+     "impact": "",
+     "seen": 548
+    },
+    {
+     "time": "08:30",
+     "text": "Oct housing: starts 1.309M vs 1.230M est (beat); permits 1.295M vs ~1.38M (big miss, lowest since May 2020). Mixed/low; futures rallied after",
+     "source": "",
+     "impact": "",
+     "seen": 548
+    },
+    {
+     "time": "≈08:25",
+     "text": "Ransomware group lists NVIDIA on leak site, no samples, unverified. Low unless confirmed",
+     "source": "",
+     "impact": "",
+     "seen": 548
+    },
+    {
+     "time": "",
+     "text": "Iran: Army statement/video backs MQ-9 shoot-down claim (no US confirmation); Iranian drones at US base in Kuwait and Bahrain intercepted, no damage. Oil still falling (WTI ~85.1, -1.1%). Mild bearish tail",
+     "source": "",
+     "impact": "",
+     "seen": 548
+    },
+    {
+     "time": "",
+     "text": "Anthropic IPO (prices tonight, ANT trades Thu): advisers weighing above $70-78 range; Nvidia $10B into private placement. AI-sentiment supportive",
+     "source": "",
+     "impact": "",
+     "seen": 548
+    },
+    {
+     "time": "",
+     "text": "Senate passed 51-47 resolution to end tariff emergency; House uncertain, veto expected. Low",
+     "source": "",
+     "impact": "",
+     "seen": 548
+    },
+    {
+     "time": "",
+     "text": "No new NVDA CEO-search news; no new Warsh remarks",
+     "source": "",
+     "impact": "",
+     "seen": 548
+    },
+    {
+     "time": "09:34-09:50",
+     "text": "NVDA reversal (Reuters): sold despite beat on overhangs: no permanent CEO (board rules out Huang return), WSJ-reported SEC disclosure probe, >$100B sales via Singapore unit (restricted-chip allegations), GM guide 71-72% vs 74.9%, China Hopp",
+     "source": "WSJ",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "09:03",
+     "text": "CNBC: Anthropic IPO still expected above $70-78 range (WSJ >$80), prices tonight; ~$250M retail demand Thu expected. Possible cash-raising in AI megacaps (unsourced hypothesis)",
+     "source": "CNBC",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "",
+     "text": "Trump in Shenzhen: met Xi and Putin at APEC dinner; substantive trade talks Thursday -> chip-export headline risk either way",
+     "source": "",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "",
+     "text": "Administration weighing disclosure rule on US firms' use of Chinese AI models (no proposal yet). Low",
+     "source": "",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "",
+     "text": "Iran: nothing new; Rubio says no imminent threat. Gold < $3,800, BTC ~$64.5K after long liquidations (risk-off tone)",
+     "source": "",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "10:00",
+     "text": "pending home sales (cons -2.0% m/m) not out at check; GDPNow unavailable",
+     "source": "",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "10:00",
+     "text": "pending home sales -4.7% m/m vs -1.4 to -2.0% est; index 63.0 (record low since 2001). Mildly dovish",
+     "source": "",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "10:30",
+     "text": "EIA crude +3.38M bbl vs +0.40M est; gasoline +5.2M. WTI ~84.3 (-2.0%), Brent ~91.9. Mildly bullish (inflation)",
+     "source": "",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "≈11:04",
+     "text": "GDPNow Q4 3.2% (from 3.4%). Small dovish",
+     "source": "",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "≈10:40",
+     "text": "Sen. Tim Scott asks Huang and Lutnick to testify (reportedly agreed); US-China commission report: China military seeking top NVDA chips via workarounds. Mild bearish semis ahead of Thu Trump-Xi talks",
+     "source": "",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "",
+     "text": "X only (unconfirmed): TSMC requiring prepayment from AI-chip customers over credit limits. Low confidence",
+     "source": "",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "",
+     "text": "Anthropic IPO: X claims ~7x covered, pricing above $70-78 possible tonight (unverified totals)",
+     "source": "",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "",
+     "text": "Iran context: US struck Iranian missile site Tue; Iran drones at US sites in Kuwait/Bahrain intercepted; drone shoot-down claim unverified by US. Oil falling, absorbed. Ignore unverified X \"$300-650B wiped after Iran strike\" story (likely t",
+     "source": "",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "",
+     "text": "Yields: a CNBC article (time unknown) shows 2y 4.83% (+4bp), 10y 5.121%; live Yahoo bars at 10:51 show 10y 5.07% (-3bp) — using live bars",
+     "source": "CNBC",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "",
+     "text": "FOMC minutes preview: Dec hike fully priced; Jan hike ~70% (CME via FXStreet), ~60% on Kalshi",
+     "source": "",
+     "impact": "",
+     "seen": 672
+    },
+    {
+     "time": "≈11:00-11:45",
+     "text": "cross-asset sell-off: gold -2.4 to -3% (below $3,800 for the first time in over a year), silver -4.6%, copper at a six-month low; energy and healthcare leading, Dow -600+. Tech relatively resilient. Neutral for QQQ",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "≈11:20-11:50",
+     "text": "NVDA (X summaries): Kress says no more H200/Hopper shipments to China, excluded from guidance (Q3 China H200 sales $2.4B); board refuses to reinstate Huang, pushback from shareholders. Bearish NVDA/semis",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "",
+     "text": "Huang/Lutnick agreed to a voluntary Senate Banking appearance; Huang closed House sessions reportedly Dec 1 (unverified). Mild bearish headline risk",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "",
+     "text": "TSMC prepayment for orders over customer credit limits: still X-only, unconfirmed",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "",
+     "text": "Anthropic IPO: $70-78 range, ticker ANT, prices tonight, Nasdaq debut Thu 11/19; order totals unverified. Some talk of rotation out of NVDA",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "",
+     "text": "Trump-Xi at APEC Shenzhen: constructive arrival, talks Thursday. Mild upside risk overnight/Thu",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "",
+     "text": "Iran: MQ-9 shoot-down claim unconfirmed by the US; Bandar Abbas blast was controlled disposal. No impact",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "",
+     "text": "Fed: nothing new beyond Waller's 50bp push; no Daly remarks found yet (12:15)",
+     "source": "",
+     "impact": "",
+     "seen": 725
+    },
+    {
+     "time": "12:30-12:57",
+     "text": "Daly: \"measured approach\", inflation too high for too long, labor stable; no 50bp support (unverified quote: bias \"up\", size/timing premature). Neutral to mild relief",
+     "source": "",
+     "impact": "",
+     "seen": 785
+    },
+    {
+     "time": "13:02",
+     "text": "20y auction (FinancialJuice, unconfirmed): 5.459% vs 5.459% WI, no tail, $16B. Neutral to mild positive",
+     "source": "",
+     "impact": "",
+     "seen": 785
+    },
+    {
+     "time": "≈11:30-12:48",
+     "text": "MSFT-INTC expanded Azure deal (Xeon incl. Diamond Rapids; MSFT first Intel Foundry EMIB customer). Mild positive semis/MSFT",
+     "source": "",
+     "impact": "",
+     "seen": 785
+    },
+    {
+     "time": "",
+     "text": "NVDA: no new hard news; China H200 halt, board/Huang saga, Ackman criticism; unverified ransomware leak-site listing. Keeps NVDA heavy",
+     "source": "",
+     "impact": "",
+     "seen": 785
+    },
+    {
+     "time": "",
+     "text": "Export controls (unverified X): Commerce reportedly extended chip controls to 5 more countries; Dutch resisting US tightening push. Mild bearish semis risk if confirmed",
+     "source": "",
+     "impact": "",
+     "seen": 785
+    },
+    {
+     "time": "",
+     "text": "Iran: CENTCOM no US injuries; \"stocks plunge\" X story is a stale Tuesday rehash. No impact",
+     "source": "",
+     "impact": "",
+     "seen": 785
+    },
+    {
+     "time": "",
+     "text": "Anthropic IPO (ANT, $70-78, prices tonight, Nasdaq Thu) unchanged. Trump-Xi(-Carney) meetings in China; no outcome yet; upside headline risk overnight/Thu",
+     "source": "",
+     "impact": "",
+     "seen": 785
+    },
+    {
+     "time": "",
+     "text": "Telecom outages overnight: officials say not a cyberattack. No impact. Fed Chair nominee / tariffs / macro: nothing new",
+     "source": "",
+     "impact": "",
+     "seen": 785
+    },
+    {
+     "time": "14:00",
+     "text": "FOMC minutes (Oct 27-28 meeting, via X wires, not checked against Fed text): almost all saw further hikes as appropriate; a couple said a Dec hike >25bp may be warranted; some favored 25bp in Oct; vast majority saw upside inflation risk; AI",
+     "source": "",
+     "impact": "",
+     "seen": 845
+    },
+    {
+     "time": "13:34-13:36",
+     "text": "Barr: supports further hikes if the economy goes as expected; inflation too high; no 50bp call. Neutral to mild negative",
+     "source": "",
+     "impact": "",
+     "seen": 845
+    },
+    {
+     "time": "13:34-13:51",
+     "text": "NVDA: Bloomberg (via wires) says the board's recruiter approached Arm CEO Rene Haas in its CEO search; Ackman says the board breached fiduciary duty. NVDA flat on it (~152). Mild negative",
+     "source": "Bloomberg",
+     "impact": "",
+     "seen": 845
+    },
+    {
+     "time": "13:04",
+     "text": "20y auction: 5.459%, bid-to-cover 2.63, solid. Neutral/positive",
+     "source": "",
+     "impact": "",
+     "seen": 845
+    },
+    {
+     "time": "13:05-13:21",
+     "text": "Crude down more than $4 on a surplus outlook; gold -2.9%; Hegseth says Hormuz is a \"non-factor\". Mild positive for inflation",
+     "source": "",
+     "impact": "",
+     "seen": 845
+    },
+    {
+     "time": "",
+     "text": "Iran/Oman talks on a security framework; the \"stocks plunge\" X story is still a Tuesday rehash. No impact",
+     "source": "",
+     "impact": "",
+     "seen": 845
+    },
+    {
+     "time": "",
+     "text": "Anthropic IPO on track (prices tonight, Nasdaq Thu). Google Genie 4 (minor). Nothing new on the Fed Chair nominee, China H200, export rules, tariffs, or Trump-Xi",
+     "source": "",
+     "impact": "",
+     "seen": 845
+    },
+    {
+     "time": "14:30",
+     "text": "Williams: brief community-investment remarks; no wire policy headline found (X quotes look like Tuesday's Axios comments). Neutral",
+     "source": "Axios",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "",
+     "text": "Minutes reaction: commentary frames Dec 25bp as near-certain, 50bp the open question (Waller). Mild negative; matches the QQQ fade and VIX rise",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "≈15:00",
+     "text": "NVDA: continued shareholder pushback stories on the CEO search (Ackman, petition, Bezos urging an internal pick); board approach to Arm CEO Rene Haas (13:37) still the latest hard news. Unverified X summary of \"Nvidia buying $10B of Anthrop",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "14:31-14:43",
+     "text": "Oil: WTI settled $83.26 (-3.2%), Brent $91.95; gold ~-3.5%. Mild positive",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "",
+     "text": "Iran: morning strikes already priced; Tasnim 14:19 called Iran-Oman talks \"constructive\"; X \"stocks plunge\" story at 15:03 is a rehash. No impact",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "14:32",
+     "text": "Thune: Democrats not engaging on government funding (Dec 11 deadline). Minor negative. 14:51 Navarro on AI for transshipment detection (no new tariffs). Nebius sharply lower on a guidance cut (minor AI-sentiment negative)",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    },
+    {
+     "time": "",
+     "text": "Nothing new on the Fed Chair nominee, chip-export rules, China or tariffs",
+     "source": "",
+     "impact": "",
+     "seen": 906
+    }
+   ]
+  },
+  "2026-11-19": {
+   "bot": [
+    {
+     "time": "07:18",
+     "text": "NQ E-minis +566.5 pts (+2.08%), ES +1.16%, YM +0.58% (Reuters)",
+     "source": "Reuters",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Overnight",
+     "text": "Anthropic IPO priced $83 (above $70-78), ~$81B raised, record; trades on Nasdaq as \"ANT\" ~midday (WSJ; exact time unverified)",
+     "source": "WSJ",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Pre-mkt",
+     "text": "NVDA +1.7-2% after 5 straight down days; AMD +2.7-5%; GOOGL +4.3%, AMZN +2.2%, MSFT/META +1%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Wed AH",
+     "text": "PANW +~10% on beat + raised FY rev guide; CRWD +5-6%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Wed/pre",
+     "text": "INTC +4-4.7%: first external 18A customer; expanded MSFT Xeon deal",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Overnight",
+     "text": "Trump (Fox, Shenzhen): NVDA Blackwell to China maybe in 2-3 yrs; Trump-Xi Shenzhen meeting left chips/rare-earths unresolved, $60B tariff-cut package not finalized, truce expires Jan 2027",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Ongoing",
+     "text": "NVDA leadership: Huang resigned ~Nov 12, interim CEO Colette Kress; board ruled out his return; Huang/Lutnick to testify (Senate Banking request; House closed session Dec 1) — X AI summaries, UNVERIFIED. NB prior brief's \"board approached A",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "06:00-07:47",
+     "text": "WMT Q3 beat (adj EPS $0.65 vs $0.64; rev $188.8B vs ~$187.3B), raised FY guide 3rd time; shares ~+0.6-1%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Wed 18:00-00:28",
+     "text": "Fed hawks: Waller wants 50bp Dec (or strong guidance); Kashkari hawkish; minutes: nearly all see +25bp Dec. Mkt ~95% +25bp Dec 8-9, ~5% for 50bp; ~61bp over 3 mtgs. 10y ~5.06-5.08%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Overnight",
+     "text": "Hormuz: tanker hit by projectile near Khasab (UKMTO); IRGC claims 2-3 tankers hit mines; IEA calls it largest energy shock ever. Brent ~$92.5, WTI ~$83.8 (+0.6%) @05:30",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Wed 19:13",
+     "text": "Iran FM Araghchi: Oman talks aimed at averting renewed US-Iran war; Hormuz corridor understanding still not formally approved",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "Wed close",
+     "text": "Dow -1.1%, S&P -0.2% (5th straight loss), Nasdaq Comp +0.4%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 490
+    },
+    {
+     "time": "08:30",
+     "text": "Initial claims (cons ~196-198K, prev 200K; cont. prev 1,697K) + Philly Fed (cons 20.6, prev 20.9; prices paid prev 43.2). Strong data = hawkish = NEG for QQQ",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "08:50",
+     "text": "Hammack (Cleveland) opening remarks · 09:25 VC Jefferson \"Economic Shocks\" (Q&A)",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "10:00",
+     "text": "Conference Board LEI (per Dow Jones cal.) + advance services report · 10:30 nat-gas storage",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "11:00",
+     "text": "KC Fed mfg index · 12:30 Goolsbee Q&A (11:30 CT) · ~midday Anthropic (ANT) first trade",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "13:00",
+     "text": "10-yr TIPS reopening auction · 14:15 Gov. Barr on AI (Q&A) · 16:00 Barkin outlook · 18:30 Paulson (Phila)",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "",
+     "text": "After close: INTU (EPS est $2.46/rev $4.31B; QQQ member), ROST (QQQ member), KEYS, ESTC, GAP, GLOB",
+     "source": "",
+     "impact": "",
+     "seen": 490
+    },
+    {
+     "time": "08:30",
+     "text": "Initial claims 203K vs ~197-198K; continuing 1.763M (+70K vs ~1.70M)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 548
+    },
+    {
+     "time": "08:30",
+     "text": "Philly Fed 6.3 vs 20.6 (prior 20.9); prices paid 58.2 (43.2), received 47.0 (40.1)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 548
+    },
+    {
+     "time": "08:50",
+     "text": "Hammack opening remarks at financial-stability conference; no policy comments found",
+     "source": "",
+     "impact": "neutral",
+     "seen": 548
+    },
+    {
+     "time": "Overnight-08:53",
+     "text": "Anthropic priced $83, $81.3B record; trading \"midday\"; perp markets imply ~+25% pop; GOOGL +4.1%, AMZN +2.4%, AVGO +2.9% pre",
+     "source": "",
+     "impact": "good",
+     "seen": 548
+    },
+    {
+     "time": "06:29",
+     "text": "NVDA CEO search: Heidrick approached Arm CEO Rene Haas (Bloomberg via Guardian); board ruled out Huang return; NVDA ~-26% in Nov",
+     "source": "Bloomberg",
+     "impact": "neutral",
+     "seen": 548
+    },
+    {
+     "time": "Today",
+     "text": "BIS rule: licenses for remote compute to China/Macau-HQ firms, advanced chip exports to ID; TSMC/Samsung reportedly paused some China shipments (partly unverified)",
+     "source": "",
+     "impact": "bad",
+     "seen": 548
+    },
+    {
+     "time": "07:40",
+     "text": "Iran says 2 tankers hit mines (unverified); Houthi missiles at Riyadh intercepted; Brent > $90",
+     "source": "",
+     "impact": "bad",
+     "seen": 548
+    },
+    {
+     "time": "08:30-08:53",
+     "text": "Texas resumes data-center permit reviews",
+     "source": "",
+     "impact": "neutral",
+     "seen": 548
+    },
+    {
+     "time": "09:25",
+     "text": "Jefferson: AI buildout adds upward pressure on demand/inflation; would respond more strongly if expectations unanchor; no rate outlook",
+     "source": "",
+     "impact": "neutral",
+     "seen": 610
+    },
+    {
+     "time": "09:30",
+     "text": "Open: Nasdaq Comp +1.55%, S&P +0.90%; NDX up to +2% early",
+     "source": "",
+     "impact": "good",
+     "seen": 610
+    },
+    {
+     "time": "09:30-10:00",
+     "text": "Anthropic rang opening bell; ANT indicated ~$100-104 vs $83 IPO; first trade still pending",
+     "source": "",
+     "impact": "good",
+     "seen": 610
+    },
+    {
+     "time": "10:00",
+     "text": "Oct LEI -0.3% to 99.3 (Kalshi had ~77% on above -0.3%)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 610
+    },
+    {
+     "time": "10:00",
+     "text": "Amodei CNBC interview: no market-moving content found",
+     "source": "CNBC",
+     "impact": "neutral",
+     "seen": 610
+    },
+    {
+     "time": "Today",
+     "text": "NVDA CEO search: Heidrick approached Arm's Haas (Kalshi Haas 27%); nothing new; NVDA +3.3%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 610
+    },
+    {
+     "time": "Today",
+     "text": "BIS chip rule effective; TSMC/Samsung China pauses, Moonshot $150M B300 cancel (X summary, unverified)",
+     "source": "",
+     "impact": "bad",
+     "seen": 610
+    },
+    {
+     "time": "≈09:25",
+     "text": "IRGC claims 2 tankers hit Hormuz mines (unverified); Axios: WH asked Pentagon for Iran response options; Brent $93",
+     "source": "Axios",
+     "impact": "bad",
+     "seen": 610
+    },
+    {
+     "time": "Today",
+     "text": "Trump-Xi-Putin APEC trilateral on fuel supply; US-China action plan on trade (X, unconfirmed)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 610
+    },
+    {
+     "time": "10:10-10:40",
+     "text": "QQQ 671.6 -> 656.0 on heavy volume; gap and Wed close broken",
+     "source": "",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "≈10:10-10:33",
+     "text": "Hunterbrook short on AMD: blacklisted IEIT kept getting AMD firmware; new license rule for chips to Singapore and 4 other countries effective today (AMD ~$4.28B Singapore billings)",
+     "source": "",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "≈10:16",
+     "text": "Guardian: Nasdaq gains shrink, risk-off tone in London",
+     "source": "",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "10:30",
+     "text": "EIA nat gas +20 Bcf vs 25 expected",
+     "source": "",
+     "impact": "neutral",
+     "seen": 660
+    },
+    {
+     "time": "≈10:50",
+     "text": "ANT still no first trade; indicated ~$100-105; Hyperliquid perps > $104",
+     "source": "",
+     "impact": "neutral",
+     "seen": 660
+    },
+    {
+     "time": "≈10:50",
+     "text": "IRGC claims mines sank 2 supertankers in Hormuz (X, unverified); oil fell anyway",
+     "source": "",
+     "impact": "bad",
+     "seen": 660
+    },
+    {
+     "time": "Today",
+     "text": "NVDA: no new CEO news; ransomware listing claim (X, unverified; no compromise reported)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 660
+    },
+    {
+     "time": "—",
+     "text": "No Fed speaker, Fed Chair nominee, or tariff headlines since 10:10",
+     "source": "",
+     "impact": "neutral",
+     "seen": 660
+    },
+    {
+     "time": "11:00",
+     "text": "KC Fed mfg composite 18 vs 11 prior, highest since May 2022; prices 53 (from 70)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 726
+    },
+    {
+     "time": "≈11:09",
+     "text": "Reuters: AMD -10.5% on Hunterbrook short report; no AMD rebuttal; Nasdaq 297 new lows",
+     "source": "Reuters",
+     "impact": "bad",
+     "seen": 726
+    },
+    {
+     "time": "≈11:40",
+     "text": "X: Moonshot AI cancelled a $150M NVDA B300 rental after the new license rule; Samsung/TSMC paused some China shipments (unverified)",
+     "source": "",
+     "impact": "bad",
+     "seen": 726
+    },
+    {
+     "time": "≈11:48",
+     "text": "ANT first trade $111.50 (+34% vs $83), then slid to ~$100-101",
+     "source": "",
+     "impact": "bad",
+     "seen": 726
+    },
+    {
+     "time": "11:50-12:04",
+     "text": "QQQ -2% to 648.9; NVDA 152.4 -> 148.6",
+     "source": "",
+     "impact": "neutral",
+     "seen": 726
+    },
+    {
+     "time": "Today",
+     "text": "IMF Georgieva: AI buildout pushes inflation; Jefferson agreed",
+     "source": "",
+     "impact": "neutral",
+     "seen": 726
+    },
+    {
+     "time": "≈12:00",
+     "text": "X: IRGC claims 2 supertankers hit mines in Hormuz (unverified by wires); WTI +0.5",
+     "source": "",
+     "impact": "bad",
+     "seen": 726
+    },
+    {
+     "time": "—",
+     "text": "NVDA: interim CEO Kress, no new leadership news; ransomware claim unproven",
+     "source": "",
+     "impact": "neutral",
+     "seen": 726
+    },
+    {
+     "time": "—",
+     "text": "No tariff headlines, no halts",
+     "source": "",
+     "impact": "neutral",
+     "seen": 726
+    },
+    {
+     "time": "≈12:00",
+     "text": "AP: S&P -1% after +1.3% open, 6th straight loss in sight; 9 of 10 S&P stocks down",
+     "source": "AP",
+     "impact": "bad",
+     "seen": 783
+    },
+    {
+     "time": "12:05-12:20",
+     "text": "NVDA at day low ~148; ANT below $100",
+     "source": "",
+     "impact": "bad",
+     "seen": 783
+    },
+    {
+     "time": "≈12:26",
+     "text": "AMD says it complies with export controls (answering Hunterbrook)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 783
+    },
+    {
+     "time": "AM (Reuters, unverified)",
+     "text": "Iran navy: two tankers hit mines in Hormuz; WTI ~84, Brent ~92.5",
+     "source": "",
+     "impact": "bad",
+     "seen": 783
+    },
+    {
+     "time": "12:12-12:47",
+     "text": "Kushner: Ukraine guarantees \"Article V-based\", Russia agreed to talks",
+     "source": "",
+     "impact": "neutral",
+     "seen": 783
+    },
+    {
+     "time": "12:40-13:02",
+     "text": "Goolsbee hawkish: tariff inflation persistent, inflation \"way higher\" than 2%, Fed must keep AI surge from overheating",
+     "source": "",
+     "impact": "bad",
+     "seen": 783
+    },
+    {
+     "time": "12:57",
+     "text": "Israel Ch.12: Trump weighing another Iran strike (unverified, single source)",
+     "source": "",
+     "impact": "bad",
+     "seen": 783
+    },
+    {
+     "time": "13:02",
+     "text": "10y TIPS auction 2.903% vs ~2.90% WI (tiny tail), btc 2.43 vs 2.24, indirects 68.6%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 783
+    },
+    {
+     "time": "12:57",
+     "text": "Trump returning from China, calls trip \"highly consequential\"; presser Fri 12:00",
+     "source": "",
+     "impact": "neutral",
+     "seen": 783
+    },
+    {
+     "time": "—",
+     "text": "X claims of NVDA \"+4% after beat\" / \"-30%\" conflict with tape; ignore",
+     "source": "",
+     "impact": "neutral",
+     "seen": 783
+    },
+    {
+     "time": "13:00-13:12",
+     "text": "Goolsbee: Fed \"cannot look through tariffs if they persist\"; needs evidence of AI productivity beyond tech",
+     "source": "",
+     "impact": "bad",
+     "seen": 845
+    },
+    {
+     "time": "13:06-13:37",
+     "text": "Trump \"in no rush\" on Iran decision; \"see what happens\" after Jan 1 (Axios, Reuters)",
+     "source": "Reuters",
+     "impact": "neutral",
+     "seen": 845
+    },
+    {
+     "time": "13:11",
+     "text": "Energy Sec. Wright: Iran tensions not rising; record Hormuz outflow yesterday",
+     "source": "",
+     "impact": "neutral",
+     "seen": 845
+    },
+    {
+     "time": "13:15",
+     "text": "Reuters: Wall St falls sharply as Anthropic debut fails to reignite AI trade; ANT -16% from open",
+     "source": "Reuters",
+     "impact": "bad",
+     "seen": 845
+    },
+    {
+     "time": "13:45",
+     "text": "Reuters: JPMorgan now expects Fed hikes at next three meetings",
+     "source": "Reuters",
+     "impact": "bad",
+     "seen": 845
+    },
+    {
+     "time": "13:50",
+     "text": "Iran says tanker hit mine, fire in eastern Hormuz (FirstSquawk, single source)",
+     "source": "",
+     "impact": "bad",
+     "seen": 845
+    },
+    {
+     "time": "13:50",
+     "text": "Nscale-ByteDance deal scrutinized over chip curbs",
+     "source": "",
+     "impact": "neutral",
+     "seen": 845
+    },
+    {
+     "time": "13:55",
+     "text": "Reuters: Houthi attack hit Saudi PIF tower in Riyadh",
+     "source": "Reuters",
+     "impact": "neutral",
+     "seen": 845
+    },
+    {
+     "time": "13:57",
+     "text": "Arizona criminal probe into OpenAI/other AI firms over \"rogue AI agents\" (second-hand, unverified)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 845
+    },
+    {
+     "time": "—",
+     "text": "X NVDA \"+4% beat\"/\"-30%\" claims conflict with tape; ignore. \"Warsh's Fed\" reference unverified",
+     "source": "",
+     "impact": "neutral",
+     "seen": 845
+    },
+    {
+     "time": "14:18-14:31",
+     "text": "Reuters/Bloomberg: Wall St slides as Anthropic debut fails to revive AI trade",
+     "source": "Bloomberg",
+     "impact": "bad",
+     "seen": 905
+    },
+    {
+     "time": "14:24",
+     "text": "AP: Trump, Xi and Putin 3-way nuclear talks, no breakthroughs",
+     "source": "AP",
+     "impact": "neutral",
+     "seen": 905
+    },
+    {
+     "time": "14:14-14:36",
+     "text": "Bloomberg: Fed tells regional staff to expect lower pay raises in 2027",
+     "source": "Bloomberg",
+     "impact": "neutral",
+     "seen": 905
+    },
+    {
+     "time": "14:22",
+     "text": "Benzinga: Trump disclosed NVDA buys of up to $380K; calls the Huang exit a \"tragedy\"",
+     "source": "",
+     "impact": "neutral",
+     "seen": 905
+    },
+    {
+     "time": "14:45-14:56",
+     "text": "Fed Barr: regulation changes may raise financial risk; ties AI boom to risk-on markets; flags leverage",
+     "source": "",
+     "impact": "neutral",
+     "seen": 905
+    },
+    {
+     "time": "14:50-14:57",
+     "text": "Senate rejects the Iran war-powers resolution (expected)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 905
+    },
+    {
+     "time": "14:52",
+     "text": "NFLX hits a multi-year low",
+     "source": "",
+     "impact": "neutral",
+     "seen": 905
+    },
+    {
+     "time": "15:03",
+     "text": "WaPo: NVDA scandal may tip toward tougher export-control enforcement",
+     "source": "",
+     "impact": "bad",
+     "seen": 905
+    }
+   ]
+  },
+  "2026-11-20": {
+   "bot": [
+    {
+     "time": "Thu 17:27-18:00",
+     "text": "ROST beats but guides holiday sales lower; about -8% after hours",
+     "source": "",
+     "impact": "neutral",
+     "seen": 485
+    },
+    {
+     "time": "Thu 22:04-Fri 05:48",
+     "text": "GAP beats on earnings, misses on revenue; about +4% premarket",
+     "source": "",
+     "impact": "neutral",
+     "seen": 485
+    },
+    {
+     "time": "Fri 00:55",
+     "text": "Barkin: policy direction \"relatively straightforward\" (WSJ)",
+     "source": "WSJ",
+     "impact": "neutral",
+     "seen": 485
+    },
+    {
+     "time": "Fri 02:53-05:43",
+     "text": "California AG subpoenas NVDA over chip transfers to China and its disclosures",
+     "source": "",
+     "impact": "bad",
+     "seen": 485
+    },
+    {
+     "time": "Fri 03:46-04:43",
+     "text": "Reports the NVDA board rules out Huang's return; Kress is interim CEO (smaller outlets)",
+     "source": "",
+     "impact": "bad",
+     "seen": 485
+    },
+    {
+     "time": "Fri 04:32-07:42",
+     "text": "US tightens chip export curbs; Asian chip stocks slide (Bloomberg/WSJ)",
+     "source": "WSJ",
+     "impact": "bad",
+     "seen": 485
+    },
+    {
+     "time": "Fri 04:36/07:35",
+     "text": "House GOP weighs subpoenaing Huang; Democrats open an NVDA probe (Reuters)",
+     "source": "Reuters",
+     "impact": "bad",
+     "seen": 485
+    },
+    {
+     "time": "Fri 04:46-07:10",
+     "text": "INTU sells Mailchimp for $3.68B and cuts its outlook; stock -8 to -11%",
+     "source": "",
+     "impact": "bad",
+     "seen": 485
+    },
+    {
+     "time": "Fri 05:21-07:33",
+     "text": "Treasuries rally on haven buying; 10-year below 5%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 485
+    },
+    {
+     "time": "Fri 06:37",
+     "text": "WSJ: Huang signals he is willing to return as CEO",
+     "source": "WSJ",
+     "impact": "neutral",
+     "seen": 485
+    },
+    {
+     "time": "Fri 06:30-07:41",
+     "text": "Previews: Waller and Cook lean toward hikes; one secondary source says \"50bp hint\"",
+     "source": "",
+     "impact": "bad",
+     "seen": 485
+    },
+    {
+     "time": "Fri 07:14-07:30",
+     "text": "Reports of Iran tanker attacks in Hormuz and a Houthi strike on Riyadh; oil still flat to weak",
+     "source": "",
+     "impact": "bad",
+     "seen": 485
+    },
+    {
+     "time": "Fri 07:30",
+     "text": "Bloomberg: worst run since 2023 as the AI trade cracks",
+     "source": "Bloomberg",
+     "impact": "bad",
+     "seen": 485
+    },
+    {
+     "time": "08:23-09:00",
+     "text": "ANT -9.6 to -10% premarket on day 2, near IPO-day open; \"drags AI trade\" (Bloomberg, MarketWatch, Barron's)",
+     "source": "Bloomberg",
+     "impact": "bad",
+     "seen": 545
+    },
+    {
+     "time": "08:25",
+     "text": "Waller opening remarks (no policy-content headlines found yet)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 545
+    },
+    {
+     "time": "08:29",
+     "text": "Telegraph: White House approves chip sales to Chinese military (unverified, single source)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 545
+    },
+    {
+     "time": "08:33",
+     "text": "Bloomberg: stocks hit worst run since 2023 as AI trade cracks; S&P at make-or-break below 7,200",
+     "source": "Bloomberg",
+     "impact": "bad",
+     "seen": 545
+    },
+    {
+     "time": "08:36",
+     "text": "NVDA extends 6-day losing streak; AMD, AVGO lead chips lower; SOXL tumbling",
+     "source": "",
+     "impact": "bad",
+     "seen": 545
+    },
+    {
+     "time": "08:38",
+     "text": "Goolsbee won't rule out a larger Dec hike (Quartz)",
+     "source": "",
+     "impact": "bad",
+     "seen": 545
+    },
+    {
+     "time": "08:47",
+     "text": "Citi: market telling Fed rates are \"unsustainably high\"",
+     "source": "",
+     "impact": "neutral",
+     "seen": 545
+    },
+    {
+     "time": "08:52",
+     "text": "Bloomberg: California probing whether NVDA misled investors on China risk",
+     "source": "Bloomberg",
+     "impact": "bad",
+     "seen": 545
+    },
+    {
+     "time": "09:00",
+     "text": "Trump to hold press conference after Putin/Xi summit (no breakthroughs reported)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 545
+    },
+    {
+     "time": "09:22",
+     "text": "NVDA: Huang resignation follow-up, Kress interim CEO, board rules out return; CA AG probe",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "09:22",
+     "text": "Asian stocks lost $1.1T on AI-bubble fears (Nikkei ~-5%, Taiex -6%)",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "09:37-09:55",
+     "text": "Open: gap down to 631 then sharp rebound; S&P turns green",
+     "source": "",
+     "impact": "good",
+     "seen": 600
+    },
+    {
+     "time": "09:43",
+     "text": "Gold crashes below $3,550, silver < $42 on hawkish-Fed expectations",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "09:54",
+     "text": "S&P 6-day losing streak, VIX touched ~31 before easing",
+     "source": "",
+     "impact": "neutral",
+     "seen": 600
+    },
+    {
+     "time": "08:37 (doc)",
+     "text": "House docs: Commerce approved ~880k NVDA H200/AMD MI325X chips for China",
+     "source": "",
+     "impact": "neutral",
+     "seen": 600
+    },
+    {
+     "time": "10:39",
+     "text": "US stocks plunge on AI valuation fears, ~$500B wiped; VIX > 30; Fear & Greed 16",
+     "source": "",
+     "impact": "bad",
+     "seen": 665
+    },
+    {
+     "time": "10:44",
+     "text": "AMD -10% after Hunterbrook report on firmware ties to blacklisted Chinese firm IEIT",
+     "source": "",
+     "impact": "bad",
+     "seen": 665
+    },
+    {
+     "time": "10:44",
+     "text": "S&P 6-day losing streak (longest since Apr 2024); NVDA ~40% off Sept highs",
+     "source": "",
+     "impact": "bad",
+     "seen": 665
+    },
+    {
+     "time": "10:57",
+     "text": "NVDA drops to 4th-largest US firm; Alphabet overtakes ($3.44T)",
+     "source": "",
+     "impact": "bad",
+     "seen": 665
+    },
+    {
+     "time": "10:44",
+     "text": "Palmer Luckey: China blocking NVDA imports, ~600k H200s stranded in HK",
+     "source": "",
+     "impact": "bad",
+     "seen": 665
+    },
+    {
+     "time": "08:37",
+     "text": "House docs: Commerce approved ~880k NVDA H200/AMD MI325X for China",
+     "source": "",
+     "impact": "neutral",
+     "seen": 665
+    },
+    {
+     "time": "11:55",
+     "text": "US stocks + crypto lose >$500B; Nasdaq Composite erases its 19% YTD gain, turns negative for the year",
+     "source": "",
+     "impact": "bad",
+     "seen": 722
+    },
+    {
+     "time": "11:55",
+     "text": "Burry highlights his AI warnings (NVDA, CoreWeave, Nebius, semis) as they slide",
+     "source": "",
+     "impact": "bad",
+     "seen": 722
+    },
+    {
+     "time": "11:55",
+     "text": "NVDA -40% since Oct 6 after Huang resignation; ~40% of SPX losses",
+     "source": "",
+     "impact": "bad",
+     "seen": 722
+    },
+    {
+     "time": "11:19",
+     "text": "Trump admin approved ~880k H200/MI325X for Chinese firms (Dec 2025 - May 2026)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 722
+    },
+    {
+     "time": "11:06",
+     "text": "Citi: US rates too high as financial conditions tighten; still sees 25bp Dec hike",
+     "source": "",
+     "impact": "neutral",
+     "seen": 722
+    },
+    {
+     "time": "10:57",
+     "text": "Bessent links Chinese AI models (DeepSeek, Kimi, Qwen) to cyberattacks",
+     "source": "",
+     "impact": "bad",
+     "seen": 722
+    },
+    {
+     "time": "12:52",
+     "text": "Fed Gov Cook: policy should tighten; core PCE 3.2%, financial conditions too easy",
+     "source": "",
+     "impact": "bad",
+     "seen": 785
+    },
+    {
+     "time": "12:52",
+     "text": "Trump news conference after the Shenzhen summit with Xi and Putin (nuclear/oil dialogue)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 785
+    },
+    {
+     "time": "12:51",
+     "text": "S&P and Dow enter correction; Nasdaq negative YTD; BTC < $59k; VIX > 30",
+     "source": "",
+     "impact": "bad",
+     "seen": 785
+    },
+    {
+     "time": "12:26",
+     "text": "AMD -13% after a Hunterbrook short report on China firmware ties",
+     "source": "",
+     "impact": "bad",
+     "seen": 785
+    },
+    {
+     "time": "12:16",
+     "text": "Bessent calls the Fed stance \"peripatetic\" on CNBC",
+     "source": "CNBC",
+     "impact": "neutral",
+     "seen": 785
+    },
+    {
+     "time": "13:55",
+     "text": "Stocks in correction; doubts grow about the Dec 8-9 Fed hike; mortgage rates 7.28%",
+     "source": "",
+     "impact": "neutral",
+     "seen": 847
+    },
+    {
+     "time": "13:55",
+     "text": "NVDA fallout continues: Kress interim CEO, no Huang return; valuation ~$3.3T",
+     "source": "",
+     "impact": "bad",
+     "seen": 847
+    },
+    {
+     "time": "13:43",
+     "text": "AI-spending fears; global markets lose trillions (TAIEX -6.2%, KOSPI -5.2%, Nikkei -5.1% overnight)",
+     "source": "",
+     "impact": "bad",
+     "seen": 847
+    },
+    {
+     "time": "13:31",
+     "text": "Sen. Cotton accuses Lutnick of ignoring chip-smuggling warnings",
+     "source": "",
+     "impact": "neutral",
+     "seen": 847
+    },
+    {
+     "time": "13:05",
+     "text": "Burry sold half his NVDA puts, keeps NDX puts through April",
+     "source": "",
+     "impact": "neutral",
+     "seen": 847
+    },
+    {
+     "time": "14:33",
+     "text": "Reuters: SEC enforcement staff examining Nvidia accounting (no wrongdoing found); NVDA -8% to -12%",
+     "source": "Reuters",
+     "impact": "bad",
+     "seen": 901
+    },
+    {
+     "time": "13:43",
+     "text": "Broadcom -11% on report that Google cuts 2027 TPU orders ~20% (Kuo)",
+     "source": "",
+     "impact": "bad",
+     "seen": 901
+    },
+    {
+     "time": "13:31",
+     "text": "AMD -13% after Hunterbrook report on China export-compliance exposure",
+     "source": "",
+     "impact": "bad",
+     "seen": 901
+    },
+    {
+     "time": "14:19",
+     "text": "Trump: tax penalty on US companies building data centers abroad",
+     "source": "",
+     "impact": "neutral",
+     "seen": 901
+    },
+    {
+     "time": "14:58",
+     "text": "Trump presser: urges the Fed to cut; Citi note says rates are too high; doubts about the Dec hike grow",
+     "source": "",
+     "impact": "neutral",
+     "seen": 901
+    },
+    {
+     "time": "13:55",
+     "text": "Bitcoin < $59k, $1B+ liquidations",
+     "source": "",
+     "impact": "bad",
+     "seen": 901
+    }
+   ]
+  },
+  "2026-11-23": {
+   "bot": [
+    {
+     "time": "02:54-07:42",
+     "text": "Reuters: US futures rebound sharply; AI-linked shares recover after last week pushed the S&P 500 and Dow into correction. Last week's pressure: Nvidia CEO Jensen Huang's abrupt departure, AI capex worries",
+     "source": "Reuters",
+     "impact": "good",
+     "seen": 492
+    },
+    {
+     "time": "≈07:00",
+     "text": "AP: S&P futures +2.9%, Nasdaq futures +3.6%; NVDA +8.2%, AVGO +5.5%, AMD +4.3% premarket; Anthropic +3.4% pre after -8.5% Fri",
+     "source": "AP",
+     "impact": "good",
+     "seen": 492
+    },
+    {
+     "time": "06:10",
+     "text": "CNBC Morning Squawk: bounce gaining steam despite rough Asia handover (SK Hynix, Kospi lower); European tech up",
+     "source": "CNBC",
+     "impact": "good",
+     "seen": 492
+    },
+    {
+     "time": "Fri 14:33",
+     "text": "(Carryover) Reuters: SEC examining Nvidia accounting",
+     "source": "Reuters",
+     "impact": "bad",
+     "seen": 492
+    },
+    {
+     "time": "Fri 14:58",
+     "text": "(Carryover) Trump urges Fed cuts",
+     "source": "",
+     "impact": "neutral",
+     "seen": 492
+    },
+    {
+     "time": "≈08:30-09:00",
+     "text": "Nvidia board reinstates Jensen Huang as President, CEO and director (finviz press release)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 546
+    },
+    {
+     "time": "08:30",
+     "text": "Investing.com: Trump administration \"circles the wagons\" for Huang's return; AG Blanche \"certainly\" hasn't concluded Alice Huang was a spy",
+     "source": "",
+     "impact": "good",
+     "seen": 546
+    },
+    {
+     "time": "Sun night",
+     "text": "Trump Truth Social: \"I hope the Board of Nvidia rehires Jensen Huang\"; Bessent: \"Jensen is on the outside now\"",
+     "source": "",
+     "impact": "good",
+     "seen": 546
+    },
+    {
+     "time": "07:14",
+     "text": "Investing.com: chips lead the AI rebound; CrowdStrike falls on an acquisition",
+     "source": "",
+     "impact": "good",
+     "seen": 546
+    },
+    {
+     "time": "09:46",
+     "text": "S&P flash PMI: composite 54.6 (prior 55.9), services miss (54.7 vs 55.7)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 605
+    },
+    {
+     "time": "09:56",
+     "text": "Trump posts blame Democrats for the post-midterm stock drop",
+     "source": "",
+     "impact": "neutral",
+     "seen": 605
+    },
+    {
+     "time": "08:58",
+     "text": "NYT: Alice Huang's contacts with China's Ministry of State Security overlap the affair; chips possibly diverted",
+     "source": "NYT",
+     "impact": "neutral",
+     "seen": 605
+    },
+    {
+     "time": "08:30-09:00",
+     "text": "Nvidia board reinstates Jensen Huang as CEO (prior brief)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 605
+    },
+    {
+     "time": "07:38",
+     "text": "Arm CEO Haas extends through 2033 and becomes SoftBank vice chair",
+     "source": "",
+     "impact": "neutral",
+     "seen": 605
+    },
+    {
+     "time": "07:30",
+     "text": "Germany composite PMI 55 (strong); France 46.2",
+     "source": "",
+     "impact": "neutral",
+     "seen": 605
+    },
+    {
+     "time": "10:55",
+     "text": "Coverage of QQQ's sharp rebound; commentary notes post-plunge rebound patterns have historically preceded more downside",
+     "source": "",
+     "impact": "neutral",
+     "seen": 665
+    },
+    {
+     "time": "10:43-10:55",
+     "text": "More coverage confirms the Nvidia board unanimously reinstated Huang after input from US officials (no national-security risk found)",
+     "source": "",
+     "impact": "good",
+     "seen": 665
+    },
+    {
+     "time": "10:23",
+     "text": "2x long/short Anthropic (ANT) ETFs launch from several issuers",
+     "source": "",
+     "impact": "neutral",
+     "seen": 665
+    },
+    {
+     "time": "10:13",
+     "text": "NYT on Alice Huang/China MSS contacts still circulating",
+     "source": "NYT",
+     "impact": "neutral",
+     "seen": 665
+    },
+    {
+     "time": "09:29",
+     "text": "Ackman warns more Fed hikes risk recession; Bessent reportedly echoes",
+     "source": "",
+     "impact": "neutral",
+     "seen": 665
+    },
+    {
+     "time": "None",
+     "text": "No new Fed surprise, tariff, or chip-export headline found",
+     "source": "",
+     "impact": "neutral",
+     "seen": 665
+    },
+    {
+     "time": "12:02",
+     "text": "Trump on Truth Social blames Democrats' midterm wins for the post-election selloff (Nasdaq -11% since the election, by his count)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 725
+    },
+    {
+     "time": "11:47",
+     "text": "More coverage: Nvidia board unanimously reinstated Huang; officials found no unlawful conduct or security risk",
+     "source": "",
+     "impact": "good",
+     "seen": 725
+    },
+    {
+     "time": "11:14",
+     "text": "Gold down 9% on the week (-35% from Jan peak) on a strong USD and Fed-hike bets",
+     "source": "",
+     "impact": "neutral",
+     "seen": 725
+    },
+    {
+     "time": "10:13",
+     "text": "S&P Global US services PMI 54.7, below expectations; composite 54.6 (from 55.9)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 725
+    },
+    {
+     "time": "10:03",
+     "text": "Trump backs a 10% cap on credit-card interest rates",
+     "source": "",
+     "impact": "neutral",
+     "seen": 725
+    },
+    {
+     "time": "None",
+     "text": "No new Fed speaker surprise, tariff, or chip-export headline found",
+     "source": "",
+     "impact": "neutral",
+     "seen": 725
+    },
+    {
+     "time": "12:07",
+     "text": "Social post: Trump says Taiwan \"stole\" the US chip industry and threatens chip tariffs up to 200%. Not confirmed by mainstream or X news; may be recycled rhetoric",
+     "source": "",
+     "impact": "neutral",
+     "seen": 780
+    },
+    {
+     "time": "12:02-12:53",
+     "text": "Bloomberg: stocks soar on Huang's reinstatement; \"wildest Monday morning since 2008\"; NVDA +30%",
+     "source": "Bloomberg",
+     "impact": "good",
+     "seen": 780
+    },
+    {
+     "time": "12:22",
+     "text": "Bloomberg: the selloff revives talk of a \"Fed put\" under Warsh",
+     "source": "Bloomberg",
+     "impact": "neutral",
+     "seen": 780
+    },
+    {
+     "time": "12:38",
+     "text": "IBD: Fed rate-hike odds rise as the Nvidia rebound eases growth fears",
+     "source": "",
+     "impact": "neutral",
+     "seen": 780
+    },
+    {
+     "time": "12:16",
+     "text": "Europe's STOXX has its best day in six months on tech",
+     "source": "",
+     "impact": "neutral",
+     "seen": 780
+    },
+    {
+     "time": "None",
+     "text": "No new Fed speaker, macro surprise, or chip-export rule",
+     "source": "",
+     "impact": "neutral",
+     "seen": 780
+    },
+    {
+     "time": "14:03",
+     "text": "Nvidia reinstatement coverage continues; IREN +30% in an AI data-center rally",
+     "source": "",
+     "impact": "good",
+     "seen": 847
+    },
+    {
+     "time": "13:49",
+     "text": "Trump gives conflicting accounts on whether he discussed Huang with Xi (CNBC)",
+     "source": "CNBC",
+     "impact": "neutral",
+     "seen": 847
+    },
+    {
+     "time": "12:10",
+     "text": "Schumer launches a probe into Huang and the administration",
+     "source": "",
+     "impact": "neutral",
+     "seen": 847
+    },
+    {
+     "time": "12:47",
+     "text": "Databricks in talks at a $225B valuation",
+     "source": "",
+     "impact": "neutral",
+     "seen": 847
+    },
+    {
+     "time": "≈09:45",
+     "text": "S&P flash PMI: composite 54.6 (from 55.9), services 54.7 (est. 55.6)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 847
+    },
+    {
+     "time": "None",
+     "text": "No new Fed speaker, macro surprise, chip-export rule, or tariff confirmation",
+     "source": "",
+     "impact": "neutral",
+     "seen": 847
+    },
+    {
+     "time": "14:54",
+     "text": "ARK sold ~$17M of NVDA near the lows before the rebound",
+     "source": "",
+     "impact": "neutral",
+     "seen": 904
+    },
+    {
+     "time": "14:53",
+     "text": "Applied Digital signs a $5.4B AI data-center lease; Marlowe raises a $277M seed for non-Nvidia AI infrastructure",
+     "source": "",
+     "impact": "neutral",
+     "seen": 904
+    },
+    {
+     "time": "14:15",
+     "text": "Ackman warns a Fed hike risks recession",
+     "source": "",
+     "impact": "neutral",
+     "seen": 904
+    },
+    {
+     "time": "13:10",
+     "text": "Amazon buys Decart's AI optimization stack for ~$7.5B",
+     "source": "",
+     "impact": "neutral",
+     "seen": 904
+    },
+    {
+     "time": "None",
+     "text": "No new Fed speaker, macro surprise, chip-export rule, tariff action, or halt",
+     "source": "",
+     "impact": "neutral",
+     "seen": 904
+    }
+   ]
+  },
+  "2026-11-24": {
+   "bot": [
+    {
+     "time": "07:57",
+     "text": "Anthropic (ANT) falls below $83 IPO price premarket, low ~$81.28 (~29% off post-IPO high)",
+     "source": "",
+     "impact": "bad",
+     "seen": 479
+    },
+    {
+     "time": "07:46",
+     "text": "Commerce adds Megaspeed + 6 affiliates (SG) to Entity List over AI-chip diversion",
+     "source": "",
+     "impact": "bad",
+     "seen": 479
+    },
+    {
+     "time": "07:37",
+     "text": "Nvidia hardware found in Russian drones (via China)",
+     "source": "",
+     "impact": "bad",
+     "seen": 479
+    },
+    {
+     "time": "07:37",
+     "text": "Bitcoin dips below $60k on record spot-ETF outflows",
+     "source": "",
+     "impact": "bad",
+     "seen": 479
+    },
+    {
+     "time": "07:37",
+     "text": "WTI crude below $80",
+     "source": "",
+     "impact": "neutral",
+     "seen": 479
+    },
+    {
+     "time": "02:07",
+     "text": "Nikkei +3.9% on Monday's US tech rally",
+     "source": "",
+     "impact": "neutral",
+     "seen": 479
+    },
+    {
+     "time": "01:40",
+     "text": "Growing AI-bubble/data-center skepticism headlines",
+     "source": "",
+     "impact": "bad",
+     "seen": 479
+    },
+    {
+     "time": "overnight",
+     "text": "Burry trims NVDA puts, adds long-dated calls; Cramer flips bullish",
+     "source": "",
+     "impact": "neutral",
+     "seen": 479
+    },
+    {
+     "time": "≈08:30-09:00",
+     "text": "WSJ: US preparing to raise tariffs on China, EU and dozens of countries; futures extend losses, Treasuries bid",
+     "source": "WSJ",
+     "impact": "bad",
+     "seen": 548
+    },
+    {
+     "time": "≈08:30",
+     "text": "HPE -12% (revenue outlook), ADI -10% (Q1 guide); SOXX -4.5% pre; MU/INTC -6%",
+     "source": "",
+     "impact": "bad",
+     "seen": 548
+    },
+    {
+     "time": "08:22",
+     "text": "Fed hike odds back to ~95% for 25bp Dec (5% for 50bp) per futures; AI rally stoking inflation worries",
+     "source": "",
+     "impact": "bad",
+     "seen": 548
+    },
+    {
+     "time": "morning",
+     "text": "Axios: Anthropic/OpenAI staff worry unreleased models too powerful; ANT near/below $83 IPO price",
+     "source": "Axios",
+     "impact": "bad",
+     "seen": 548
+    },
+    {
+     "time": "morning",
+     "text": "GS TMT desk: \"better sentiment is not a clearing event for semis\"; BofA: Huang reinstatement not end of scrutiny",
+     "source": "",
+     "impact": "bad",
+     "seen": 548
+    },
+    {
+     "time": "≈09:30-09:40",
+     "text": "Cash open: Nasdaq Comp -1.8%, S&P -1.2%, Dow -0.4%; NVDA -5% after +31% Mon; AMD lower",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "≈09:00-09:30",
+     "text": "NY Fed Williams: inflation too high, won't rule out back-to-back hikes; yields steady",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "≈09:20",
+     "text": "WSJ detail: Section 301 tariffs on 16 economies; EU <=15%, higher for China; Greer may announce this week",
+     "source": "WSJ",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "≈09:20",
+     "text": "Anthropic shares below $83 IPO price premarket on Axios AI-safety report",
+     "source": "Axios",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "overnight",
+     "text": "BTC < $60k, record Nov spot-ETF outflows",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "10:00",
+     "text": "Conference Board confidence 103.3 vs 92.5 est (Oct 91.9)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 662
+    },
+    {
+     "time": "≈09:55",
+     "text": "Commerce Entity List: Megaspeed + 6 affiliates over Nvidia AI-chip concerns; Sen. Cotton pledging probes",
+     "source": "",
+     "impact": "bad",
+     "seen": 662
+    },
+    {
+     "time": "ongoing",
+     "text": "Tariff report (Section 301, 16 economies) - ~$1T wiped at open; NVDA, AMD, AAPL, AMZN lead losses",
+     "source": "",
+     "impact": "bad",
+     "seen": 662
+    },
+    {
+     "time": "08:51",
+     "text": "NVDA reinstated Huang as CEO (context for Mon +31%; giveback continuing)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 662
+    },
+    {
+     "time": "≈11:55",
+     "text": "Trump backs NVDA board reinstating Huang; Cotton keeps up China-chip warnings",
+     "source": "",
+     "impact": "neutral",
+     "seen": 720
+    },
+    {
+     "time": "≈11:44",
+     "text": "Commerce Entity List: Megaspeed + 6 affiliates, with a presumption of denial on AI-chip exports",
+     "source": "",
+     "impact": "bad",
+     "seen": 720
+    },
+    {
+     "time": "≈11:11",
+     "text": "House Democrats (Raskin) probe Lutnick's handling of Megaspeed; questions about Trump's NVDA holdings",
+     "source": "",
+     "impact": "bad",
+     "seen": 720
+    },
+    {
+     "time": "≈10:51",
+     "text": "Ackman warns a Fed hike risks recession; Williams pushes back",
+     "source": "",
+     "impact": "bad",
+     "seen": 720
+    },
+    {
+     "time": "09:10",
+     "text": "Oil at 3-month lows on supply",
+     "source": "",
+     "impact": "neutral",
+     "seen": 720
+    },
+    {
+     "time": "ongoing",
+     "text": "Section 301 tariff report (16 economies) overhang",
+     "source": "",
+     "impact": "bad",
+     "seen": 720
+    },
+    {
+     "time": "≈12:55",
+     "text": "Section 301 broad tariff reports (China, EU + 14) re-circulating; no official USTR announcement yet",
+     "source": "",
+     "impact": "bad",
+     "seen": 777
+    },
+    {
+     "time": "≈12:55",
+     "text": "Raskin on CNBC questions Trump's NVDA holdings; House probe of Lutnick/Megaspeed continues",
+     "source": "CNBC",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "≈12:31",
+     "text": "Gold/silver drop sharply in one hour (gold ~3,640 to 3,588)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "≈12:08",
+     "text": "Preview: PCE tomorrow 08:30 expected +0.3% m/m; >=0.4% seen as hawkish",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "09:00",
+     "text": "Case-Shiller +2.1% y/y (Sep)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "≈13:46",
+     "text": "AMD below $400 on S-3 registering ~337M shares for resale (OpenAI/Meta warrants)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 833
+    },
+    {
+     "time": "≈13:24",
+     "text": "Reports that Alice Huang kept contact with Chinese intelligence; Sen. Kennedy wants a Huang hearing",
+     "source": "",
+     "impact": "neutral",
+     "seen": 833
+    },
+    {
+     "time": "≈13:10",
+     "text": "Cramer flips bullish on NVDA after Huang's reinstatement",
+     "source": "",
+     "impact": "neutral",
+     "seen": 833
+    },
+    {
+     "time": "≈12:55",
+     "text": "Commerce adds Megaspeed and SG affiliates to the Entity List (NVDA chip diversion)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 833
+    },
+    {
+     "time": "ongoing",
+     "text": "Section 301 tariffs on China, EU + 14 reported, still not official",
+     "source": "",
+     "impact": "bad",
+     "seen": 833
+    },
+    {
+     "time": "≈14:54",
+     "text": "Nebius and IREN down 10-13% (Nebius trimmed its 2026 outlook on capacity delays)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 903
+    },
+    {
+     "time": "≈14:54",
+     "text": "Nvidia's Huang reinstatement draws Democratic backlash (Schumer) over export controls",
+     "source": "",
+     "impact": "neutral",
+     "seen": 903
+    },
+    {
+     "time": "≈14:24",
+     "text": "Gold and silver fall sharply on hawkish Fed and December-hike expectations",
+     "source": "",
+     "impact": "bad",
+     "seen": 903
+    },
+    {
+     "time": "≈14:11",
+     "text": "Bitcoin below $60k on ETF outflows and liquidations",
+     "source": "",
+     "impact": "bad",
+     "seen": 903
+    },
+    {
+     "time": "≈13:33",
+     "text": "Ackman warns a December hike risks recession",
+     "source": "",
+     "impact": "neutral",
+     "seen": 903
+    },
+    {
+     "time": "ongoing",
+     "text": "Section 301 tariffs on China, EU + 14 reported, still not official (USTR Greer may announce this week)",
+     "source": "",
+     "impact": "bad",
+     "seen": 903
+    }
+   ]
+  },
+  "2026-11-25": {
+   "bot": [
+    {
+     "time": "≈05:27",
+     "text": "Asian markets plunge in AI selloff: KOSPI -5-6% (halt), Nikkei -3%, chips weak; India up",
+     "source": "",
+     "impact": "bad",
+     "seen": 358
+    },
+    {
+     "time": "≈05:47",
+     "text": "NVDA -5% premarket, continuing its reversal after the reinstatement spike",
+     "source": "",
+     "impact": "bad",
+     "seen": 358
+    },
+    {
+     "time": "≈04:42",
+     "text": "Romney criticizes AI chip sales to China amid the Nvidia/Huang scandal",
+     "source": "",
+     "impact": "bad",
+     "seen": 358
+    },
+    {
+     "time": "Tue PM",
+     "text": "Dell Q3 blowout: rev $54.9B vs $49.3B est, AI servers $22B, $132B backlog",
+     "source": "",
+     "impact": "good",
+     "seen": 358
+    },
+    {
+     "time": "Tue ≈17:26",
+     "text": "AMD -12% AH on a 337M-share registration (OpenAI/Meta warrants)",
+     "source": "",
+     "impact": "bad",
+     "seen": 358
+    },
+    {
+     "time": "Tue ≈17:26",
+     "text": "Ackman warns a December hike risks recession",
+     "source": "",
+     "impact": "neutral",
+     "seen": 358
+    },
+    {
+     "time": "ongoing",
+     "text": "Section 301 tariff expansion still not official",
+     "source": "",
+     "impact": "bad",
+     "seen": 358
+    },
+    {
+     "time": "≈06:36",
+     "text": "Asian markets lose >$750B in the AI selloff; KOSPI -6% with a halt, SoftBank -10% (AI ROI doubts, US tariff threats)",
+     "source": "",
+     "impact": "bad",
+     "seen": 415
+    },
+    {
+     "time": "≈06:27",
+     "text": "Oracle 5y CDS 316-356bp, bonds >9%, on its $125B debt and capex surge",
+     "source": "",
+     "impact": "bad",
+     "seen": 415
+    },
+    {
+     "time": "≈06:39",
+     "text": "Anthropic below its $83 IPO price after founders' ~$2B sale",
+     "source": "",
+     "impact": "bad",
+     "seen": 415
+    },
+    {
+     "time": "≈05:54",
+     "text": "Trump backs Huang's return (pardon offer, stake idea)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 415
+    },
+    {
+     "time": "≈06:08",
+     "text": "Australia Oct CPI 4.9% (from 4.3%); UK energy cap +26% (Middle East gas)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 415
+    },
+    {
+     "time": "≈04:42",
+     "text": "Romney criticizes AI chip sales to China",
+     "source": "",
+     "impact": "bad",
+     "seen": 415
+    },
+    {
+     "time": "≈07:01",
+     "text": "WSJ: Trump admin preparing broad tariffs on 16 economies after a USTR probe",
+     "source": "WSJ",
+     "impact": "bad",
+     "seen": 476
+    },
+    {
+     "time": "≈07:43",
+     "text": "NVDA -5.5% premarket after -5.9% Tue; NDX fut -2.7%, AMD -6.7%, MU -6.4%",
+     "source": "",
+     "impact": "bad",
+     "seen": 476
+    },
+    {
+     "time": "≈07:43",
+     "text": "Trump says he personally pushed NVDA's board to reinstate Huang; scrutiny over China-intel ties",
+     "source": "",
+     "impact": "neutral",
+     "seen": 476
+    },
+    {
+     "time": "≈07:35",
+     "text": "NVDA cuts GeForce allocations 20-30% for Q4 (distributor reports)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 476
+    },
+    {
+     "time": "≈07:14-07:23",
+     "text": "Romney presses on ~880k H200/AMD chip approvals for China",
+     "source": "",
+     "impact": "bad",
+     "seen": 476
+    },
+    {
+     "time": "≈07:52",
+     "text": "Asia tech plunge (SoftBank -10%, KOSPI halts); India +2%",
+     "source": "",
+     "impact": "bad",
+     "seen": 476
+    },
+    {
+     "time": "08:30",
+     "text": "Oct PCE: headline 3.8% y/y (in line); core 3.3% y/y (+0.1 vs est), 0.3% m/m; income +0.7% (est 0.4%); spending +0.3% (est 0.4%)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 535
+    },
+    {
+     "time": "08:30",
+     "text": "Q3 GDP 2nd estimate revised up to 4.3% (from 3.4%)",
+     "source": "",
+     "impact": "bad",
+     "seen": 535
+    },
+    {
+     "time": "≈08:39",
+     "text": "Dow Jones: Nasdaq futures -2.8% as AI selloff returns; NVDA -5%+, META and AAPL lower; USTR Greer may unveil the 16-economy tariff probe results as soon as this week",
+     "source": "",
+     "impact": "bad",
+     "seen": 535
+    },
+    {
+     "time": "≈09:55",
+     "text": "NVDA extends Tuesday's 5.9% drop and wipes out Monday's reinstatement rally; heavy volume",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "≈09:36",
+     "text": "Asia recap: KOSPI -5-6% with a trading halt, Nikkei -3%, SoftBank -15% on the AI selloff and tariff worries",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "≈08:21",
+     "text": "Memory chips: DRAM/NAND oversupply warnings; BNP downgrades MU",
+     "source": "",
+     "impact": "bad",
+     "seen": 600
+    },
+    {
+     "time": "≈07:14",
+     "text": "Romney questions US AI-chip sales to China amid the NVDA/Huang controversy",
+     "source": "",
+     "impact": "neutral",
+     "seen": 600
+    },
+    {
+     "time": "≈10:46",
+     "text": "Asia recap: AI/chip selloff, SoftBank market value below its OpenAI stake, Nikkei -3%, KOSPI halt",
+     "source": "",
+     "impact": "bad",
+     "seen": 653
+    },
+    {
+     "time": "≈10:24",
+     "text": "\"Markets plunge on hot inflation\": Core PCE 3.3% y/y tops forecasts; S&P under 7,000 intraday; BTC ~$57.5K",
+     "source": "",
+     "impact": "bad",
+     "seen": 653
+    },
+    {
+     "time": "≈10:04",
+     "text": "NVDA cuts gaming GPU supply to board partners by 20-30% through early 2027 (Board Channels report)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 653
+    },
+    {
+     "time": "≈09:10",
+     "text": "Reports say the administration is preparing broad tariffs on China, EU, Japan, South Korea and 14 others (EU up to 20%, China up to 40%)",
+     "source": "",
+     "impact": "bad",
+     "seen": 653
+    },
+    {
+     "time": "08:30",
+     "text": "Oct PCE 0.3% m/m, 3.8% y/y (in line); Core 0.3% m/m, 3.3% y/y (hot); Q3 GDP revised to 4.3%",
+     "source": "",
+     "impact": "bad",
+     "seen": 653
+    },
+    {
+     "time": "≈11:43",
+     "text": "USTR details tariffs: China 20% (to 40%), Vietnam up to 35%, India/Taiwan 25%, EU/Japan ≤15%",
+     "source": "",
+     "impact": "bad",
+     "seen": 715
+    },
+    {
+     "time": "≈11:43",
+     "text": "Report: US intel tells Congress there is no evidence Alice Huang was tasked to start the relationship with the NVDA CEO",
+     "source": "",
+     "impact": "neutral",
+     "seen": 715
+    },
+    {
+     "time": "≈11:28",
+     "text": "Sen. Gallego warns NVDA board it faces \"ruin\" without a deal with Congress",
+     "source": "",
+     "impact": "neutral",
+     "seen": 715
+    },
+    {
+     "time": "≈11:06",
+     "text": "Hassett calls economy \"Goldilocks\" (4% GDP, low unemployment)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 715
+    },
+    {
+     "time": "≈10:58",
+     "text": "Recap: $1.7T erased at open; BTC < $58K, gold < $3,440",
+     "source": "",
+     "impact": "bad",
+     "seen": 715
+    },
+    {
+     "time": "≈12:55",
+     "text": "MU slides on BNP downgrade (PT $1,700 to $775) and a weaker TrendForce 2027 memory outlook",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "≈12:43",
+     "text": "Reports: NVDA cutting gaming GPU supply 20-30% through Jan 2027",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "≈12:31",
+     "text": "CoreWeave 2031 notes fall to ~74c (17.9% yield)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "≈12:31",
+     "text": "Intel briefing: no evidence China directed the Huang relationship",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "≈11:53",
+     "text": "Q3 GDP revised to 4.3%; core PCE 3.3% (earlier release, being recapped)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "11:55 to 12:57",
+     "text": "QQQ +14.7 (611.1 to 625.9), VIX -3.6 with no headline catalyst",
+     "source": "",
+     "impact": "neutral",
+     "seen": 777
+    },
+    {
+     "time": "≈13:48",
+     "text": "Recaps of the morning rout (14-partner tariff proposals plus hot October PCE); NDX briefly in a bear market from its Oct highs",
+     "source": "",
+     "impact": "neutral",
+     "seen": 831
+    },
+    {
+     "time": "≈13:38",
+     "text": "More on the MU oversupply downgrade (BNP PT $775)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 831
+    },
+    {
+     "time": "≈13:22",
+     "text": "WaPo: NVDA B300 servers sold on China's gray market at ~5x US price",
+     "source": "",
+     "impact": "bad",
+     "seen": 831
+    },
+    {
+     "time": "12:57 to 13:50",
+     "text": "QQQ +6 more, VIX -1.6, no new macro headline",
+     "source": "",
+     "impact": "neutral",
+     "seen": 831
+    },
+    {
+     "time": "≈14:40",
+     "text": "Reports: NVDA board unanimously reinstates Jensen Huang as CEO after the intel clearance; Trump says no security risk",
+     "source": "",
+     "impact": "good",
+     "seen": 900
+    },
+    {
+     "time": "≈14:12",
+     "text": "S&P puts NVDA AA ratings on CreditWatch Negative (governance, succession, key-man risk)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 900
+    },
+    {
+     "time": "≈14:13",
+     "text": "MU down 10%+ on NAND price warnings (TrendForce)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 900
+    },
+    {
+     "time": "≈14:00",
+     "text": "Beige Book released; no market-moving headlines found",
+     "source": "",
+     "impact": "neutral",
+     "seen": 900
+    },
+    {
+     "time": "≈14:39",
+     "text": "AI data-center credit stress (bank loan sales, CoreWeave bonds ~74c)",
+     "source": "",
+     "impact": "neutral",
+     "seen": 900
+    }
+   ]
+  }
+ }
 }
