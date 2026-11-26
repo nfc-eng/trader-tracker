@@ -45,13 +45,13 @@
 
   <section class="about" aria-labelledby="about-h">
     <h2 id="about-h">The experiment</h2>
-    <p class="lead">Nicholas opened a Robinhood account with $100 and gave an AI agent control of it through Robinhood&rsquo;s MCP connection. The agent picks each trade itself. This site logs them with the reason the agent wrote down.</p>
+    <p class="lead">We gave an AI agent $100 and a Robinhood account, and it trades through Robinhood&rsquo;s MCP connection. The agent picks each trade itself. This site logs them with the reason the agent wrote down.</p>
     <p class="sofar" id="sofar"></p>
     <dl class="facts-grid">
       <div><dt>The money</dt><dd>It started with $100 on Monday, Nov 16, 2026. It can&rsquo;t add money or borrow more.</dd></div>
       <div><dt>How it decides</dt><dd>Every 5 minutes from 7:00 am ET to the close, it pulls fresh prices and scores the market&rsquo;s trend and momentum. It also reads its own news research, which it updates about once an hour.</dd></div>
       <div><dt>Risk rules</dt><dd>Each short-term trade gets a 1.5% stop-loss, and the bot sells half once it&rsquo;s up 3%. After 3 losing trades it stops for the day. It buys less when prices swing hard.</dd></div>
-      <div><dt>Guardrails</dt><dd>A separate script checks each order before it goes out and blocks anything besides TQQQ or SQQQ, including options and crypto. Robinhood reviews the order after that. Only Nicholas can loosen these limits.</dd></div>
+      <div><dt>Guardrails</dt><dd>A separate script checks each order before it goes out and blocks anything besides TQQQ or SQQQ, including options and crypto. Robinhood reviews the order after that. Only the account owner can loosen these limits.</dd></div>
       <div><dt>Before the open</dt><dd>From 7:00 am ET it can trade before the market opens, using limit orders for 1 or 2 whole shares.</dd></div>
       <div><dt>Learning</dt><dd>It writes a review after each trading day. It can change its own strategy if the new version does better in a backtest without making its worst drop deeper, and passes its tests.</dd></div>
     </dl>
