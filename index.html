@@ -3,10 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Trader Bot: a $100 account, every trade explained</title>
-<meta name="description" content="An AI agent trades TQQQ and SQQQ with a $100 account. Follow the account value, the P&L, and the reasoning behind every trade.">
+<title>Teeter: an AI bot trading $100, every trade explained</title>
+<meta name="description" content="An AI bot trades a real $100 account on the Nasdaq, going up or down with TQQQ and SQQQ. See every trade, what it made or lost, and the reason behind it in plain English.">
+<link rel="canonical" href="https://trader-tracker-murex.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Teeter">
+<meta property="og:title" content="Teeter: an AI bot trading $100, every trade explained">
+<meta property="og:description" content="A small, real-money experiment: an AI bot bets on the Nasdaq going up or down. Every trade and its reason, in plain English.">
+<meta property="og:url" content="https://trader-tracker-murex.vercel.app/">
+<meta property="og:image" content="https://trader-tracker-murex.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Teeter wordmark: a seesaw mark and the line 'An AI bot trading a real $100. Every trade, explained.'">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Teeter: an AI bot trading $100, every trade explained">
+<meta name="twitter:description" content="A small, real-money experiment. Every trade and its reason, in plain English.">
+<meta name="twitter:image" content="https://trader-tracker-murex.vercel.app/og.png">
 <meta name="theme-color" content="#f4f5f2">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316211d'/%3E%3Cpath d='M5 21l7-7 5 4 10-10' fill='none' stroke='%23f4f5f2' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
@@ -15,20 +30,44 @@
 <body>
 <main>
   <header class="masthead">
-    <div class="title">
-      <h1>Trader Bot</h1>
-      <p>An AI agent trades TQQQ and SQQQ with a $100 account. Every trade is shown with the bot&rsquo;s own reasoning.</p>
+    <div class="brand">
+      <p class="lockup"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 19.5 27 11.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M16 17.2 21.6 26.5H10.4Z" fill="currentColor"/></svg><span class="word">Teeter</span></p>
+      <h1>An AI bot trading a real $100 on the Nasdaq. Every trade, explained.</h1>
     </div>
-    <div class="account">
-      <p class="muted">Account value</p>
+    <div class="account" aria-live="polite">
+      <p class="kicker">The $100 is now worth</p>
       <p class="value" id="value">&nbsp;</p>
-      <p class="pnl" id="pnl"></p>
+      <p class="verdict" id="verdict"></p>
+      <p class="today" id="today"></p>
       <p class="asof muted" id="asof"></p>
     </div>
   </header>
 
+  <section class="about" aria-labelledby="about-h">
+    <h2 id="about-h">The experiment</h2>
+    <p class="lead">Nicholas put $100 into its own Robinhood account and handed the trading to an AI agent. It trades on its own through Robinhood&rsquo;s MCP connection. Teeter shows every move it makes and the reason it gave.</p>
+    <p class="sofar" id="sofar"></p>
+    <dl class="facts-grid">
+      <div><dt>The money</dt><dd>$100, and that&rsquo;s all it gets. It can&rsquo;t add money, borrow or use margin. Live since Monday, Nov 16, 2026.</dd></div>
+      <div><dt>How it decides</dt><dd>Every 5 minutes from 7:00 am ET to the close, it pulls fresh prices and scores the market&rsquo;s trend, momentum and volatility, plus its own news research, refreshed about hourly.</dd></div>
+      <div><dt>Risk rules</dt><dd>Every short-term trade has a 1.5% stop-loss and sells half at +3%. It quits for the day after 3 losing trades, and trades smaller when markets are wild.</dd></div>
+      <div><dt>Guardrails</dt><dd>A separate script checks every order first: only TQQQ or SQQQ, no options, no crypto, no borrowing. Robinhood&rsquo;s own order review comes next. Only Nicholas can loosen the limits.</dd></div>
+      <div><dt>Before the open</dt><dd>From 7:00 am ET it can trade early, but only small limit orders of 1 or 2 whole shares.</dd></div>
+      <div><dt>Learning</dt><dd>After every day it writes a review of what worked. It may change its own strategy only if the change wins in a backtest, doesn&rsquo;t deepen its worst losses, and passes its tests.</dd></div>
+    </dl>
+  </section>
+
+  <section class="how" aria-labelledby="how-h">
+    <h2 id="how-h">How it works</h2>
+    <div class="how-grid">
+      <p><b>Two funds, two directions.</b> The bot only buys <span class="sym tq">TQQQ</span>, which moves about 3% when the Nasdaq-100 moves 1%, or <span class="sym sq">SQQQ</span>, which moves the opposite way. Buying SQQQ is a bet the market falls.</p>
+      <p><b>Short trades, with exits set in advance.</b> Almost everything here is a <dfn title="Short trades that usually last minutes to hours and are closed the same day.">tactical</dfn> trade, with a <dfn title="An automatic sale if the trade loses a set amount, usually 1.5%.">stop-loss</dfn> and a <dfn title="A sale of part of the position once it gains a set amount, usually 3%.">profit target</dfn> set before it buys. SQQQ is never held overnight.</p>
+      <p><b>A slow rule that hasn&rsquo;t switched on yet.</b> A separate <dfn title="The bot's long-term rule: hold TQQQ only when the Nasdaq is above its 200-day average and calm. Otherwise hold cash. Never SQQQ.">core</dfn> rule would hold TQQQ for weeks when the Nasdaq is above its 200-day average and calm. The market has been falling, so that rule has stayed in cash the whole time.</p>
+    </div>
+  </section>
+
   <section class="replay" aria-labelledby="replay-h">
-    <h2 id="replay-h">Replay</h2>
+    <h2 id="replay-h">Watch it trade</h2>
     <div class="replay-head">
       <div class="seg" role="group" aria-label="Replay range">
         <button class="on" data-mode="day" aria-pressed="true">Day</button>
@@ -69,8 +108,33 @@
   </section>
 
   <section class="summary" aria-labelledby="sum-h">
-    <h2 id="sum-h">Summary</h2>
+    <h2 id="sum-h">The scorecard</h2>
     <dl id="stats"></dl>
+  </section>
+
+  <section class="rts" aria-labelledby="rt-h">
+    <div class="sec-head">
+      <h2 id="rt-h">Best and worst trades</h2>
+      <p class="muted">Each sale is matched with the buys it closed, oldest first. Tap a row to see why the bot got in and out.</p>
+    </div>
+    <div class="rt-tools">
+      <div class="seg" id="rtFilter" role="group" aria-label="Show">
+        <button data-f="all" class="on" aria-pressed="true">All</button>
+        <button data-f="best" aria-pressed="false">Best 5</button>
+        <button data-f="worst" aria-pressed="false">Worst 5</button>
+      </div>
+      <div class="sort" id="rtSort" role="group" aria-label="Sort by">
+        <span class="muted">Sort</span>
+        <button data-k="pnl">Profit <i></i></button>
+        <button data-k="pct">% <i></i></button>
+        <button data-k="date">Date <i></i></button>
+        <button data-k="hold">Time held <i></i></button>
+        <button data-k="sym">Fund <i></i></button>
+      </div>
+    </div>
+    <div class="rt-cols" aria-hidden="true"><span>Trade</span><span>Held</span><span>%</span><span>Profit</span></div>
+    <div id="rtList"></div>
+    <p class="rt-open" id="rtOpen"></p>
   </section>
 
   <section aria-labelledby="pnl-h">
@@ -79,12 +143,13 @@
   </section>
 
   <section aria-labelledby="log-h">
-    <h2 id="log-h">All trades</h2>
+    <h2 id="log-h">Every trade, day by day</h2>
     <div id="days"></div>
   </section>
 
   <footer>
-    <p><strong>Not financial advice.</strong> This is a small experimental account (about $100) run by an automated AI agent for learning. TQQQ and SQQQ are 3&times; leveraged ETFs and can lose value fast. Past results say nothing about the future. Reasons are the bot&rsquo;s own notes, lightly edited. All times are US Eastern.</p>
+    <p><strong>Not financial advice.</strong> Teeter is a small experiment: one automated AI agent trading a real account of about $100 to learn what works. TQQQ and SQQQ are 3&times; leveraged funds and can lose value fast; most people should not trade them. A few good days prove nothing about the future.</p>
+    <p>The plain-English reasons are translated from the bot&rsquo;s own notes; tap &ldquo;Details&rdquo; to read the originals. News shown here is only what the bot itself wrote down in its research notes, as written; nothing is added from outside. All times are US Eastern.</p>
     <p class="muted" id="gen"></p>
   </footer>
 </main>
