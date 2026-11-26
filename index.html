@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Trader Bot — Live Trade Tracker</title>
+<meta name="description" content="Follow along with an experimental TQQQ/SQQQ trading bot: account value, P&L, and every trade with the reasoning behind it.">
+<meta name="theme-color" content="#07090f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div>
+<main>
+  <header class="top">
+    <div class="brand">
+      <span class="dot live"></span>
+      <div>
+        <h1>Trader Bot</h1>
+        <p class="sub">An AI agent trading TQQQ / SQQQ with a $100 account. Every trade, and why.</p>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="label">Account value</div>
+      <div class="value" id="value">—</div>
+      <div class="pnl" id="pnl">—</div>
+      <div class="asof" id="asof"></div>
+    </div>
+  </header>
+
+  <section class="card replay">
+    <div class="replay-head">
+      <div class="seg" role="tablist">
+        <button class="on" data-mode="day">Day</button>
+        <button data-mode="week">Week</button>
+      </div>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="readout">
+      <div><span class="rk">Replay</span><span id="rtime" class="rv">—</span></div>
+      <div class="rbig" id="rvalue">—</div>
+      <div id="rdelta" class="rd">—</div>
+    </div>
+    <div class="chart-wrap" id="chartWrap">
+      <canvas id="chart"></canvas>
+      <div class="callout" id="callout"></div>
+    </div>
+    <div class="controls">
+      <button class="play" id="play" aria-label="Play replay"><svg viewBox="0 0 24 24" id="playIcon"><path d="M8 5v14l11-7z"/></svg></button>
+      <input type="range" id="scrub" min="0" max="1000" value="1000" aria-label="Replay position">
+      <button class="speed" id="speed">1×</button>
+    </div>
+    <div class="legend">
+      <span><i class="tri up tq"></i>Buy TQQQ</span><span><i class="tri dn tq"></i>Sell TQQQ</span>
+      <span><i class="tri up sq"></i>Buy SQQQ</span><span><i class="tri dn sq"></i>Sell SQQQ</span>
+      <span class="hint">Tap a marker for the bot's reasoning</span>
+    </div>
+  </section>
+
+  <section class="stats" id="stats"></section>
+
+  <section class="card">
+    <h2>Daily P&amp;L</h2>
+    <div class="bars" id="bars"></div>
+  </section>
+
+  <section class="card">
+    <h2>Trades by day</h2>
+    <div id="days"></div>
+  </section>
+
+  <footer>
+    <p><b>Not financial advice.</b> This is a small, experimental account (about $100) run by an automated AI agent for fun and learning. TQQQ and SQQQ are 3× leveraged ETFs and are extremely risky. Past results say nothing about the future. Trade reasons are the bot's own notes, lightly edited. Times are US Eastern.</p>
+    <p class="muted" id="gen"></p>
+  </footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
