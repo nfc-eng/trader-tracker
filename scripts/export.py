@@ -110,18 +110,20 @@ def plain(t, raw):
         else:
             verb = "Added to" if re.search(r"\b(re-)?add\b", r) else "Bought"
             score = _num(r"score\s*([+-]?\d*\.\d+)", r)
-            strength = "" if score is None else ("strongly " if abs(score) >= 0.6 else "mildly " if abs(score) < 0.4 else "")
+            strength = "" if score is None else (", and the reading was strong" if abs(score) >= 0.6 else ", but the reading was weak" if abs(score) < 0.4 else "")
             dirw = "up" if sym == "TQQQ" else "down"
             ev = []
-            if "pce" in r or "gdp" in r: ev.append("it was reacting to the morning's inflation and GDP reports")
+            if "pce" in r or "gdp" in r: ev.append("it was trading on the morning's inflation and GDP reports")
             if "new low" in r: ev.append("the Nasdaq had just hit a new low for the day")
             elif "breaking lower" in r: ev.append("the Nasdaq was breaking lower")
             elif re.search(r"new (day|session) high", r): ev.append("the Nasdaq had just hit a new high for the day")
             if "failed-bounce" in r: ev.append("a bounce had just stalled where the bot's research expected it to")
-            if "bear trend" in r and not ev: ev.append("the trend was down")
+            if "bear trend" in r and not ev: ev.append("the Nasdaq was trending lower")
             if ("trend15m" in r or "bull" in r) and sym == "TQQQ" and not ev: ev.append("the short-term trend was up")
-            lead = f"{verb} {sym}, a bet that the Nasdaq would {bet}. The bot's signals {strength}pointed {dirw}"
-            out.append(lead + (": " + "; ".join(ev) + "." if ev else "."))
+            lead = f"{verb} {sym}, a bet that the Nasdaq would {bet}. Its signals pointed {dirw}{strength}."
+            out.append(lead)
+            if ev:
+                e = "; ".join(ev); out.append(e[0].upper() + e[1:] + ".")
             agree = ("bearish" if sym == "SQQQ" else "bullish")
             other = "bullish" if agree == "bearish" else "bearish"
             mult = _num(r"x(\d\.\d+)", r)
@@ -152,7 +154,7 @@ def plain(t, raw):
         if stop and loss and loss - stop > 0.05: s += f", past its {_pct(stop)} stop-loss"
         else: s += ", hitting its stop-loss"
         out.append(s + ".")
-        if sym == "SQQQ" and "bounc" in r: out.append("The Nasdaq had bounced back up.")
+        if sym == "SQQQ" and "bounc" in r: out.append("The Nasdaq had bounced.")
         if sym == "TQQQ" and ("fell" in r or "faded" in r): out.append("The Nasdaq had turned lower.")
         if "fed speech" in r: out.append("A Fed speech was also coming up.")
     elif "take profit" in r or "take-profit" in r or ("trim" in r and gain):
@@ -161,14 +163,12 @@ def plain(t, raw):
         if gain: s += f" of about {_pct(gain)}"
         if "take" in r: s += ", past its 3% profit target"
         elif "conviction fades" in r: s += ", as the signal got weaker"
-        else: s += ", taking profits in steps"
+        else: s += ". The bot sells in steps as a trade gains"
         out.append(s + ". It kept the rest in case the move continued.")
     elif re.search(r"score (faded|flipped)|-> exit|target cash|discretionary", r):
-        s = f"Sold {sym} because the bot's signals "
-        s += "flipped" if "flipped" in r else "faded"
-        if "bounc" in r and sym == "SQQQ": s += " as the Nasdaq bounced back up"
-        elif sym == "TQQQ": s += " as the Nasdaq lost momentum"
-        out.append(s + ", so the reason for the trade was gone.")
+        move = "bounced" if ("bounc" in r and sym == "SQQQ") else "lost momentum" if sym == "TQQQ" else "turned"
+        sig = "flipped" if "flipped" in r else "faded"
+        out.append(f"Sold {sym} when the Nasdaq {move} and the bot's signals {sig}. Its reason for the trade was gone.")
         if "nvda" in r: out.append("It also wanted to be out before Nvidia's earnings report.")
     elif re.search(r"\beod\b|flatten|never overnight|15:50", r):
         s = "Sold everything before the close: the bot doesn't hold its short-term trades overnight"
@@ -177,7 +177,7 @@ def plain(t, raw):
     else:
         out.append(f"Sold {sym}.")
     if "news scan" in r and "no new shock" in r:
-        out.append("A quick news check found nothing that changed the plan.")
+        out.append("It checked the news and saw nothing that changed the plan.")
     return " ".join(out)
 
 

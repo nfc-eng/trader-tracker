@@ -1,13 +1,13 @@
 # Teeter
 
-**An AI bot trading a real $100 on the Nasdaq. Every trade, explained.**
+**An AI bot trades $100 of real money on the Nasdaq and writes down why it makes each trade.**
 
 Live: https://trader-tracker-murex.vercel.app
 
 Teeter is a public log of a small, real-money experiment. An automated AI agent trades a
 ~$100 brokerage account using only two funds: TQQQ (moves about 3x the Nasdaq-100's daily
 move) and SQQQ (about 3x the opposite). The name comes from the seesaw: the bot tips one way
-or the other, and you can watch it happen.
+or the other, and the site shows each move.
 
 What the site shows:
 - the account's current value and how today went
