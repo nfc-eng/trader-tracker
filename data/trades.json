@@ -12,7 +12,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "BUY SQQQ $14.84 market filled 0.327325 @45.3371, tactical score -0.52 bear trend+intraday; stop 1.5%/tp 3%; flat by 15:50 ET",
-   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the trend was down. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down. The Nasdaq was trending lower. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
    "n": 1,
    "news": []
   },
@@ -49,7 +49,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "BUY SQQQ $17.99 market filled 0.398125 @45.1868, tactical score -0.631 (QQQ breaking lower, 665.7), SQQQ eligible; stop 1.5%/tp 3%; flat by 15:50 ET",
-   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq was breaking lower. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. The Nasdaq was breaking lower. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
    "n": 3,
    "news": []
   },
@@ -86,7 +86,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "BUY SQQQ $19.24 market (tactical), order filled 0.418087 @ 46.0191. Reason: score -0.36 (bear trend + bear intraday), size reduced x0.79 by bullish low-conf research. Stop 1.5% / TP 3.0%. Must be flat by 15:50 (NVDA tonight)",
-   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals mildly pointed down: the trend was down. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, but the reading was weak. The Nasdaq was trending lower. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
    "n": 5,
    "news": [
     {
@@ -121,7 +121,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "ADD SQQQ $5.80 market (tactical), order filled 0.125324 @ 46.28. Score -0.469 (QQQ 660.2 new low); engine target $25.13. SQQQ now ~0.543411 sh",
-   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the Nasdaq had just hit a new low for the day.",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down. The Nasdaq had just hit a new low for the day.",
    "n": 6,
    "news": [
     {
@@ -156,7 +156,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 46.4643; market $23.45 order filled 0.503467 @ 46.577. Score -0.643, conviction 0.367 (QQQ 659.47 new low, below prior close 661.75); research flipped bearish conf 0.40 (x1.10 SQQQ). Engine target $95.10. Limit raised 46.37->46.47 after ask…",
-   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. The Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
    "n": 7,
    "news": [
     {
@@ -191,7 +191,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 46.4643; market $23.45 order filled 0.503467 @ 46.577. Score -0.643, conviction 0.367 (QQQ 659.47 new low, below prior close 661.75); research flipped bearish conf 0.40 (x1.10 SQQQ). Engine target $95.10. Limit raised 46.37->46.47 after ask…",
-   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. The Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
    "n": 8,
    "news": [
     {
@@ -346,7 +346,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TRIM SQQQ (tactical) market sell 0.255850 sh order filled @ 48.9050. pnl +5.5%, engine laddered TP target $12.52. QQQ 647.4300. Remaining SQQQ 0.255768",
-   "why": "Sold some of its SQQQ to lock in a gain of about 5.5%, taking profits in steps. It kept the rest in case the move continued.",
+   "why": "Sold some of its SQQQ to lock in a gain of about 5.5%. The bot sells in steps as a trade gains. It kept the rest in case the move continued.",
    "n": 12,
    "result": {
     "pnl": 0.6,
@@ -386,7 +386,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TRIM SQQQ (tactical) market sell 0.127884 sh order filled @ 48.2309. pnl +4.2% on QQQ bounce to 650.1800; engine laddered TP target $6.18. Remaining SQQQ 0.127884",
-   "why": "Sold some of its SQQQ to lock in a gain of about 4.2%, taking profits in steps. It kept the rest in case the move continued.",
+   "why": "Sold some of its SQQQ to lock in a gain of about 4.2%. The bot sells in steps as a trade gains. It kept the rest in case the move continued.",
    "n": 13,
    "result": {
     "pnl": 0.21,
@@ -426,7 +426,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 47.3589; market $43.81 order filled 0.926041 @ 47.3089. Score -0.608, conv 0.348; QQQ 653.99 in research's 652.5-655 failed-bounce entry zone, research bearish 0.55. 13%). SQQQ now 2.053925 sh avg 47.29. Stop 1.5%/TP 3%; flat by 15:50 (NVDA…",
-   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: a bounce had just stalled where the bot's research expected it to. The bot's news research agreed. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. A bounce had just stalled where the bot's research expected it to. The bot's news research agreed. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
    "n": 14,
    "news": [
     {
@@ -461,7 +461,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "ADD SQQQ (tactical) 2 legs: limit 1 sh order filled @ 47.3589; market $43.81 order filled 0.926041 @ 47.3089. Score -0.608, conv 0.348; QQQ 653.99 in research's 652.5-655 failed-bounce entry zone, research bearish 0.55. 13%). SQQQ now 2.053925 sh avg 47.29. Stop 1.5%/TP 3%; flat by 15:50 (NVDA…",
-   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: a bounce had just stalled where the bot's research expected it to. The bot's news research agreed. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. A bounce had just stalled where the bot's research expected it to. The bot's news research agreed. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
    "n": 15,
    "news": [
     {
@@ -496,7 +496,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "CORE run: rule D OFF (BEAR trend, rv20 36%) -> core Discretionary tactical exit: SOLD SQQQ 2 @ 47.373 (limit) + 0.053925 @ 47.365 (mkt), proceeds ~97.30 vs cost 97.10 (+0.20). Reason: score faded -0.61 -> -0.38, QQQ bouncing to 654.45, research says flat before NVDA print; SQQQ must be flat by…",
-   "why": "Sold SQQQ because the bot's signals faded as the Nasdaq bounced back up, so the reason for the trade was gone. It also wanted to be out before Nvidia's earnings report.",
+   "why": "Sold SQQQ when the Nasdaq bounced and the bot's signals faded. Its reason for the trade was gone. It also wanted to be out before Nvidia's earnings report.",
    "n": 16,
    "result": {
     "pnl": 0.17,
@@ -536,7 +536,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "CORE run: rule D OFF (BEAR trend, rv20 36%) -> core Discretionary tactical exit: SOLD SQQQ 2 @ 47.373 (limit) + 0.053925 @ 47.365 (mkt), proceeds ~97.30 vs cost 97.10 (+0.20). Reason: score faded -0.61 -> -0.38, QQQ bouncing to 654.45, research says flat before NVDA print; SQQQ must be flat by…",
-   "why": "Sold SQQQ because the bot's signals faded as the Nasdaq bounced back up, so the reason for the trade was gone. It also wanted to be out before Nvidia's earnings report.",
+   "why": "Sold SQQQ when the Nasdaq bounced and the bot's signals faded. Its reason for the trade was gone. It also wanted to be out before Nvidia's earnings report.",
    "n": 17,
    "result": {
     "pnl": 0.17,
@@ -651,7 +651,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TRADE tactical BUY TQQQ 0.38 market filled 0.365363 sh @ 55.78. Score +0.354 (intraday_mom +0.94, trend15m +1, vwap +0.51; rsi2 -1, gap_fade -1). Stop 1.5%, TP 3%. Rule D OFF. QQQ 674.21 new session high",
-   "why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up: the Nasdaq had just hit a new high for the day. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up, but the reading was weak. The Nasdaq had just hit a new high for the day. It planned to sell if the trade lost 1.5% or gained 3%.",
    "n": 20,
    "news": [
     {
@@ -761,7 +761,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "Engine exit (target CASH, score -0.61, pnl -0.73%): SELL TQQQ 0.12161 market, order filled @ 40.8424",
-   "why": "Sold TQQQ because the bot's signals faded as the Nasdaq lost momentum, so the reason for the trade was gone.",
+   "why": "Sold TQQQ when the Nasdaq lost momentum and the bot's signals faded. Its reason for the trade was gone.",
    "n": 23,
    "result": {
     "pnl": -0.03,
@@ -801,7 +801,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL ENTRY. Engine TQQQ, score +0.421 (QQQ 656.65 new day high, holding above 645; research bullish 0.60). BUY TQQQ $15.93 market, order filled 0.316647 @ 50.3083. Stop 1.68%, target 3.35%. Rule D OFF",
-   "why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the Nasdaq had just hit a new high for the day. The bot's news research agreed. It planned to sell if the trade lost 1.7% or gained 3.4%.",
+   "why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up. The Nasdaq had just hit a new high for the day. The bot's news research agreed. It planned to sell if the trade lost 1.7% or gained 3.4%.",
    "n": 24,
    "news": [
     {
@@ -876,7 +876,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "QQQ 637.86, TQQQ, SQQQ. Rule D OFF (BEAR, rv20 47.9%). Tactical score +0.40 (trend15m up, tnx20d/net-liq mild +; research bearish 0.57 -> TQQQ size x0.66), conviction 0.23. BUY TQQQ $13.34 market filled 0.289905 @ 46.015. Stop 1.5% (~45.33), TP 3% (~47.40). Event window 09:55-10:15 (Conf Board…",
-   "why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up. The short-term trend was up. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%.",
    "n": 26,
    "news": [
     {
@@ -911,7 +911,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TQQQ 0.289905 held (entry 46.015), TQQQ, QQQ 636.63. Engine tactical score -0.10 -> EXIT. SELL TQQQ 0.289905 market filled @ 45.965. Round trip P&L -0.01 (loss 1 of 3). Flat, Rule D OFF",
-   "why": "Sold TQQQ because the bot's signals faded as the Nasdaq lost momentum, so the reason for the trade was gone.",
+   "why": "Sold TQQQ when the Nasdaq lost momentum and the bot's signals faded. Its reason for the trade was gone.",
    "n": 27,
    "result": {
     "pnl": -0.01,
@@ -951,7 +951,7 @@
    "session": "pre-market",
    "sleeve": "tactical",
    "details": "(premarket, PCE/GDP reaction): Engine score -0.80 (bear trend + bear intraday, high-fear 0.5x) -> BUY 1 SQQQ limit 53.33 extended_hours gfd, order. State: filled avg 53.3100. Stop 1.5% / TP 3% per engine. Rule D OFF",
-   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: it was reacting to the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. It was trading on the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
    "n": 28,
    "news": [
     {
@@ -1026,7 +1026,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL exit SQQQ (score flipped to +0.31 as QQQ bounced to 618). SELL 0.500091 SQQQ market regular_hours gfd, filled avg 53.215 (~$26.61). Now flat, Tactical today: 1 round trip, pnl +0.88 (losses counter 1). Rule D OFF. QQQ 618.0400, TQQQ 41.8250, SQQQ 53.2310",
-   "why": "Sold SQQQ because the bot's signals flipped as the Nasdaq bounced back up, so the reason for the trade was gone.",
+   "why": "Sold SQQQ when the Nasdaq bounced and the bot's signals flipped. Its reason for the trade was gone.",
    "n": 30,
    "result": {
     "pnl": -0.05,
@@ -1066,7 +1066,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL entry SQQQ (score -0.42, bear trend + bear intraday, high-fear 0.5x). BUY $29.57 SQQQ market regular_hours gfd, filled 0.543516 @ 54.405. Stop 1.5% / TP 3%. QQQ 612.85. Rule D OFF",
-   "why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the trend was down. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down. The Nasdaq was trending lower. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
    "n": 31,
    "news": [
     {
@@ -1101,7 +1101,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL add SQQQ (new research brief bias -1 conf 0.52 -> SQQQ size x1.13; score -0.42). BUY $3.64 SQQQ market regular_hours gfd, filled 0.066447 @ 54.78. Now SQQQ 0.609963 (avg ~54.45). QQQ 610.75. Rule D OFF",
-   "why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down. The bot's news research agreed, so it bought a little more.",
+   "why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down. The bot's news research agreed, so it bought a little more.",
    "n": 32,
    "news": [
     {
@@ -1136,7 +1136,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "STOP hit SQQQ -2.63% (stop 1.5%). SOLD SQQQ 0.609963 market filled @52.7253 = $32.16 (cost $33.21, -$1.05). Now flat, Rule D OFF. QQQ 619.14 bouncing (orb30 + vwap up). Tactical losses today 2",
-   "why": "Sold SQQQ because it fell 2.6% from its buy price, past its 1.5% stop-loss. The Nasdaq had bounced back up.",
+   "why": "Sold SQQQ because it fell 2.6% from its buy price, past its 1.5% stop-loss. The Nasdaq had bounced.",
    "n": 33,
    "result": {
     "pnl": -1.05,
@@ -1176,7 +1176,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL entry TQQQ (score +0.36, size x0.77, research x0.67). BOUGHT TQQQ $26.32 market filled 0.6254 @42.085. Stop 1.5%/TP 3%. Rule D OFF. QQQ 619.16",
-   "why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up, but the reading was weak. It planned to sell if the trade lost 1.5% or gained 3%.",
    "n": 34,
    "news": [
     {
@@ -1211,7 +1211,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL add TQQQ (score +0.42, target $30.42). BOUGHT TQQQ $3.88 market filled 0.091381 @42.4592. Rule D OFF. QQQ 620.8500",
-   "why": "Added to TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up.",
+   "why": "Added to TQQQ, a bet that the Nasdaq would rise. Its signals pointed up.",
    "n": 35,
    "news": [
     {
@@ -1246,7 +1246,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL take-profit trim TQQQ +3.26%. SOLD TQQQ 0.35835 market filled 0.358350 @43.4550. Rule D OFF. QQQ 625.8650. News scan: Micron downgrades, FinCEN cyber incident, semis selloff; no new shock",
-   "why": "Sold some of its TQQQ to lock in a gain of about 3.3%, past its 3% profit target. It kept the rest in case the move continued. A quick news check found nothing that changed the plan.",
+   "why": "Sold some of its TQQQ to lock in a gain of about 3.3%, past its 3% profit target. It kept the rest in case the move continued. It checked the news and saw nothing that changed the plan.",
    "n": 36,
    "result": {
     "pnl": 0.49,
@@ -1286,7 +1286,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL re-add TQQQ (score +0.42, target $51.42, research bullish 0.50 x1.12). BOUGHT TQQQ $35.88 market filled 0.829307 @43.265. Now TQQQ 1.187738. Rule D OFF. QQQ 625.2. Note rsi2_15m 87 (stretched)",
-   "why": "Added to TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. The bot's news research agreed, so it bought a little more.",
+   "why": "Added to TQQQ, a bet that the Nasdaq would rise. Its signals pointed up. The short-term trend was up. The bot's news research agreed, so it bought a little more.",
    "n": 37,
    "news": [
     {
@@ -1321,7 +1321,7 @@
    "session": "regular",
    "sleeve": "tactical",
    "details": "TACTICAL take-profit trim TQQQ +3.24%. SOLD TQQQ 0.593930 market filled @44.1908 = $26.25. Remaining TQQQ 0.593808. Rule D OFF. QQQ 629.47. News scan (X news): tariffs/inflation, Fed AI-risk report, semis selloff; no new shock",
-   "why": "Sold some of its TQQQ to lock in a gain of about 3.2%, past its 3% profit target. It kept the rest in case the move continued. A quick news check found nothing that changed the plan.",
+   "why": "Sold some of its TQQQ to lock in a gain of about 3.2%, past its 3% profit target. It kept the rest in case the move continued. It checked the news and saw nothing that changed the plan.",
    "n": 38,
    "result": {
     "pnl": 0.94,
@@ -1449,7 +1449,7 @@
    "pnl_pct": -1.98,
    "hold_min": 86,
    "date": "2026-11-16",
-   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the trend was down. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down. The Nasdaq was trending lower. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
    "exit_why": "Sold SQQQ because it fell 1.9% from its buy price, hitting its stop-loss. A Fed speech was also coming up."
   },
   {
@@ -1470,7 +1470,7 @@
    "pnl_pct": 1.36,
    "hold_min": 210,
    "date": "2026-11-16",
-   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq was breaking lower. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. The Nasdaq was breaking lower. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close.",
    "exit_why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight."
   },
   {
@@ -1494,7 +1494,7 @@
    "pnl_pct": 3.68,
    "hold_min": 63,
    "date": "2026-11-17",
-   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals mildly pointed down: the trend was down. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, but the reading was weak. The Nasdaq was trending lower. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%, and to be out before the close (Nvidia reported earnings that night).",
    "exit_why": "Sold half of its SQQQ to lock in a gain of about 3.4%, past its 3% profit target. It kept the rest in case the move continued."
   },
   {
@@ -1515,7 +1515,7 @@
    "pnl_pct": 4.59,
    "hold_min": 38,
    "date": "2026-11-17",
-   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. The Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
    "exit_why": "Sold some of its SQQQ to lock in a gain of about 4.5%, as the signal got weaker. It kept the rest in case the move continued."
   },
   {
@@ -1537,8 +1537,8 @@
    "pnl_pct": 5.01,
    "hold_min": 43,
    "date": "2026-11-17",
-   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
-   "exit_why": "Sold some of its SQQQ to lock in a gain of about 5.5%, taking profits in steps. It kept the rest in case the move continued."
+   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. The Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold some of its SQQQ to lock in a gain of about 5.5%. The bot sells in steps as a trade gains. It kept the rest in case the move continued."
   },
   {
    "symbol": "SQQQ",
@@ -1558,8 +1558,8 @@
    "pnl_pct": 3.55,
    "hold_min": 47,
    "date": "2026-11-17",
-   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
-   "exit_why": "Sold some of its SQQQ to lock in a gain of about 4.2%, taking profits in steps. It kept the rest in case the move continued."
+   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. The Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold some of its SQQQ to lock in a gain of about 4.2%. The bot sells in steps as a trade gains. It kept the rest in case the move continued."
   },
   {
    "symbol": "SQQQ",
@@ -1582,8 +1582,8 @@
    "pnl_pct": 0.18,
    "hold_min": 325,
    "date": "2026-11-17",
-   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: the Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
-   "exit_why": "Sold SQQQ because the bot's signals faded as the Nasdaq bounced back up, so the reason for the trade was gone. It also wanted to be out before Nvidia's earnings report."
+   "entry_why": "Added to SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. The Nasdaq had just hit a new low for the day. The bot's news research agreed, so it bought a little more.",
+   "exit_why": "Sold SQQQ when the Nasdaq bounced and the bot's signals faded. Its reason for the trade was gone. It also wanted to be out before Nvidia's earnings report."
   },
   {
    "symbol": "TQQQ",
@@ -1624,7 +1624,7 @@
    "pnl_pct": -3.04,
    "hold_min": 34,
    "date": "2026-11-19",
-   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up: the Nasdaq had just hit a new high for the day. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up, but the reading was weak. The Nasdaq had just hit a new high for the day. It planned to sell if the trade lost 1.5% or gained 3%.",
    "exit_why": "Sold TQQQ because it fell 3% from its buy price, past its 1.5% stop-loss. The Nasdaq had turned lower."
   },
   {
@@ -1646,7 +1646,7 @@
    "hold_min": 4,
    "date": "2026-11-20",
    "entry_why": "Made a small $5 trade because the bot's rules call for at least one trade a day, and its signals weren't strong enough for a normal one.",
-   "exit_why": "Sold TQQQ because the bot's signals faded as the Nasdaq lost momentum, so the reason for the trade was gone."
+   "exit_why": "Sold TQQQ when the Nasdaq lost momentum and the bot's signals faded. Its reason for the trade was gone."
   },
   {
    "symbol": "TQQQ",
@@ -1666,7 +1666,7 @@
    "pnl_pct": -1.94,
    "hold_min": 10,
    "date": "2026-11-23",
-   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the Nasdaq had just hit a new high for the day. The bot's news research agreed. It planned to sell if the trade lost 1.7% or gained 3.4%.",
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up. The Nasdaq had just hit a new high for the day. The bot's news research agreed. It planned to sell if the trade lost 1.7% or gained 3.4%.",
    "exit_why": "Sold TQQQ because it fell 1.8% from its buy price, past its 1.7% stop-loss. The Nasdaq had turned lower."
   },
   {
@@ -1687,8 +1687,8 @@
    "pnl_pct": -0.11,
    "hold_min": 5,
    "date": "2026-11-24",
-   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%.",
-   "exit_why": "Sold TQQQ because the bot's signals faded as the Nasdaq lost momentum, so the reason for the trade was gone."
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up. The short-term trend was up. Its news research leaned the other way, so it bought less than usual. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold TQQQ when the Nasdaq lost momentum and the bot's signals faded. Its reason for the trade was gone."
   },
   {
    "symbol": "SQQQ",
@@ -1708,7 +1708,7 @@
    "pnl_pct": 3.47,
    "hold_min": 59,
    "date": "2026-11-25",
-   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: it was reacting to the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. It was trading on the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
    "exit_why": "Sold some of its SQQQ to lock in a gain of about 3.4%, past its 3% profit target. It kept the rest in case the move continued."
   },
   {
@@ -1729,8 +1729,8 @@
    "pnl_pct": -0.18,
    "hold_min": 75,
    "date": "2026-11-25",
-   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals strongly pointed down: it was reacting to the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
-   "exit_why": "Sold SQQQ because the bot's signals flipped as the Nasdaq bounced back up, so the reason for the trade was gone."
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down, and the reading was strong. It was trading on the morning's inflation and GDP reports. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold SQQQ when the Nasdaq bounced and the bot's signals flipped. Its reason for the trade was gone."
   },
   {
    "symbol": "SQQQ",
@@ -1751,8 +1751,8 @@
    "pnl_pct": -3.16,
    "hold_min": 112,
    "date": "2026-11-25",
-   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. The bot's signals pointed down: the trend was down. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
-   "exit_why": "Sold SQQQ because it fell 2.6% from its buy price, past its 1.5% stop-loss. The Nasdaq had bounced back up."
+   "entry_why": "Bought SQQQ, a bet that the Nasdaq would fall. Its signals pointed down. The Nasdaq was trending lower. Markets were jittery, so it kept the size small. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold SQQQ because it fell 2.6% from its buy price, past its 1.5% stop-loss. The Nasdaq had bounced."
   },
   {
    "symbol": "TQQQ",
@@ -1772,8 +1772,8 @@
    "pnl_pct": 3.26,
    "hold_min": 44,
    "date": "2026-11-25",
-   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up. It planned to sell if the trade lost 1.5% or gained 3%.",
-   "exit_why": "Sold some of its TQQQ to lock in a gain of about 3.3%, past its 3% profit target. It kept the rest in case the move continued. A quick news check found nothing that changed the plan."
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up, but the reading was weak. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold some of its TQQQ to lock in a gain of about 3.3%, past its 3% profit target. It kept the rest in case the move continued. It checked the news and saw nothing that changed the plan."
   },
   {
    "symbol": "TQQQ",
@@ -1795,8 +1795,8 @@
    "pnl_pct": 3.71,
    "hold_min": 86,
    "date": "2026-11-25",
-   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. The bot's signals mildly pointed up. It planned to sell if the trade lost 1.5% or gained 3%.",
-   "exit_why": "Sold some of its TQQQ to lock in a gain of about 3.2%, past its 3% profit target. It kept the rest in case the move continued. A quick news check found nothing that changed the plan."
+   "entry_why": "Bought TQQQ, a bet that the Nasdaq would rise. Its signals pointed up, but the reading was weak. It planned to sell if the trade lost 1.5% or gained 3%.",
+   "exit_why": "Sold some of its TQQQ to lock in a gain of about 3.2%, past its 3% profit target. It kept the rest in case the move continued. It checked the news and saw nothing that changed the plan."
   },
   {
    "symbol": "TQQQ",
@@ -1816,7 +1816,7 @@
    "pnl_pct": 2.79,
    "hold_min": 41,
    "date": "2026-11-25",
-   "entry_why": "Added to TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. The bot's news research agreed, so it bought a little more.",
+   "entry_why": "Added to TQQQ, a bet that the Nasdaq would rise. Its signals pointed up. The short-term trend was up. The bot's news research agreed, so it bought a little more.",
    "exit_why": "Sold some of its TQQQ to lock in a gain of about 3.7%, past its 3% profit target. It kept the rest in case the move continued."
   },
   {
@@ -1837,7 +1837,7 @@
    "pnl_pct": 3.78,
    "hold_min": 164,
    "date": "2026-11-25",
-   "entry_why": "Added to TQQQ, a bet that the Nasdaq would rise. The bot's signals pointed up: the short-term trend was up. The bot's news research agreed, so it bought a little more.",
+   "entry_why": "Added to TQQQ, a bet that the Nasdaq would rise. Its signals pointed up. The short-term trend was up. The bot's news research agreed, so it bought a little more.",
    "exit_why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight, and markets were about to close for Thanksgiving."
   }
  ],

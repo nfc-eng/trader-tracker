@@ -85,7 +85,7 @@ function soFar() {
   $('#sofar').innerHTML = `<b>So far:</b> after ${E.stats.trading_days} trading days the account is <span class="${cls(E.total_pnl)}">${up ? 'up' : 'down'} ${Math.abs(E.total_pnl_pct).toFixed(1)}%</span> from $100. `
     + `On ${day}, it ${d.pnl >= 0 ? 'gained' : 'lost'} ${fmt$(Math.abs(d.pnl))} (${signP1(d.pnl_pct)})`
     + (pos.length ? ` across ${pos.length} complete position${pos.length===1?'':'s'} (${w} winner${w===1?'':'s'}, ${l} loser${l===1?'':'s'}). ` : '. ')
-    + `${open} It&rsquo;s early, and leveraged funds can give gains back fast.`;
+    + `${open} ${E.stats.trading_days} days is a short run, and leveraged funds can lose gains fast.`;
 }
 
 function stats() {
@@ -93,8 +93,8 @@ function stats() {
   const best = R.reduce((a, r) => !a || r.pnl > a.pnl ? r : a, null), worst = R.reduce((a, r) => !a || r.pnl < a.pnl ? r : a, null);
   const rows = [
     ['Total profit', `<span class="${cls(E.total_pnl)}">${sign$(E.total_pnl)}</span> <span class="muted">(${signP(E.total_pnl_pct)})</span>`, 'Account value now minus the $100 it started with.'],
-    ['Trades that made money', `${won} of ${R.length}`, 'Counted per sale: each sell is matched with the buys it closed out.'],
-    ['Days that ended up', `${s.green_days} of ${s.trading_days}`, 'A day counts as up if the account closed higher than it opened.'],
+    ['Winning sales', `${won} of ${R.length}`, 'We count each sale, matched to the buys it closed out.'],
+    ['Up days', `${s.green_days} of ${s.trading_days}`, 'Days when the account closed higher than it opened.'],
     ['Best trade', best ? `<span class="pos">${sign$(best.pnl)}</span> ${symTag(best.symbol)} ${dLabel(best.date)}` : '\u2014', ''],
     ['Worst trade', worst ? `<span class="${cls(worst.pnl)}">${sign$(worst.pnl)}</span> ${symTag(worst.symbol)} ${dLabel(worst.date)}` : '\u2014', ''],
     ['Highest value so far', fmt$(s.max_value), ''],
@@ -151,7 +151,7 @@ function table() {
   }).join('') || '<p class="muted">No finished trades yet.</p>';
   $('#rtOpen').innerHTML = OPEN.length
     ? `<strong>Still holding:</strong> ` + OPEN.map(o => `${o.shares} ${symTag(o.symbol)} bought for ${fmt$(o.cost)} (avg ${fmt$(o.avg_price)})`).join('; ') + '. Not counted above until sold.'
-    : 'No open positions right now: everything has been sold, so every result above is final.';
+    : 'The bot holds nothing right now, so every result above is final.';
 }
 function wireTable() {
   document.querySelectorAll('#rtFilter button').forEach(b => b.onclick = () => { filt = b.dataset.f; table(); });
@@ -176,7 +176,7 @@ function dayList() {
       <span class="num">${fmt$(t.notional)}${t.result ? ` <b class="${cls(t.result.pnl)}">${sign$(t.result.pnl)}</b>` : ''}<em>${+t.shares.toFixed(4)} sh at ${fmt$(t.price)}${t.session === 'pre-market' ? ', pre-market' : ''}</em></span>
       <span class="note">${esc(t.why || t.details || '')}${t.details ? ` <details class="raw inline"><summary>Details</summary>${esc(t.details)}</details>` : ''}</span></div>`).join('')}
     <div class="daynews">
-      ${bot.length ? `<details class="botnews"><summary>News the bot cited in its research (${bot.length})</summary>${newsList(bot)}</details>` : '<p class="muted small">The bot kept no research notes this day.</p>'}
+      ${bot.length ? `<details class="botnews"><summary>News the bot cited in its research (${bot.length})</summary>${newsList(bot)}</details>` : '<p class="muted small">No research notes from the bot this day.</p>'}
     </div></details>`;
   }).join('');
 }
@@ -239,14 +239,14 @@ function renderTrade() {
   $('#tprev').disabled = active <= 0;
   $('#tnext').disabled = !n || active >= n - 1;
   const box = $('#tbody');
-  if (active < 0) { box.innerHTML = `<p class="empty">${n ? 'Press play. The replay pauses at each trade and explains here what the bot did and why. You can also tap a marker on the chart, or use Next.' : 'The bot made no trades in this period.'}</p>`; return; }
+  if (active < 0) { box.innerHTML = `<p class="empty">${n ? 'Press play and the replay stops at each trade to show what the bot did and why. You can also tap a marker or use Next.' : 'The bot made no trades in this period.'}</p>`; return; }
   const t = marks[active].t, buy = t.side === 'buy';
   const res = t.result ? `<div><span>Result</span><b class="${cls(t.result.pnl)}">${sign$(t.result.pnl)} (${signP1(t.result.pnl_pct)})</b></div>` : '';
   box.innerHTML = `<div class="trade-head"><span class="trade-title">${buy ? 'Bought' : 'Sold'} ${symTag(t.symbol)}</span><span class="trade-when">${dLabel(t.date)}, ${hm(mins(t.time))} ET${t.session === 'pre-market' ? ', before the open' : ''}</span></div>
     <p class="why">${esc(t.why || 'No note was recorded for this trade.')}</p>
     <div class="facts"><div><span>Amount</span><b>${fmt$(t.notional)}</b></div><div><span>Price</span><b>${fmt$(t.price)}</b></div><div><span>Shares</span><b>${+t.shares.toFixed(4)}</b></div>${res}</div>
     ${(t.news && t.news.length) || (t.logged && t.logged.news) ? `<details class="raw"><summary>News the bot had read</summary>${tradeNews(t)}</details>` : ''}
-    ${t.details ? `<details class="raw"><summary>Details</summary><p>${esc(t.details)}</p>${signalsList(t)}<p class="muted small">The bot's own note, lightly cleaned up. ${t.order_type} order, ${t.session} session.</p></details>` : ''}`;
+    ${t.details ? `<details class="raw"><summary>Details</summary><p>${esc(t.details)}</p>${signalsList(t)}<p class="muted small">The bot's own note, with private details removed. ${t.order_type} order, ${t.session} session.</p></details>` : ''}`;
 }
 function setActive(i) { if (i === active) return; active = i; renderTrade(); }
 function syncActive(force) {
