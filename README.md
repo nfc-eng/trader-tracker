@@ -1,5 +1,7 @@
 # Trader Bot — Live Trade Tracker
 
+**Live:** https://trader-tracker-murex.vercel.app
+
 Public, static site that follows an experimental AI trading bot running a ~$100 Robinhood account in TQQQ / SQQQ.
 
 - **Replay chart**: press Play to watch the account value move intraday (Day) or across a week (Week). Each fill pops in as a marker (▲ buy / ▼ sell, cyan = TQQQ, purple = SQQQ) with the bot's own reasoning.
