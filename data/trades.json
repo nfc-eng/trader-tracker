@@ -1428,6 +1428,195 @@
      "impact": "neutral"
     }
    ]
+  },
+  {
+   "time": "2026-11-27T07:11:51-05:00",
+   "date": "2026-11-27",
+   "symbol": "TQQQ",
+   "side": "buy",
+   "shares": 1.0,
+   "price": 47.98,
+   "notional": 47.98,
+   "order_type": "limit",
+   "session": "pre-market",
+   "sleeve": "tactical",
+   "details": "BUY TQQQ 1 sh limit 47.98 extended_hours state filled filled 1.0000 @ 47.9800. 90), Score +0.56 (premarket_gap +1.9%, trend15m up; core signals bearish), research bullish 0.45, flag sqqq_high_fear. Rule D OFF. News: NQ +2.5% AI rebound; Goldman warns $100B systematic selling next week; oil ~$97…",
+   "why": "Bought 1 share of TQQQ in premarket because Nasdaq futures are up about 2% on a rebound in AI and chip stocks and the tactical score is +0.56 with a bullish research brief. Small 1-share size because VIX is elevated and the half-day session could fade",
+   "logged": {
+    "reason": "score +0.558; flags sqqq_high_fear; CORE holds $0.00 (changes only at the 3:30 PM ET run; rule D now OFF); RESEARCH brief: bias +1 conf 0.45 (6.3 min old) -> size x1.11 TQQQ / x0.73 SQQQ",
+    "plain": "Bought 1 share of TQQQ in premarket because Nasdaq futures are up about 2% on a rebound in AI and chip stocks and the tactical score is +0.56 with a bullish research brief. Small 1-share size because VIX is elevated and the half-day session could fade",
+    "score": 0.558,
+    "signals": {
+     "research_bias": "bullish",
+     "research_conf": 0.45,
+     "stop_pct": 1.5,
+     "tp_pct": 3.0,
+     "flags": "sqqq_high_fear",
+     "trend15m": 0.005,
+     "rsi2_15m": 85.327,
+     "premarket_gap": 0.019,
+     "premarket_reaction": 0.0,
+     "vol_regime": 1.362,
+     "reversal5d": 0.002,
+     "gao_last_half": 0.0
+    },
+    "news": [
+     {
+      "headline": "Wall St futures surge as investors pile back into battered AI stocks",
+      "source": "Reuters via Investing.com",
+      "url": "",
+      "time": "2026-11-27T04:48:00-05:00"
+     },
+     {
+      "headline": "Dow, S&P 500, Nasdaq 100 futures rise as Wall Street returns to wrap up holiday-shortened week",
+      "source": "Benzinga",
+      "url": "",
+      "time": "2026-11-27T05:43:00-05:00"
+     },
+     {
+      "headline": "Stocks rally as investors snap up Black Friday deals",
+      "source": "Barron's",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-112726",
+      "time": "2026-11-27T05:08:00-05:00"
+     },
+     {
+      "headline": "Oil up as tanker attacks and Saudi refinery strike fuel supply concerns",
+      "source": "Anadolu Agency",
+      "url": "https://www.aa.com.tr/en/energy/oil/oil-up-as-tanker-attacks-and-saudi-refinery-strike-fuel-supply-concerns/61265",
+      "time": "2026-11-27T02:27:00-05:00"
+     },
+     {
+      "headline": "Goldman Sachs boosts server DRAM demand forecasts for 2027-28",
+      "source": "X News",
+      "url": "",
+      "time": "2026-11-27T05:27:00-05:00"
+     },
+     {
+      "headline": "Nvidia halts AI chip server shipments to Southeast Asia amid U.S. export curbs",
+      "source": "X News",
+      "url": "",
+      "time": "2026-11-27T06:26:00-05:00"
+     }
+    ]
+   },
+   "n": 41,
+   "news": [
+    {
+     "time": "06:35",
+     "text": "ET, X News: the Netherlands resists the US push to tighten ASML China sales. Export-rule friction, slightly negative for chips. https:/",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "Still live: Nvidia SE Asia shipment halt under the new license rule (06:26 ET update); banks marketing AI and data-center loans, with CoreWeave CDS implying more than 70% 5-yr default odds (06:52 ET update); Section 301 tariff proposals (Ch",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "Fed: Chair Warsh, no new remarks. Blackout runs Nov 28 to Dec 10; FOMC Dec 8-9",
+     "source": "",
+     "impact": ""
+    }
+   ]
+  },
+  {
+   "time": "2026-11-27T09:34:54-05:00",
+   "date": "2026-11-27",
+   "symbol": "TQQQ",
+   "side": "sell",
+   "shares": 1.0,
+   "price": 46.67,
+   "notional": 46.67,
+   "order_type": "limit",
+   "session": "regular",
+   "sleeve": "tactical",
+   "details": "TACTICAL STOP TQQQ -2.7% (open faded premarket gains; QQQ 640.6). SOLD TQQQ 1 sh limit 46.67 regular filled @46.67 = -1.31 vs 47.98 buy. Now flat Rule D OFF",
+   "why": "Sold the 1 TQQQ share at the open because it hit the engine's 1.5% stop: the premarket rally faded and TQQQ opened about 2.7% below the premarket buy price",
+   "logged": {
+    "reason": "score +0.404; flags sqqq_high_fear; CORE holds $0.00 (changes only at the 3:30 PM ET run; rule D now OFF); RESEARCH brief: bias +1 conf 0.45 (29.7 min old) -> size x1.11 TQQQ / x0.73 SQQQ",
+    "plain": "Sold the 1 TQQQ share at the open because it hit the engine's 1.5% stop: the premarket rally faded and TQQQ opened about 2.7% below the premarket buy price",
+    "score": 0.404,
+    "signals": {
+     "research_bias": "bullish",
+     "research_conf": 0.45,
+     "stop_pct": 1.5,
+     "tp_pct": 3.0,
+     "flags": "sqqq_high_fear",
+     "trend15m": 0.005,
+     "rsi2_15m": 85.327,
+     "premarket_gap": 0.0,
+     "premarket_trend": 0.0,
+     "premarket_reaction": 0.0,
+     "vol_regime": 1.362,
+     "reversal5d": -0.007
+    },
+    "news": [
+     {
+      "headline": "October US advance goods trade balance -149.5B vs -133.0B expected",
+      "source": "Investing Live",
+      "url": "https://investinglive.com/news/october-us-advance-goods-trade-balance-149-5b-vs-133-0b-expected/",
+      "time": "2026-11-27T08:31:00-05:00"
+     },
+     {
+      "headline": "US goods-trade deficit widens for fourth straight month",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/us-goods-trade-deficit-widens-for-fourth-straight-month",
+      "time": "2026-11-27T08:32:00-05:00"
+     },
+     {
+      "headline": "Premarket movers: AI stocks rebound, Vertex slides on FDA review",
+      "source": "Investing.com",
+      "url": "",
+      "time": "2026-11-27T07:07:00-05:00"
+     },
+     {
+      "headline": "Nvidia Blackwell chips turn up at China site tied to Alice Huang",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang",
+      "time": "2026-11-27T06:45:00-05:00"
+     },
+     {
+      "headline": "Iran Navy claims commandos retook two US-seized tankers (unverified)",
+      "source": "X News",
+      "url": "",
+      "time": "2026-11-27T08:41:27-05:00"
+     },
+     {
+      "headline": "Stocks rally as investors snap up Black Friday deals",
+      "source": "Barron's",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-112726",
+      "time": "2026-11-27T07:34:00-05:00"
+     }
+    ]
+   },
+   "n": 42,
+   "result": {
+    "pnl": -1.31,
+    "pnl_pct": -2.73,
+    "rt": 20
+   },
+   "news": [
+    {
+     "time": "08:41",
+     "text": "ET, X News (unverified Fars claim): Iran's Navy says commandos retook two tankers seized by the US and that Hormuz stays closed. No US response yet. Oil tail risk. https:/",
+     "source": "",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "CNBC (updated this hour): Brent $96.48 (-9c), near its monthly high but not extending. Below the $100 trigger. https:/",
+     "source": "CNBC",
+     "impact": ""
+    },
+    {
+     "time": "",
+     "text": "Fed: no confirmed new Warsh remarks; an unsourced GMT Eight flash was ignored. Blackout starts Sat 11/28",
+     "source": "",
+     "impact": ""
+    }
+   ]
   }
  ],
  "round_trips": [
@@ -1839,6 +2028,27 @@
    "date": "2026-11-25",
    "entry_why": "Added to TQQQ, a bet that the Nasdaq would rise. Its signals pointed up. The short-term trend was up. The bot's news research agreed, so it bought a little more.",
    "exit_why": "Sold everything before the close: the bot doesn't hold its short-term trades overnight, and markets were about to close for Thanksgiving."
+  },
+  {
+   "symbol": "TQQQ",
+   "entry_time": "2026-11-27T07:11:51-05:00",
+   "exit_time": "2026-11-27T09:34:54-05:00",
+   "shares": 1.0,
+   "cost": 47.98,
+   "proceeds": 46.67,
+   "entry_n": [
+    41
+   ],
+   "exit_n": [
+    42
+   ],
+   "id": 20,
+   "pnl": -1.31,
+   "pnl_pct": -2.73,
+   "hold_min": 143,
+   "date": "2026-11-27",
+   "entry_why": "Bought 1 share of TQQQ in premarket because Nasdaq futures are up about 2% on a rebound in AI and chip stocks and the tactical score is +0.56 with a bullish research brief. Small 1-share size because VIX is elevated and the half-day session could fade",
+   "exit_why": "Sold the 1 TQQQ share at the open because it hit the engine's 1.5% stop: the premarket rally faded and TQQQ opened about 2.7% below the premarket buy price"
   }
  ],
  "open_positions": [],
@@ -4706,6 +4916,378 @@
      "source": "",
      "impact": "neutral",
      "seen": 900
+    }
+   ]
+  },
+  "2026-11-26": {
+   "bot": [
+    {
+     "time": "",
+     "text": "~05:24 ET, X News (FT report): Nvidia pauses high-end AI chip shipments to Southeast Asia amid US export rule. Bearish NVDA/QQQ at Friday open. https:/",
+     "source": "FT",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "",
+     "text": "~05:48 ET, X News (CBS report): Chinese-controlled firms bought Nvidia's top AI chips. Mild bearish/regulatory. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "",
+     "text": "~22:13 ET, X News: Dow erases 1,100-point loss; Nasdaq 100 recovers from 4.7% plunge to -0.6%. Bullish reversal. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "",
+     "text": "~23:10 ET, X News: JPMorgan sees AI supercycle driving S&P 500 to 8,200 in 2027. Sentiment-positive, low near-term impact. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "",
+     "text": "~03:05 ET, X News: NVIDIA reportedly cuts gaming GPU supply 20-30% for Q4 (Chinese forum claim, unconfirmed). Minor. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    }
+   ]
+  },
+  "2026-11-27": {
+   "bot": [
+    {
+     "time": "05:15",
+     "text": "ET, X News: stock futures surge into the Black Friday half day. NQ is up over 2.5% and S&P futures are above 7,300. The move builds on Wednesday's recovery (Nasdaq briefly hit bear-market territory) plus 4.3% Q3 GDP and tariff optimism. QQQ",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "04:56",
+     "text": "ET: Chinese stocks have their best day in two years after a State Council support pledge. Shanghai +3.7%, ChiNext +11.6%, STAR 50 +15% on semis/AI, and Hang Seng Tech +6%. This is risk-on for semis. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "03:23",
+     "text": "ET: China industrial profits rose 20.1% y/y in October, led by AI and memory-chip electronics. Supportive for semis. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "05:28",
+     "text": "ET: banks are offloading AI-related loans (JPM, Citi, ING, HSBC on Stargate-linked debt). This is a mild AI-credit negative and continues Thursday's CoreWeave theme. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "05:21",
+     "text": "ET: Nvidia's halt of AI-chip shipments to SE Asia under the new Commerce license rule is still in the news. NVDA-negative, follow-up only. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "23:50",
+     "text": "ET Thu: Trump says he worried about the sharp intraday Nasdaq drop (down over 4% intraday Wed before closing -0.62%). This hints at a political \"put.\" https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "00:58",
+     "text": "ET: Arthur Hayes warns of a liquid-asset sell-off if the Fed doesn't soften before its pre-FOMC blackout (starts midnight ET Sat 11/28). Fed speakers could hit today. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "",
+     "text": "Background: Jensen Huang reinstated as NVDA CEO (follow-up). Brent ~$96.6 after a Saudi refinery attack (per Nifty market wrap; unverified elsewhere)",
+     "source": "",
+     "impact": "",
+     "seen": 358
+    },
+    {
+     "time": "04:48",
+     "text": "ET, Reuters via Investing.com: Nasdaq futures surge as investors return to AI stocks. NQ was +2.87% at 04:23; NVDA +4.7%, AMD +7% and AVGO +4.7% premarket. A strategist calls the recovery \"technical,\" with the panic questions unanswered. Bu",
+     "source": "Reuters",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "05:43",
+     "text": "ET, Benzinga: QQQ premarket $651.9 (+2.83%). 10y yield 4.92%. FedWatch Dec hike 98.8%. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "05:08",
+     "text": "ET, Barron's: chip, memory and networking stocks are \"flying\" premarket; KOSPI +4.3%. https:/",
+     "source": "Barron's",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "04:31",
+     "text": "ET, X News (confirmed by Anadolu 02:27 ET): Brent near $97-98 after attacks on Saudi Aramco's Jazan refinery and in Hormuz. OPEC+ meets Sun 11/29. Mildly bearish via inflation and yields; a move above $100 would matter more. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "06:52",
+     "text": "ET, X News: Iran claims tankers hit mines in Hormuz (unconfirmed). Tail risk. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "05:27",
+     "text": "ET, X News: Goldman raises server DRAM demand forecasts for 2027 (+17%) and 2028 (+18%). Bullish for MU and memory. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "06:35",
+     "text": "ET, X News: the Netherlands resists the US push to tighten ASML China sales. Export-rule friction, slightly negative for chips. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "",
+     "text": "Still live: Nvidia SE Asia shipment halt under the new license rule (06:26 ET update); banks marketing AI and data-center loans, with CoreWeave CDS implying more than 70% 5-yr default odds (06:52 ET update); Section 301 tariff proposals (Ch",
+     "source": "",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "",
+     "text": "Fed: Chair Warsh, no new remarks. Blackout runs Nov 28 to Dec 10; FOMC Dec 8-9",
+     "source": "",
+     "impact": "",
+     "seen": 425
+    },
+    {
+     "time": "06:45",
+     "text": "ET, Bloomberg: Nvidia Blackwell chips (GB300 NVL72 rack, GB200 server) turn up at a Shanghai site tied to Alice Huang/Megaspeed, which was blacklisted this week. Mildly negative for NVDA and semis; adds export-control headline risk. https:/",
+     "source": "Bloomberg",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "07:13",
+     "text": "ET, StreetInsider: follow-up on the same story. https:/+Blackwell+chips+found+in+Shanghai+data+center+tied+to+Alice+Huang/.html",
+     "source": "",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "07:34",
+     "text": "ET, Barron's live: S&P futures +2%, Nasdaq futures close to +3%. Continuation. https:/",
+     "source": "Barron's",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "07:12",
+     "text": "ET update, Reuters via Investing: NQ +2.23% at 06:42; NVDA +3.6%, AMD +4.4%, AVGO +3.4%; Dec hike almost fully priced. https:/",
+     "source": "Reuters",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "06:55",
+     "text": "ET, CNBC: tech rally lifts futures; Chinese chipmakers post their biggest-ever one-day gains. https:/",
+     "source": "CNBC",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "07:06",
+     "text": "ET, X News: Goldman warns of up to $100B of systematic selling next week. A next-week headwind; little effect today. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "07:30",
+     "text": "ET, X News: Iranian state media say the IRGC fired warning shots at a US F-16 near Hormuz (unverified). Oil tail risk. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "07:06",
+     "text": "ET, X News: Trump touts the Intel stake and repeats his interest in Nvidia (CNBC interview). Neutral. https:/",
+     "source": "CNBC",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "",
+     "text": "Earlier items still live: Brent supply fears after the Saudi refinery and Hormuz attacks, NVDA SE Asia shipment halt, banks selling AI loans, Section 301 tariff proposals, China State Council support rally",
+     "source": "",
+     "impact": "",
+     "seen": 478
+    },
+    {
+     "time": "08:30",
+     "text": "ET, Census: Oct advance goods trade balance -$149.5B vs about -$133.0B consensus. September was revised to -$135.1B. Imports +$21.1B, with capital goods +8.5% m/m. Wholesale inventories +0.9%, retail +0.8%. Negative for Q4 GDP tracking, but",
+     "source": "",
+     "impact": "",
+     "seen": 545
+    },
+    {
+     "time": "08:32",
+     "text": "ET, Bloomberg: US goods-trade deficit widens for a fourth straight month, the widest since March 2025. https:/",
+     "source": "Bloomberg",
+     "impact": "",
+     "seen": 545
+    },
+    {
+     "time": "",
+     "text": "About 08:31 ET, Investing Live: Oct advance goods trade -149.5B vs -133.0B expected. https://",
+     "source": "",
+     "impact": "",
+     "seen": 545
+    },
+    {
+     "time": "07:07",
+     "text": "ET, Investing.com: premarket movers. NVDA +4.7%, AMD +7%, AVGO +4.7%, MU +6%, MRVL +7.3%, hyperscalers +2.3-5.3%. Broad semis and AI bid. Later reads show NVDA nearer +3% (Yahoo blog 07:53) after the Megaspeed headline. https:/",
+     "source": "Yahoo",
+     "impact": "",
+     "seen": 545
+    },
+    {
+     "time": "08:41",
+     "text": "ET, X News (unverified Fars claim): Iran's Navy says commandos retook two tankers seized by the US and that Hormuz stays closed. No US response yet. Oil tail risk. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 545
+    },
+    {
+     "time": "",
+     "text": "CNBC (updated this hour): Brent $96.48 (-9c), near its monthly high but not extending. Below the $100 trigger. https:/",
+     "source": "CNBC",
+     "impact": "",
+     "seen": 545
+    },
+    {
+     "time": "",
+     "text": "Fed: no confirmed new Warsh remarks; an unsourced GMT Eight flash was ignored. Blackout starts Sat 11/28",
+     "source": "",
+     "impact": "",
+     "seen": 545
+    },
+    {
+     "time": "09:35",
+     "text": "ET, Reuters via Investing.com: US stocks open higher as AI shares claw back losses (Nasdaq +1.58% at the open). Gains faded within minutes. https:/",
+     "source": "Reuters",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "09:32",
+     "text": "ET, Yahoo live blog: early semis bounce (NVDA nearly +2%, MU +4%), since reversed; no major data today. https:/",
+     "source": "Yahoo",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "06:02",
+     "text": "ET, Reuters via StreetInsider: next tests are the jobs report next Friday (consensus +90k) and the rate view. S&P put NVDA on CreditWatch Negative Wednesday; Huang testifies to Senate Banking next week. A headwind into next week.…",
+     "source": "Reuters",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "09:43",
+     "text": "ET update, X News: the IRGC claims tankers hit mines north of Khasab and a supertanker burned (unverified). Oil tail risk. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "09:46",
+     "text": "ET update, X News: Trump tells troops an Iran victory awaits his call and gives Tehran until the new year. 08:09 ET: Israel signals readiness for unilateral strikes on Iran. Geopolitical overhang, no new action. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "09:14",
+     "text": "ET, X News: record Thanksgiving online spending of $7.1B (+10.4% y/y, Adobe). Mildly supportive. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "",
+     "text": "Fed: nothing confirmed new; an undated GMT Eight Warsh flash was ignored",
+     "source": "",
+     "impact": "",
+     "seen": 605
+    },
+    {
+     "time": "10:44",
+     "text": "ET, CNBC live: Dow rallies 500 points; S&P +1.2%, Nasdaq +1.7%; Meta and Amazon about +3%, AVGO +2%. The benchmark is heading for its best week since April 2025. Bullish. https:/",
+     "source": "CNBC",
+     "impact": "",
+     "seen": 660
+    },
+    {
+     "time": "10:39",
+     "text": "ET, AP: stocks rise with about three of every four S&P stocks up; best week since May 2025 in view. Bullish breadth. https:/",
+     "source": "AP",
+     "impact": "",
+     "seen": 660
+    },
+    {
+     "time": "10:27",
+     "text": "ET, Barron's: Stocks rally as AI fears fade, \"no clear catalyst\"; Deutsche Bank's Jim Reid says the tech selloff \"has stabilised for now.\" Mildly bullish. https:/",
+     "source": "Barron's",
+     "impact": "",
+     "seen": 660
+    },
+    {
+     "time": "10:18",
+     "text": "ET, MarketWatch: rally broadens beyond tech. Neutral to bullish. https:/",
+     "source": "MarketWatch",
+     "impact": "",
+     "seen": 660
+    },
+    {
+     "time": "10:43",
+     "text": "ET, Bloomberg: Brent near $95 in thin trading, easing from the morning high. Mildly supportive. https:/",
+     "source": "Bloomberg",
+     "impact": "",
+     "seen": 660
+    },
+    {
+     "time": "10:39",
+     "text": "ET update, X News: IRGC commanders declare \"zero hour\" to break the US naval blockade. Unconfirmed, no operations reported. Headline tail risk. https:/",
+     "source": "",
+     "impact": "",
+     "seen": 660
+    },
+    {
+     "time": "",
+     "text": "Fed: nothing new; the latest Warsh speech was Nov 16. NVDA: no new story; the SE Asia shipment pause is still circulating",
+     "source": "",
+     "impact": "",
+     "seen": 660
     }
    ]
   }
